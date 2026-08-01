@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <clipPath id="uk-clip">
+      <circle cx="30" cy="30" r="28" />
+    </clipPath>
+    <radialGradient id="uk-glow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.3"/>
+    </radialGradient>
+    <linearGradient id="gold-ring-uk" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="50%" stop-color="#FF8C00"/>
+      <stop offset="100%" stop-color="#FFB347"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#uk-clip)">
+    <rect width="60" height="60" fill="#012169"/>
+    <!-- Diagonals White -->
+    <path d="M-5,-5 L65,65 M65,-5 L-5,65" stroke="#FFFFFF" stroke-width="10"/>
+    <!-- Diagonals Red -->
+    <path d="M-5,-5 L65,65 M65,-5 L-5,65" stroke="#C8102E" stroke-width="3.6"/>
+    <!-- St. George Cross White -->
+    <path d="M30,-5 V65 M-5,30 H65" stroke="#FFFFFF" stroke-width="16"/>
+    <!-- St. George Cross Red -->
+    <path d="M30,-5 V65 M-5,30 H65" stroke="#C8102E" stroke-width="9.6"/>
+    <!-- Glass Gloss Overlay -->
+    <circle cx="30" cy="30" r="28" fill="url(#uk-glow)"/>
+  </g>
+  <circle cx="30" cy="30" r="28" fill="none" stroke="url(#gold-ring-uk)" stroke-width="2.5"/>
+</svg>

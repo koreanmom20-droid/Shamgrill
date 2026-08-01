@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sham Bird &amp; Al-Asala — Luxury Restaurant Experience</title>
+  <meta name="description"
+    content="Explore authentic Iraqi & Levantine chicken & meat shawarma, charcoal grills, meals, pastries, pizza, burgers & oriental dishes." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Image Fallback Infrastructure -->
+  <script>
+    window.FALLBACK_ASSETS = {
+      flag_en: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2060%22%20width%3D%2260%22%20height%3D%2260%22%3E%20%3Cdefs%3E%20%3CclipPath%20id%3D%22uk-clip%22%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20%2F%3E%20%3C%2FclipPath%3E%20%3CradialGradient%20id%3D%22uk-glow%22%20cx%3D%2235%25%22%20cy%3D%2235%25%22%20r%3D%2265%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.35%22%2F%3E%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.05%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23000000%22%20stop-opacity%3D%220.3%22%2F%3E%20%3C%2FradialGradient%3E%20%3ClinearGradient%20id%3D%22gold-ring-uk%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FFE066%22%2F%3E%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23FF8C00%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23FFB347%22%2F%3E%20%3C%2FlinearGradient%3E%20%3C%2Fdefs%3E%20%3Cg%20clip-path%3D%22url(%23uk-clip)%22%3E%20%3Crect%20width%3D%2260%22%20height%3D%2260%22%20fill%3D%22%23012169%22%2F%3E%20%3C!--%20Diagonals%20White%20--%3E%20%3Cpath%20d%3D%22M-5%2C-5%20L65%2C65%20M65%2C-5%20L-5%2C65%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2210%22%2F%3E%20%3C!--%20Diagonals%20Red%20--%3E%20%3Cpath%20d%3D%22M-5%2C-5%20L65%2C65%20M65%2C-5%20L-5%2C65%22%20stroke%3D%22%23C8102E%22%20stroke-width%3D%223.6%22%2F%3E%20%3C!--%20St.%20George%20Cross%20White%20--%3E%20%3Cpath%20d%3D%22M30%2C-5%20V65%20M-5%2C30%20H65%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%2216%22%2F%3E%20%3C!--%20St.%20George%20Cross%20Red%20--%3E%20%3Cpath%20d%3D%22M30%2C-5%20V65%20M-5%2C30%20H65%22%20stroke%3D%22%23C8102E%22%20stroke-width%3D%229.6%22%2F%3E%20%3C!--%20Glass%20Gloss%20Overlay%20--%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20fill%3D%22url(%23uk-glow)%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22url(%23gold-ring-uk)%22%20stroke-width%3D%222.5%22%2F%3E%20%3C%2Fsvg%3E",
+      flag_ku: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2060%22%20width%3D%2260%22%20height%3D%2260%22%3E%20%3Cdefs%3E%20%3CclipPath%20id%3D%22kurd-clip%22%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20%2F%3E%20%3C%2FclipPath%3E%20%3CradialGradient%20id%3D%22kurd-glow%22%20cx%3D%2235%25%22%20cy%3D%2235%25%22%20r%3D%2265%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.35%22%2F%3E%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.05%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23000000%22%20stop-opacity%3D%220.25%22%2F%3E%20%3C%2FradialGradient%3E%20%3ClinearGradient%20id%3D%22gold-ring-kurd%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FFE066%22%2F%3E%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23FF8C00%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23FFB347%22%2F%3E%20%3C%2FlinearGradient%3E%20%3CradialGradient%20id%3D%22sun-glow%22%20cx%3D%2250%25%22%20cy%3D%2250%25%22%20r%3D%2250%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FFF500%22%2F%3E%20%3Cstop%20offset%3D%2270%25%22%20stop-color%3D%22%23FFB800%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23E69500%22%2F%3E%20%3C%2FradialGradient%3E%20%3C%2Fdefs%3E%20%3Cg%20clip-path%3D%22url(%23kurd-clip)%22%3E%20%3C!--%20Red%20Top%20--%3E%20%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2260%22%20height%3D%2220%22%20fill%3D%22%23E41B13%22%2F%3E%20%3C!--%20White%20Center%20--%3E%20%3Crect%20x%3D%220%22%20y%3D%2220%22%20width%3D%2260%22%20height%3D%2220%22%20fill%3D%22%23FFFFFF%22%2F%3E%20%3C!--%20Green%20Bottom%20--%3E%20%3Crect%20x%3D%220%22%20y%3D%2240%22%20width%3D%2260%22%20height%3D%2220%22%20fill%3D%22%23278E43%22%2F%3E%20%3C!--%20Golden%20Sun%20Center%20Emblem%20--%3E%20%3Cpolygon%20points%3D%2230.00%2C18.50%2030.89%2C24.07%2033.39%2C19.01%2032.60%2C24.59%2036.48%2C20.50%2034.08%2C25.60%2038.99%2C22.83%2035.20%2C27.00%2040.71%2C25.80%2035.85%2C28.66%2041.47%2C29.14%2035.98%2C30.45%2041.21%2C32.56%2035.59%2C32.19%2039.96%2C35.75%2034.69%2C33.74%2037.82%2C38.43%2033.38%2C34.96%2034.99%2C40.36%2031.77%2C35.73%2031.71%2C41.37%2030.00%2C36.00%2028.29%2C41.37%2028.23%2C35.73%2025.01%2C40.36%2026.62%2C34.96%2022.18%2C38.43%2025.31%2C33.74%2020.04%2C35.75%2024.41%2C32.19%2018.79%2C32.56%2024.02%2C30.45%2018.53%2C29.14%2024.15%2C28.66%2019.29%2C25.80%2024.80%2C27.00%2021.01%2C22.83%2025.92%2C25.60%2023.52%2C20.50%2027.40%2C24.59%2026.61%2C19.01%2029.11%2C24.07%22%20fill%3D%22url(%23sun-glow)%22%20stroke%3D%22%23E69500%22%20stroke-width%3D%220.4%22%2F%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%226%22%20fill%3D%22url(%23sun-glow)%22%2F%3E%20%3C!--%20Glass%20Gloss%20Overlay%20--%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20fill%3D%22url(%23kurd-glow)%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22url(%23gold-ring-kurd)%22%20stroke-width%3D%222.5%22%2F%3E%20%3C%2Fsvg%3E",
+      flag_ar: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2060%2060%22%20width%3D%2260%22%20height%3D%2260%22%3E%20%3Cdefs%3E%20%3CclipPath%20id%3D%22iraq-clip%22%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20%2F%3E%20%3C%2FclipPath%3E%20%3CradialGradient%20id%3D%22iraq-glow%22%20cx%3D%2235%25%22%20cy%3D%2235%25%22%20r%3D%2265%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.35%22%2F%3E%20%3Cstop%20offset%3D%2260%25%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.05%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23000000%22%20stop-opacity%3D%220.3%22%2F%3E%20%3C%2FradialGradient%3E%20%3ClinearGradient%20id%3D%22gold-ring-iraq%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FFE066%22%2F%3E%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23FF8C00%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23FFB347%22%2F%3E%20%3C%2FlinearGradient%3E%20%3C%2Fdefs%3E%20%3Cg%20clip-path%3D%22url(%23iraq-clip)%22%3E%20%3C!--%20Red%20Top%20--%3E%20%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%2260%22%20height%3D%2220%22%20fill%3D%22%23CE1126%22%2F%3E%20%3C!--%20White%20Center%20--%3E%20%3Crect%20x%3D%220%22%20y%3D%2220%22%20width%3D%2260%22%20height%3D%2220%22%20fill%3D%22%23FFFFFF%22%2F%3E%20%3C!--%20Black%20Bottom%20--%3E%20%3Crect%20x%3D%220%22%20y%3D%2240%22%20width%3D%2260%22%20height%3D%2220%22%20fill%3D%22%23000000%22%2F%3E%20%3C!--%20Kufic%20Calligraphy%20%22%D8%A7%D9%84%D9%84%D9%87%20%D8%A3%D9%83%D8%A8%D8%B1%22%20(God%20is%20Greatest)%20--%3E%20%3Cg%20transform%3D%22translate(30%2C%2030)%22%20fill%3D%22%23007A3D%22%3E%20%3C!--%20Kufic%20style%20stylized%20geometric%20representation%20--%3E%20%3Cpath%20d%3D%22M-14%2C-5%20h3%20v10%20h-3%20z%20M-9%2C-5%20h3%20v10%20h-3%20z%20M-4%2C-5%20h2%20v10%20h-2%20z%20M0%2C-7%20h3%20v12%20h-3%20z%20M5%2C-5%20h3%20v10%20h-3%20z%20M10%2C-5%20h3%20v10%20h-3%20z%22%20opacity%3D%220.95%22%2F%3E%20%3Ctext%20x%3D%220%22%20y%3D%223.5%22%20font-family%3D%22'Noto%20Sans%20Arabic'%2C%20'Amiri'%2C%20sans-serif%22%20font-weight%3D%22900%22%20font-size%3D%227.5%22%20text-anchor%3D%22middle%22%20fill%3D%22%23007A3D%22%20letter-spacing%3D%220.5%22%3E%D8%A7%D9%84%D9%84%D9%87%20%D8%A3%D9%83%D8%A8%D8%B1%3C%2Ftext%3E%20%3C%2Fg%3E%20%3C!--%20Glass%20Gloss%20Overlay%20--%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20fill%3D%22url(%23iraq-glow)%22%2F%3E%20%3C%2Fg%3E%20%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%2228%22%20fill%3D%22none%22%20stroke%3D%22url(%23gold-ring-iraq)%22%20stroke-width%3D%222.5%22%2F%3E%20%3C%2Fsvg%3E",
+      logo: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20200%20200%22%20width%3D%22200%22%20height%3D%22200%22%3E%20%3Cdefs%3E%20%3CradialGradient%20id%3D%22logoBg%22%20cx%3D%2250%25%22%20cy%3D%2250%25%22%20r%3D%2250%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2322140a%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230a0705%22%2F%3E%20%3C%2FradialGradient%3E%20%3ClinearGradient%20id%3D%22logoGold%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%22100%25%22%3E%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23FFE066%22%2F%3E%20%3Cstop%20offset%3D%2250%25%22%20stop-color%3D%22%23FF8C00%22%2F%3E%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23FF5500%22%2F%3E%20%3C%2FlinearGradient%3E%20%3C%2Fdefs%3E%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2294%22%20fill%3D%22url(%23logoBg)%22%20stroke%3D%22url(%23logoGold)%22%20stroke-width%3D%224%22%2F%3E%20%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2285%22%20fill%3D%22none%22%20stroke%3D%22%23FFB347%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%224%203%22%20opacity%3D%220.5%22%2F%3E%20%3Cpath%20d%3D%22M100%2035%20C115%2065%20140%2075%20140%20105%20C140%20130%20122%20145%20100%20145%20C78%20145%2060%20130%2060%20105%20C60%2075%2085%2065%20100%2035%20Z%22%20fill%3D%22url(%23logoGold)%22%20opacity%3D%220.95%22%2F%3E%20%3Cpath%20d%3D%22M100%2055%20C110%2075%20125%2085%20125%20108%20C125%20124%20114%20135%20100%20135%20C86%20135%2075%20124%2075%20108%20C75%2085%2090%2075%20100%2055%20Z%22%20fill%3D%22%23FFD700%22%2F%3E%20%3Cpath%20d%3D%22M100%2075%20C105%2087%20112%2095%20112%20110%20C112%20118%20107%20125%20100%20125%20C93%20125%2088%20118%2088%20110%20C88%2095%2095%2087%20100%2075%20Z%22%20fill%3D%22%23FFF59D%22%2F%3E%20%3Ctext%20x%3D%22100%22%20y%3D%22166%22%20font-family%3D%22'Plus%20Jakarta%20Sans'%2C%20sans-serif%22%20font-size%3D%2214%22%20font-weight%3D%22900%22%20fill%3D%22%23FFFFFF%22%20text-anchor%3D%22middle%22%20letter-spacing%3D%222%22%3ESHAM%20BIRD%3C%2Ftext%3E%20%3Ctext%20x%3D%22100%22%20y%3D%22182%22%20font-family%3D%22'Noto%20Sans%20Arabic'%2C%20sans-serif%22%20font-size%3D%2210%22%20font-weight%3D%22bold%22%20fill%3D%22%23FFB347%22%20text-anchor%3D%22middle%22%3E%D9%85%D8%B7%D8%B9%D9%85%20%D8%B4%D8%A7%D9%85%20%D8%A8%D9%8A%D8%B1%D8%AF%3C%2Ftext%3E%20%3C%2Fsvg%3E",
+      food: "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20width%3D%22400%22%20height%3D%22300%22%3E%20%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23121318%22%2F%3E%20%3Ccircle%20cx%3D%22200%22%20cy%3D%22130%22%20r%3D%2270%22%20fill%3D%22%231a1c24%22%20stroke%3D%22%23ff8c00%22%20stroke-width%3D%222%22%2F%3E%20%3Ctext%20x%3D%22200%22%20y%3D%22140%22%20font-size%3D%2260%22%20text-anchor%3D%22middle%22%3E%F0%9F%8D%97%3C%2Ftext%3E%20%3Ctext%20x%3D%22200%22%20y%3D%22230%22%20font-family%3D%22sans-serif%22%20font-size%3D%2216%22%20font-weight%3D%22bold%22%20fill%3D%22%23ffb347%22%20text-anchor%3D%22middle%22%3ESham%20Bird%20Special%3C%2Ftext%3E%20%3C%2Fsvg%3E"
+    };
+    function handleImageError(img, type) {
+      if (img.dataset.hasFallback) return;
+      img.dataset.hasFallback = 'true';
+      if (window.FALLBACK_ASSETS && window.FALLBACK_ASSETS[type]) {
+        img.src = window.FALLBACK_ASSETS[type];
+      } else if (window.FALLBACK_ASSETS && window.FALLBACK_ASSETS.food) {
+        img.src = window.FALLBACK_ASSETS.food;
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- Neon Developer Credit Badge (Top Left Corner) -->
+  <div class="neon-dev-badge">
+    <div class="neon-dev-line">
+      <span class="neon-dev-tag">Dev :</span>
+      <a href="tel:+9647722820101" class="neon-dev-num">07722820101</a>
+    </div>
+    <div class="neon-dev-line ar">
+      <span class="neon-dev-tag">المبرمج :</span>
+      <a href="tel:+9647722820101" class="neon-dev-num">07722820101</a>
+    </div>
+  </div>
+
+  <!-- Seamless Continuous Background Video Layer -->
+  <video id="bg-video" autoplay loop muted playsinline preload="auto">
+    <source src="assets/video.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Background Layer Stack: Vignette + Canvas + Silhouettes -->
+  <div class="vignette-overlay"></div>
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Background Food Silhouettes (5-10% opacity) -->
+  <div class="bg-silhouettes" aria-hidden="true">
+    <div class="silhouette sil-1">🍗</div>
+    <div class="silhouette sil-2">🌯</div>
+    <div class="silhouette sil-3">🥩</div>
+    <div class="silhouette sil-4">🍕</div>
+    <div class="silhouette sil-5">🔥</div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+       SCREEN 1: LUXURY GATEWAY & FLOATING LOGO
+       ════════════════════════════════════════════════════════════ -->
+  <!-- ════════════════════════════════════════════════════════════
+       SCREEN 1: LUXURY GATEWAY & FLOATING LOGO
+       ════════════════════════════════════════════════════════════ -->
+  <section id="splash-screen" class="screen active">
+    <div class="splash-card-wrapper">
+
+      <!-- Glowing Ambient Backdrop Aura -->
+      <div class="card-glow-aura"></div>
+
+      <div class="splash-card glass-luxury">
+        <div class="splash-grid-layout">
+
+          <!-- LEFT COLUMN: BRAND HERO & BADGES -->
+          <div class="splash-brand-col">
+            <div class="logo-container-luxury">
+              <div class="logo-circle-glass">
+                <img src="assets/logo.png" alt="Sham Bird Logo" class="luxury-logo" id="hero-logo"
+                  onerror="handleImageError(this, 'logo')" />
+                <span class="logo-fallback-flame">🔥</span>
+              </div>
+            </div>
+
+            <h1 class="brand-title-luxury">Sham Bird</h1>
+            <p class="brand-subtitle-luxury">مطعم شام بيرد والأصالة · Shawarma, Grill &amp; Bakery</p>
+
+            <div class="divider-gold-line">
+              <span class="divider-emblem">🔥</span>
+            </div>
+
+            <!-- Bottom Luxury Feature Badges -->
+            <div class="splash-features-row">
+              <div class="feature-badge">
+                <span class="feat-icon">🔥</span>
+                <span class="feat-text">Fresh Ingredients</span>
+              </div>
+              <div class="feature-badge">
+                <span class="feat-icon">🥩</span>
+                <span class="feat-text">Fresh Meat</span>
+              </div>
+              <div class="feature-badge">
+                <span class="feat-icon">✅</span>
+                <span class="feat-text"> Best Chef's </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: LANGUAGE SELECTION & SOCIALS -->
+          <div class="splash-lang-col">
+            <div class="lang-selection-block">
+              <h2 class="lang-heading-luxury" id="lang-prompt-title">Choose Your Language</h2>
+              <p class="lang-heading-sub">اختر لغتك · زمانی خۆت هەڵبژێرە</p>
+
+              <div class="lang-cards-grid">
+                <!-- English -->
+                <button class="lang-card-btn" data-lang="en" onclick="selectLanguage('en')">
+                  <div class="flag-badge">
+                    <img src="assets/flag_en.svg" alt="English" class="lang-flag-img"
+                      onerror="handleImageError(this, 'flag_en')" />
+                  </div>
+                  <div class="lang-card-text">
+                    <span class="lang-card-title">English</span>
+                    <span class="lang-card-sub">Choose english to browse the menu with english Language</span>
+                  </div>
+                  <div class="lang-arrow">→</div>
+                </button>
+
+                <!-- Kurdish -->
+                <button class="lang-card-btn" data-lang="ku" onclick="selectLanguage('ku')">
+                  <div class="flag-badge">
+                    <img src="assets/flag_ku.svg" alt="Kurdish" class="lang-flag-img"
+                      onerror="handleImageError(this, 'flag_ku')" />
+                  </div>
+                  <div class="lang-card-text">
+                    <span class="lang-card-title">Kurdish</span>
+                    <span class="lang-card-sub">هەڵبژێره‌ کوردی بۆ سه‌یری مێنیو به‌ زمانی کوردی</span>
+                  </div>
+                  <div class="lang-arrow">←</div>
+                </button>
+
+                <!-- Arabic Iraqi -->
+                <button class="lang-card-btn" data-lang="ar" onclick="selectLanguage('ar')">
+                  <div class="flag-badge">
+                    <img src="assets/flag_ar.svg" alt="Arabic" class="lang-flag-img"
+                      onerror="handleImageError(this, 'flag_ar')" />
+                  </div>
+                  <div class="lang-card-text">
+                    <span class="lang-card-title">Arabic</span>
+                    <span class="lang-card-sub">اختر العربية لتصفح المنيو باللغة العربية</span>
+                  </div>
+                  <div class="lang-arrow">←</div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Social Media & Support Block with Pointer Label -->
+            <div class="splash-socials-wrapper">
+              <div class="socials-label">
+                <span class="socials-label-text">Our Social Media</span>
+                <span class="pointing-arrow">➔</span>
+              </div>
+              <div class="splash-socials-row">
+                <a href="https://www.facebook.com/share/1FAUrQS6hE/" target="_blank" rel="noopener"
+                  class="social-pill fb" title="Facebook">
+                  <svg class="social-svg" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                  </svg>
+                  <span class="social-name">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/sham68939?igsh=cnFqZnZnM2w0dXJq" target="_blank" rel="noopener"
+                  class="social-pill ig" title="Instagram">
+                  <svg class="social-svg" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                  </svg>
+                  <span class="social-name">Instagram</span>
+                </a>
+                <a href="https://wa.me/9647509661218" target="_blank" rel="noopener" class="social-pill wa"
+                  title="WhatsApp">
+                  <svg class="social-svg" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                  </svg>
+                  <span class="social-name">WhatsApp</span>
+                </a>
+                <a href="tel:+9647509661218" class="social-pill sup" title="Call 0750 966 1218">
+                  <svg class="social-svg" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                  </svg>
+                  <span class="social-name">0750 966 1218</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════════
+       SCREEN 2: MAIN FOOD EXPERIENCE (FULL MENU)
+       ════════════════════════════════════════════════════════════ -->
+  <main id="main-app" class="screen hidden">
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="app-header">
+      <div class="header-container">
+
+        <div class="brand-badge" onclick="showSplashScreen()">
+          <img src="assets/logo.png" alt="Sham Bird Logo" class="header-logo"
+            onerror="handleImageError(this, 'logo')" />
+          <div class="brand-text">
+            <span class="brand-name">Sham Bird</span>
+            <span class="brand-tag">مطعم شام بيرد والأصالة</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <div class="topbar-socials">
+            <a href="https://www.facebook.com/share/1FAUrQS6hE/" target="_blank" rel="noopener"
+              class="topbar-icon-btn fb" title="Facebook">
+              <svg class="social-svg-sm" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/sham68939?igsh=cnFqZnZnM2w0dXJq" target="_blank" rel="noopener"
+              class="topbar-icon-btn ig" title="Instagram">
+              <svg class="social-svg-sm" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/9647509661218" target="_blank" rel="noopener" class="topbar-icon-btn wa"
+              title="WhatsApp (0750 966 1218)">
+              <svg class="social-svg-sm" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="lang-switcher">
+            <button id="lang-switch-btn" class="icon-pill-btn" onclick="toggleLangMenu()">
+              <span id="current-lang-flag"><img src="assets/flag_en.svg" alt="EN" class="topbar-flag-img"
+                  id="topbar-flag-img-el" onerror="handleImageError(this, 'flag_en')" /></span>
+              <span id="current-lang-code">EN</span>
+              <span class="caret">▾</span>
+            </button>
+            <div id="lang-dropdown" class="lang-dropdown glass-panel hidden">
+              <button onclick="switchLanguage('en')"><img src="assets/flag_en.svg" alt="EN" class="dropdown-flag-img"
+                  onerror="handleImageError(this, 'flag_en')" />
+                English</button>
+              <button onclick="switchLanguage('ku')"><img src="assets/flag_ku.svg" alt="KU" class="dropdown-flag-img"
+                  onerror="handleImageError(this, 'flag_ku')" />
+                کوردی (Kurdish)</button>
+              <button onclick="switchLanguage('ar')"><img src="assets/flag_ar.svg" alt="AR" class="dropdown-flag-img"
+                  onerror="handleImageError(this, 'flag_ar')" />
+                عربي عراقي (Arabic)</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-aura-glow"></div>
+      <div class="hero-container">
+
+        <div class="hero-badge">🔥 Authentic Charcoal Grill &amp; Gourmet Shawarma</div>
+
+        <h1 id="hero-question" class="hero-title">
+          What Do you like to eat today?
+        </h1>
+        <p id="hero-subtitle" class="hero-sub">
+          Explore delicious shawarma, charcoal grills, sandwiches, meals, burgers, fresh pastries &amp; pizza.
+        </p>
+
+        <!-- SEARCH BAR -->
+        <div class="search-box-wrapper glass-panel">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="menu-search-input" placeholder="Search shawarma, meals, burgers, pizza, pastries..."
+            oninput="handleSearch(this.value)" />
+          <button id="clear-search-btn" class="clear-btn hidden" onclick="clearSearch()">✕</button>
+        </div>
+
+        <!-- Category Pill Chips -->
+        <div class="quick-tags" id="quick-tags">
+          <button class="tag-chip active" onclick="filterCategory('all', this)">✨ <span data-i18n="cat_all">All
+              Items</span></button>
+          <button class="tag-chip" onclick="filterCategory('ch_shawarma', this)">🍗 <span
+              data-i18n="cat_ch_shawarma">Chicken Shawarma</span></button>
+          <button class="tag-chip" onclick="filterCategory('meat_shawarma', this)">🥩 <span
+              data-i18n="cat_meat_shawarma">Meat Shawarma</span></button>
+          <button class="tag-chip" onclick="filterCategory('sandwiches', this)">🥪 <span
+              data-i18n="cat_sandwiches">Sandwiches &amp; Rolls</span></button>
+          <button class="tag-chip" onclick="filterCategory('meals', this)">🍽️ <span data-i18n="cat_meals">Meals &amp;
+              Grill</span></button>
+          <button class="tag-chip" onclick="filterCategory('burgers', this)">🍔 <span
+              data-i18n="cat_burgers">Burgers</span></button>
+          <button class="tag-chip" onclick="filterCategory('pastries', this)">🫓 <span data-i18n="cat_pastries">Pastries
+              &amp; Pizza</span></button>
+          <button class="tag-chip" onclick="filterCategory('falafel', this)">🧆 <span data-i18n="cat_falafel">Falafel
+              &amp; Fries</span></button>
+          <button class="tag-chip" onclick="filterCategory('oriental', this)">🍚 <span data-i18n="cat_oriental">Oriental
+              &amp; Salads</span></button>
+          <button class="tag-chip" onclick="filterCategory('drinks', this)">🥤 <span
+              data-i18n="cat_drinks">Drinks</span></button>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#menu-container" id="browse-menu-btn" class="btn-primary">
+            <span>📖</span> <span data-i18n="btn_browse">Browse Full Menu</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CHEF'S RECOMMENDATIONS SECTION -->
+    <section class="chefs-picks-section">
+      <div class="section-title-wrap">
+        <span class="section-tag">Chef's Picks</span>
+        <h2 class="section-title" data-i18n="chef_title">Chef's Recommendations</h2>
+        <p class="section-sub" data-i18n="chef_sub">Handcrafted signature feasts selected by our master chefs</p>
+      </div>
+
+      <div class="chefs-grid">
+        <div class="chef-card">
+          <span class="chef-ribbon">👑 Signature Platter</span>
+          <div class="chef-img-wrapper">
+            <img src="assets/shawarma.png" alt="Arabi Chicken Shawarma Meal" class="chef-img"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=900&auto=format&fit=crop&q=80';" />
+          </div>
+          <div class="chef-card-body">
+            <h3 class="chef-card-title">Arabi Chicken Shawarma Feast</h3>
+            <p class="chef-card-desc">Sliced Arabi shawarma roll served with crispy fries, garlic sauce &amp; pickles.
+            </p>
+            <div class="chef-card-footer">
+              <span class="chef-price">5,000 IQD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chef-card">
+          <span class="chef-ribbon">🔥 Charcoal Grill</span>
+          <div class="chef-img-wrapper">
+            <img src="assets/broasted.png" alt="Whole Grilled Chicken Meal" class="chef-img"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=900&auto=format&fit=crop&q=80';" />
+          </div>
+          <div class="chef-card-body">
+            <h3 class="chef-card-title">Whole Charcoal Grilled Chicken</h3>
+            <p class="chef-card-desc">Charcoal-grilled whole chicken served with french fries, garlic dip &amp; fresh
+              bread.</p>
+            <div class="chef-card-footer">
+              <span class="chef-price">12,000 IQD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chef-card">
+          <span class="chef-ribbon">🥩 Gourmet Meat</span>
+          <div class="chef-img-wrapper">
+            <img src="assets/mixed_grill.png" alt="1 KG Meat Shawarma" class="chef-img"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544025162-d76694265947?w=900&auto=format&fit=crop&q=80';" />
+          </div>
+          <div class="chef-card-body">
+            <h3 class="chef-card-title">1 KG Meat Shawarma Feast</h3>
+            <p class="chef-card-desc">Full 1 KG tender beef shawarma meat platter with all sauces &amp; fresh samoon.
+            </p>
+            <div class="chef-card-footer">
+              <span class="chef-price">30,000 IQD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU CONTAINER SECTION -->
+    <section id="menu-container" class="menu-section">
+      <div class="section-title-wrap">
+        <span class="section-tag">Digital Menu</span>
+        <h2 id="menu-section-title" class="section-title" data-i18n="menu_title">Our Featured Menu</h2>
+        <p id="menu-section-subtitle" class="section-sub" data-i18n="menu_sub">All prices listed in IQD · Prepared fresh
+          with authentic ingredients</p>
+      </div>
+
+      <div id="search-status" class="search-status hidden"></div>
+
+      <!-- FOOD CARDS GRID SECTIONS -->
+      <div id="food-grid" class="menu-sections-wrapper">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <section class="reviews-section">
+      <div class="section-title-wrap">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title" data-i18n="reviews_title">What Our Guests Say</h2>
+        <p class="section-sub" data-i18n="reviews_sub">Real reviews from food lovers in Erbil &amp; Ainkawa 108 S.t</p>
+
+        <div style="margin-top: 1.2rem;">
+          <button id="open-review-modal-btn" class="icon-pill-btn" onclick="openReviewModal()" style="margin: 0 auto;">
+            <span>✍️</span> <span data-i18n="add_review_btn">Add a Review</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dynamic Customer Reviews Grid -->
+      <div id="reviews-grid" class="reviews-grid">
+        <!-- Rendered dynamically by JavaScript -->
+      </div>
+    </section>
+
+    <!-- ADD A REVIEW MODAL -->
+    <div id="review-modal-backdrop" class="modal-backdrop hidden" onclick="closeReviewModal(event)">
+      <div class="modal-card glass-luxury" onclick="event.stopPropagation()">
+        <div class="modal-header">
+          <h3 class="modal-title">✍️ <span data-i18n="write_review_title">Write a Review</span></h3>
+          <button class="modal-close-btn" onclick="closeReviewModal()">✕</button>
+        </div>
+
+        <div id="review-form-body">
+          <p class="modal-sub">Share your dining experience at Sham Bird &amp; Al-Asala</p>
+
+          <div class="form-group">
+            <label class="form-label">Your Rating</label>
+            <div class="star-rating-picker" id="star-picker">
+              <span data-star="1" onclick="setReviewRating(1)">★</span>
+              <span data-star="2" onclick="setReviewRating(2)">★</span>
+              <span data-star="3" onclick="setReviewRating(3)">★</span>
+              <span data-star="4" onclick="setReviewRating(4)">★</span>
+              <span data-star="5" onclick="setReviewRating(5)" class="selected">★</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="review-name">Your Name</label>
+            <input type="text" id="review-name" class="form-input" placeholder="e.g. Hassan Ahmed" maxlength="40" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="review-text">Your Review</label>
+            <textarea id="review-text" class="form-textarea" rows="3"
+              placeholder="Tell us about the food, garlic sauce, samoon & service..."></textarea>
+          </div>
+
+          <div id="review-limit-msg" class="review-limit-notice hidden">
+            ⚠️ You have already submitted a review. Thank you for your feedback!
+          </div>
+
+          <button id="submit-review-btn" class="btn-primary"
+            style="width: 100%; justify-content: center; margin-top: 1rem;" onclick="submitUserReview()">
+            <span>✨</span> <span>Submit Review</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ITEM DETAIL & PHOTO ZOOM MODAL -->
+    <div id="item-modal-backdrop" class="modal-backdrop hidden" onclick="closeItemModal(event)">
+      <div class="item-modal-card glass-luxury" onclick="event.stopPropagation()">
+        <button class="modal-close-btn item-modal-close" onclick="closeItemModal()">✕</button>
+        <div class="item-modal-grid">
+          <div class="item-modal-img-container" onclick="openPhotoZoom()">
+            <img id="item-modal-img" src="" alt="Dish Image" class="item-modal-img" />
+            <div class="img-zoom-hint">
+              <span>🔍</span> <span>Click to Zoom Photo</span>
+            </div>
+            <span id="item-modal-badge" class="badge-tag"></span>
+          </div>
+          <div class="item-modal-details">
+            <h2 id="item-modal-title" class="item-modal-title"></h2>
+            <div id="item-modal-subtitle" class="item-modal-subtitle"></div>
+            <p id="item-modal-desc" class="item-modal-desc"></p>
+            <div class="item-modal-meta">
+              <span id="item-modal-price" class="price-tag"></span>
+            </div>
+            <div class="item-modal-actions">
+              <button class="btn-primary zoom-btn" onclick="openPhotoZoom()">
+                <span>🔍</span> <span>Zoom High-Res Photo</span>
+              </button>
+              <button class="view-item-btn secondary" onclick="closeItemModal()">
+                <span>✕</span> <span>Close</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX FULLSCREEN PHOTO ZOOM -->
+    <div id="photo-zoom-backdrop" class="lightbox-backdrop hidden" onclick="closePhotoZoom(event)">
+      <div class="lightbox-toolbar" onclick="event.stopPropagation()">
+        <span id="lightbox-title" class="lightbox-title"></span>
+        <div class="lightbox-controls">
+          <button onclick="zoomPhoto(0.25)" title="Zoom In">🔍 +</button>
+          <button onclick="zoomPhoto(-0.25)" title="Zoom Out">🔍 -</button>
+          <button onclick="resetPhotoZoom()" title="Reset Zoom">🔄 Reset</button>
+          <button onclick="closePhotoZoom()" title="Close Lightbox" class="lightbox-close">✕</button>
+        </div>
+      </div>
+      <div class="lightbox-stage" onclick="event.stopPropagation()">
+        <img id="lightbox-img" src="" alt="Zoomed Dish Photo" class="lightbox-img" />
+      </div>
+    </div>
+
+    <!-- PREMIUM 4-COLUMN FOOTER -->
+    <footer class="app-footer glass-panel">
+      <div class="footer-4col-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <img src="assets/logo.png" alt="Sham Bird" class="footer-brand-logo"
+            onerror="handleImageError(this, 'logo')" />
+          <h3 style="color:#fff; font-size:1.2rem; font-weight:800; margin-bottom:0.4rem;">Sham Bird &amp; Al-Asala</h3>
+          <p class="footer-brand-desc">مطعم شام بيرد والأصالة · شاورما ومعجنات ومشاوي عرقية وشامية اصيلة.</p>
+          <div class="footer-social-row">
+            <a href="https://www.facebook.com/share/1FAUrQS6hE/" target="_blank" rel="noopener"
+              class="topbar-icon-btn fb" title="Facebook">
+              <svg class="social-svg-sm" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/sham68939?igsh=cnFqZnZnM2w0dXJq" target="_blank" rel="noopener"
+              class="topbar-icon-btn ig" title="Instgram">
+              <svg class="social-svg-sm" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/9647509661218" target="_blank" rel="noopener" class="topbar-icon-btn wa"
+              title="WhatsApp (0750 966 1218)">
+              <svg class="social-svg-sm" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Categories -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Categories</h4>
+          <ul class="footer-list">
+            <li><a href="#menu-container" onclick="filterCategory('ch_shawarma')">🍗 Chicken Shawarma</a></li>
+            <li><a href="#menu-container" onclick="filterCategory('meat_shawarma')">🥩 Meat Shawarma</a></li>
+            <li><a href="#menu-container" onclick="filterCategory('meals')">🍽️ Meals &amp; Grills</a></li>
+            <li><a href="#menu-container" onclick="filterCategory('burgers')">🍔 Burgers</a></li>
+            <li><a href="#menu-container" onclick="filterCategory('pastries')">🫓 Pastries &amp; Pizza</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Experience -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Hospitality</h4>
+          <ul class="footer-list">
+            <li>🔥 Charcoal Grilled Daily</li>
+            <li>🥖 Fresh Stone Oven Bakery</li>
+            <li>✅ 100% Halal Certified Meat</li>
+            <li>⚡ Fast Digital Menu Access</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact &amp; Connect</h4>
+          <ul class="footer-list">
+            <li>📍 Erbil &amp; Ainkawa 108 S.t</li>
+            <li>📞 <a href="tel:+9647509661218"
+                style="color:var(--accent-gold); text-decoration:none; font-weight:600;">0750 966 1218</a></li>
+            <li>💬 <a href="https://wa.me/9647509661218" target="_blank" rel="noopener"
+                style="color:#4ade80; text-decoration:none;">WhatsApp: 0750 966 1218</a></li>
+            <li>📸 <a href="https://www.instagram.com/sham68939?igsh=cnFqZnZnM2w0dXJq" target="_blank" rel="noopener"
+                style="color:#f472b6; text-decoration:none;">@sham68939</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider">
+        <span class="divider-emblem">◆</span>
+      </div>
+      <div class="footer-bottom-row">
+        <span>© 2026 Sham Bird &amp; Al-Asala Restaurant. All rights reserved.</span>
+        <span>Built with Apple-Level Luxury Design</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

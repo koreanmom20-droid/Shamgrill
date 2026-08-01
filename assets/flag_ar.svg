@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <clipPath id="iraq-clip">
+      <circle cx="30" cy="30" r="28" />
+    </clipPath>
+    <radialGradient id="iraq-glow" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#ffffff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.3"/>
+    </radialGradient>
+    <linearGradient id="gold-ring-iraq" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE066"/>
+      <stop offset="50%" stop-color="#FF8C00"/>
+      <stop offset="100%" stop-color="#FFB347"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#iraq-clip)">
+    <!-- Red Top -->
+    <rect x="0" y="0" width="60" height="20" fill="#CE1126"/>
+    <!-- White Center -->
+    <rect x="0" y="20" width="60" height="20" fill="#FFFFFF"/>
+    <!-- Black Bottom -->
+    <rect x="0" y="40" width="60" height="20" fill="#000000"/>
+    
+    <!-- Kufic Calligraphy "الله أكبر" (God is Greatest) -->
+    <g transform="translate(30, 30)" fill="#007A3D">
+      <!-- Kufic style stylized geometric representation -->
+      <path d="M-14,-5 h3 v10 h-3 z M-9,-5 h3 v10 h-3 z M-4,-5 h2 v10 h-2 z M0,-7 h3 v12 h-3 z M5,-5 h3 v10 h-3 z M10,-5 h3 v10 h-3 z" opacity="0.95"/>
+      <text x="0" y="3.5" font-family="'Noto Sans Arabic', 'Amiri', sans-serif" font-weight="900" font-size="7.5" text-anchor="middle" fill="#007A3D" letter-spacing="0.5">الله أكبر</text>
+    </g>
+    
+    <!-- Glass Gloss Overlay -->
+    <circle cx="30" cy="30" r="28" fill="url(#iraq-glow)"/>
+  </g>
+  <circle cx="30" cy="30" r="28" fill="none" stroke="url(#gold-ring-iraq)" stroke-width="2.5"/>
+</svg>
