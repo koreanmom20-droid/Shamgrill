@@ -2162,7 +2162,94 @@ html[dir="rtl"] .footer-col-title::after {
   color: var(--text-muted);
 }
 
-/* ── Responsive Grid Breakpoints & Layout ─────────────────────────────── */
+/* ── Luxury Developer Credit Chip (Top Left Corner) ────────────────────────── */
+.dev-luxury-badge {
+  position: fixed;
+  top: 18px;
+  left: 22px;
+  z-index: 9999;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.5rem 1rem;
+  background: rgba(12, 14, 20, 0.88);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 140, 0, 0.25), inset 0 0 10px rgba(255, 179, 71, 0.12);
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: auto;
+  user-select: none;
+}
+
+.dev-luxury-badge:hover {
+  transform: translateY(-2px) scale(1.04);
+  background: rgba(22, 24, 34, 0.95);
+  border-color: var(--accent-gold);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 35px rgba(255, 140, 0, 0.45);
+}
+
+.dev-badge-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 140, 0, 0.3), rgba(255, 179, 71, 0.15));
+  border: 1px solid var(--accent-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-gold);
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(255, 140, 0, 0.3);
+}
+
+.dev-badge-content {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.dev-badge-title {
+  font-size: 0.66rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.dev-badge-num {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.6px;
+  font-family: var(--font-en);
+}
+
+.dev-badge-pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 10px #10b981, 0 0 18px #10b981;
+  animation: devPulse 2s ease-in-out infinite;
+  margin-left: 0.15rem;
+}
+
+@keyframes devPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+/* ── Comprehensive Mobile & Tablet Responsive Master Rules ────────────────── */
 @media (min-width: 1280px) {
   .food-grid {
     grid-template-columns: repeat(4, 1fr) !important;
@@ -2178,114 +2265,334 @@ html[dir="rtl"] .footer-col-title::after {
 @media (min-width: 600px) and (max-width: 919px) {
   .food-grid {
     grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.2rem !important;
   }
 }
 
 @media (max-width: 599px) {
   .food-grid {
     grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    padding: 4rem 1rem 2rem 1rem;
+  html {
+    font-size: 14px;
+  }
+
+  /* Developer badge position on small mobile screens */
+  .dev-luxury-badge {
+    top: 10px;
+    left: 10px;
+    padding: 0.35rem 0.7rem;
+    gap: 0.45rem;
+    background: rgba(12, 14, 20, 0.92);
+  }
+
+  .dev-badge-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .dev-badge-icon svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .dev-badge-title {
+    font-size: 0.6rem;
+  }
+
+  .dev-badge-num {
+    font-size: 0.78rem;
+  }
+
+  /* Splash Gateway Screen Mobile Enhancements */
+  #splash-screen {
+    padding: 4.8rem 1rem 2rem 1rem;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .splash-card-wrapper {
+    width: 100%;
+    max-width: 100%;
   }
 
   .splash-card.glass-luxury {
-    padding: 2.2rem 1.4rem 1.4rem 1.4rem;
+    padding: 1.8rem 1.2rem;
+    border-radius: 24px;
+  }
+
+  .splash-grid-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1.8rem !important;
+  }
+
+  .logo-container-luxury {
+    width: 110px;
+    height: 110px;
+    margin-bottom: 1rem;
+  }
+
+  .logo-circle-glass {
+    width: 105px;
+    height: 105px;
   }
 
   .brand-title-luxury {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
+    line-height: 1.15;
+    margin-bottom: 0.4rem;
   }
 
-  .footer-4col-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  .brand-subtitle-luxury {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .splash-features-row {
+    gap: 0.45rem;
+    margin-top: 1.2rem;
+    padding-top: 1rem;
+  }
+
+  .feature-badge {
+    padding: 0.45rem 0.8rem;
+    font-size: 0.78rem;
+  }
+
+  .lang-heading-luxury {
+    font-size: 1.25rem;
+  }
+
+  .lang-card-btn {
+    padding: 0.9rem 1.1rem;
+    border-radius: 16px;
+    min-height: 56px;
+  }
+
+  .flag-badge {
+    width: 44px;
+    height: 44px;
+    margin-right: 0.8rem;
+  }
+
+  html[dir="rtl"] .flag-badge {
+    margin-right: 0;
+    margin-left: 0.8rem;
+  }
+
+  .lang-card-title {
+    font-size: 1.05rem;
+  }
+
+  .lang-card-sub {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .splash-socials-wrapper {
+    align-items: center !important;
+    margin-top: 1.5rem;
+  }
+
+  .socials-label {
+    font-size: 0.92rem;
+    justify-content: center;
+  }
+
+  .splash-socials-row {
+    justify-content: center !important;
+    gap: 0.5rem;
+  }
+
+  .social-pill {
+    padding: 0.55rem 0.9rem;
+    font-size: 0.82rem;
+    flex: 1 1 calc(50% - 0.5rem);
+    min-width: 125px;
+    justify-content: center;
+  }
+
+  /* App Navigation Header Mobile Optimization */
+  .app-header {
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    background: rgba(7, 8, 10, 0.94);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-glass);
+  }
+
+  .header-container {
+    padding: 0 0.85rem;
+    gap: 0.5rem;
+  }
+
+  .brand-badge {
+    gap: 0.5rem;
+    margin-left: 110px; /* Leave clean space for fixed dev badge on top left */
+  }
+
+  html[dir="rtl"] .brand-badge {
+    margin-left: 0;
+    margin-right: 110px;
+  }
+
+  .header-logo {
+    width: 36px;
+    height: 36px;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+    font-weight: 800;
+  }
+
+  .brand-tag {
+    display: none;
   }
 
   .topbar-socials {
     display: none;
   }
-}
 
-/* ── Neon Developer Credit Badge (Top Left Corner) ────────────────────────── */
-.neon-dev-badge {
-  position: fixed;
-  top: 18px;
-  left: 22px;
-  z-index: 9999;
-  padding: 0.6rem 1rem;
-  background: rgba(6, 11, 22, 0.82);
-  border: 1px solid rgba(0, 243, 255, 0.55);
-  border-radius: var(--radius-sm);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 0 18px rgba(0, 243, 255, 0.35), inset 0 0 12px rgba(0, 243, 255, 0.15);
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  font-family: var(--font-en);
-  animation: neonGlowPulse 3s ease-in-out infinite alternate;
-  pointer-events: auto;
-  user-select: none;
-}
-
-@keyframes neonGlowPulse {
-  0% {
-    border-color: rgba(0, 243, 255, 0.5);
-    box-shadow: 0 0 14px rgba(0, 243, 255, 0.3), inset 0 0 8px rgba(0, 243, 255, 0.15);
-  }
-  100% {
-    border-color: rgba(0, 243, 255, 0.95);
-    box-shadow: 0 0 28px rgba(0, 243, 255, 0.65), inset 0 0 16px rgba(0, 243, 255, 0.3);
-  }
-}
-
-.neon-dev-line {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.86rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.neon-dev-line.ar {
-  direction: rtl;
-  font-family: var(--font-ar);
-}
-
-.neon-dev-tag {
-  color: #00f3ff;
-  text-shadow: 0 0 6px rgba(0, 243, 255, 0.95), 0 0 14px rgba(0, 243, 255, 0.7);
-  letter-spacing: 0.5px;
-}
-
-.neon-dev-num {
-  color: #00ff88;
-  text-decoration: none;
-  text-shadow: 0 0 6px rgba(0, 255, 136, 0.95), 0 0 14px rgba(0, 255, 136, 0.7);
-  font-weight: 800;
-  letter-spacing: 0.5px;
-  transition: all 0.25s ease;
-}
-
-.neon-dev-num:hover {
-  color: #ffffff;
-  text-shadow: 0 0 10px #00ff88, 0 0 22px #00ff88;
-}
-
-@media (max-width: 768px) {
-  .neon-dev-badge {
-    top: 10px;
-    left: 10px;
+  #lang-switch-btn {
     padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
   }
-  .neon-dev-line {
+
+  /* Hero Section Mobile Optimization */
+  .hero-section {
+    padding: 2rem 1rem 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .hero-badge {
     font-size: 0.78rem;
-    gap: 0.35rem;
+    padding: 0.4rem 0.85rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-title {
+    font-size: 1.85rem;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-sub {
+    font-size: 0.88rem;
+    line-height: 1.5;
+    margin-bottom: 1.4rem;
+  }
+
+  .search-box-wrapper {
+    padding: 0.45rem 0.75rem;
+    border-radius: 18px;
+    width: 100%;
+  }
+
+  /* Category Horizontal Scroll Mobile Bar */
+  .categories-nav {
+    position: sticky;
+    top: 54px;
+    z-index: 850;
+    background: rgba(14, 15, 20, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 140, 0, 0.15);
+    margin-bottom: 1.5rem;
+  }
+
+  .categories-wrapper,
+  .category-pills-scroll {
+    display: flex;
+    gap: 0.55rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.2rem 0.85rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .categories-wrapper::-webkit-scrollbar,
+  .category-pills-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-btn {
+    flex-shrink: 0;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  /* Food Cards Mobile Sizing */
+  .food-card {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .food-card-img-wrapper {
+    height: 180px;
+  }
+
+  .food-card-body {
+    padding: 1rem 0.9rem;
+  }
+
+  .food-title {
+    font-size: 1.1rem;
+  }
+
+  .food-desc {
+    font-size: 0.82rem;
+    line-height: 1.4;
+  }
+
+  /* Modal Mobile Bottom Sheet Styling */
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-card {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 26px 26px 0 0;
+    max-height: 90vh;
+    padding: 1.5rem 1.1rem 2rem 1.1rem;
+  }
+
+  /* Footer Mobile Alignment */
+  .footer-4col-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    text-align: center !important;
+  }
+
+  html[dir="rtl"] .footer-4col-grid {
+    text-align: center !important;
+  }
+
+  .footer-col-title::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.75rem;
+    text-align: center;
   }
 }
 
