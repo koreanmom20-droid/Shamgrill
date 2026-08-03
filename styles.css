@@ -279,14 +279,14 @@ html[dir="rtl"] body {
   width: 165px;
   height: 165px;
   border-radius: 50%;
-  background: rgba(255, 140, 0, 0.08);
-  border: 1px solid rgba(255, 140, 0, 0.4);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(16px);
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 0 0 35px rgba(255, 140, 0, 0.25), inset 0 0 20px rgba(255, 140, 0, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   animation: logoFloatPulse 3.5s ease-in-out infinite alternate;
 }
 
@@ -294,15 +294,13 @@ html[dir="rtl"] body {
   width: 140px;
   height: 140px;
   object-fit: contain;
-  filter: drop-shadow(0 12px 25px rgba(255, 140, 0, 0.5));
+  filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.6));
   transition: transform 0.3s ease;
   z-index: 2;
 }
+
 .logo-fallback-flame {
-  position: absolute;
-  font-size: 4.2rem;
-  z-index: 1;
-  opacity: 0.85;
+  display: none;
 }
 
 .logo-circle-glass:hover .luxury-logo {
@@ -312,12 +310,12 @@ html[dir="rtl"] body {
 @keyframes logoFloatPulse {
   0% {
     transform: translateY(0) scale(1);
-    box-shadow: 0 0 25px rgba(255, 140, 0, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   }
 
   100% {
     transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 0 45px rgba(255, 140, 0, 0.4);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -1030,17 +1028,34 @@ html[dir="rtl"] .search-icon {
   background: rgba(255, 140, 0, 0.15);
   border-color: var(--border-orange);
   color: #ffffff;
-  transform: translateY(-3px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(255, 140, 0, 0.2);
+  transform: translateY(-2px);
 }
 
 .tag-chip.active {
-  background: linear-gradient(135deg, var(--accent-orange), var(--accent-gold));
-  border-color: var(--accent-orange);
-  color: #07080a;
+  background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-gold) 100%);
+  border-color: transparent;
+  color: #0e0f14;
   font-weight: 800;
-  transform: translateY(-3px) scale(1.04);
-  box-shadow: 0 10px 28px rgba(255, 140, 0, 0.45);
+  box-shadow: 0 4px 16px rgba(255, 140, 0, 0.4);
+}
+
+.chip-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.4rem;
+  padding: 0.12rem 0.5rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--accent-gold);
+  transition: all 0.2s ease;
+}
+
+.tag-chip.active .chip-count {
+  background: rgba(14, 15, 20, 0.4);
+  color: #ffffff;
 }
 
 .hero-actions {
@@ -2239,10 +2254,13 @@ html[dir="rtl"] .footer-col-title::after {
 }
 
 @keyframes devPulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.4;
     transform: scale(0.85);
   }
+
   50% {
     opacity: 1;
     transform: scale(1.25);
@@ -2436,7 +2454,8 @@ html[dir="rtl"] .footer-col-title::after {
 
   .brand-badge {
     gap: 0.5rem;
-    margin-left: 110px; /* Leave clean space for fixed dev badge on top left */
+    margin-left: 110px;
+    /* Leave clean space for fixed dev badge on top left */
   }
 
   html[dir="rtl"] .brand-badge {
@@ -2600,16 +2619,45 @@ html[dir="rtl"] .footer-col-title::after {
 .logo-circle-glass {
   overflow: hidden;
 }
+
 .flag-badge {
   overflow: hidden;
 }
-.luxury-logo, .header-logo, .footer-brand-logo {
+
+.luxury-logo,
+.header-logo,
+.footer-brand-logo {
   object-fit: contain;
 }
-.lang-flag-img, .topbar-flag-img, .dropdown-flag-img {
+
+.lang-flag-img,
+.topbar-flag-img,
+.dropdown-flag-img {
   object-fit: cover;
 }
+
 img {
   color: var(--accent-gold);
   font-size: 0.75rem;
+}
+
+/* No-Photo Banner Styles */
+.no-photo-banner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 170px;
+}
+
+.no-photo-icon {
+  font-size: 3.5rem;
+  opacity: 0.95;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.6));
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.food-card:hover .no-photo-icon {
+  transform: scale(1.15) rotate(5deg);
 }
