@@ -125,887 +125,23 @@ const i18n = {
 
 // ── Category Visual Themes Dictionary ─────────────────────────────────────
 const catThemes = {
-  ch_shawarma: { fallbackImg: 'assets/shawarma.png', gradient: 'linear-gradient(135deg, rgba(255, 140, 0, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍗' },
-  meat_shawarma: { fallbackImg: 'assets/mixed_grill.png', gradient: 'linear-gradient(135deg, rgba(239, 68, 68, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🥩' },
-  pastries: { fallbackImg: 'assets/starters.png', gradient: 'linear-gradient(135deg, rgba(168, 85, 247, 0.4) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🫓' },
-  sandwiches: { fallbackImg: 'assets/mixed_grill.png', gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🥪' },
-  meals: { fallbackImg: 'assets/broasted.png', gradient: 'linear-gradient(135deg, rgba(217, 119, 6, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍽️' },
-  burgers: { fallbackImg: 'assets/broasted.png', gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍔' },
-  pizza: { fallbackImg: 'assets/starters.png', gradient: 'linear-gradient(135deg, rgba(225, 29, 72, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍕' },
-  light_rolls: { fallbackImg: 'assets/shawarma.png', gradient: 'linear-gradient(135deg, rgba(34, 197, 94, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🌯' },
-  fries: { fallbackImg: 'assets/starters.png', gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍟' },
-  appetizers: { fallbackImg: 'assets/starters.png', gradient: 'linear-gradient(135deg, rgba(16, 185, 129, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🥗' },
-  oriental: { fallbackImg: 'assets/shawarma.png', gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.4) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍚' },
-  drinks: { fallbackImg: 'assets/starters.png', gradient: 'linear-gradient(135deg, rgba(14, 165, 233, 0.4) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🥤' }
+  ch_shawarma: { gradient: 'linear-gradient(135deg, rgba(255, 140, 0, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍗' },
+  meat_shawarma: { gradient: 'linear-gradient(135deg, rgba(239, 68, 68, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🥩' },
+  pastries: { gradient: 'linear-gradient(135deg, rgba(168, 85, 247, 0.4) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🫓' },
+  sandwiches: { gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🥪' },
+  meals: { gradient: 'linear-gradient(135deg, rgba(217, 119, 6, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍽️' },
+  burgers: { gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍔' },
+  pizza: { gradient: 'linear-gradient(135deg, rgba(225, 29, 72, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍕' },
+  light_rolls: { gradient: 'linear-gradient(135deg, rgba(34, 197, 94, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🌯' },
+  fries: { gradient: 'linear-gradient(135deg, rgba(234, 179, 8, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍟' },
+  appetizers: { gradient: 'linear-gradient(135deg, rgba(16, 185, 129, 0.45) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🥗' },
+  oriental: { gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.4) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🍚' },
+  drinks: { gradient: 'linear-gradient(135deg, rgba(14, 165, 233, 0.4) 0%, rgba(14, 15, 20, 0.95) 100%)', icon: '🥤' }
 };
 
 const menuItems = [
   {
     "num": 1,
-    "id": "cs1",
-    "category": "ch_shawarma",
-    "name": "Chicken Shawarma Roll (Lebanese & Saj)",
-    "nameAr": "لفة شاورما دجاج خبز لبناني مع صاج",
-    "nameKu": "لوولەی شاورمەی مریشک نانی لبنانی و ساج",
-    "desc": "Fresh chicken shawarma wrapped with Lebanese & Saj flatbread.",
-    "priceFormatted": "2,000 IQD",
-    "img": "assets/23.jpg",
-    "badge": "🔥 Popular"
-  },
-  {
-    "num": 2,
-    "id": "cs2",
-    "category": "ch_shawarma",
-    "name": "Chicken Shawarma Roll (Lebanese Bread)",
-    "nameAr": "لفة شاورما دجاج خبز لبناني",
-    "nameKu": "لوولەی شاورمەی مریشک نانی لبنانی",
-    "desc": "Classic chicken shawarma wrapped in soft Lebanese pita bread.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/2.jpg",
-    "badge": " Classic"
-  },
-  {
-    "num": 3,
-    "id": "cs3",
-    "category": "ch_shawarma",
-    "name": "Chicken Shawarma Roll (Stone Samoon)",
-    "nameAr": "لفة شاورما دجاج صمون حجري",
-    "nameKu": "لوولەی شاورمەی مریشک سەموونی بەردین",
-    "desc": "Fresh chicken shawarma in stone-oven baked samoon.",
-    "priceFormatted": "1,250 IQD",
-    "img": "assets/9.jpg",
-    "badge": " Stone Oven"
-  },
-  {
-    "num": 4,
-    "id": "cs4",
-    "category": "ch_shawarma",
-    "name": "Chicken Shawarma Roll (Lebanese Deluxe)",
-    "nameAr": "لفة شاورما دجاج خبز لبناني ممتازة",
-    "nameKu": "لوولەی شاورمەی مریشک نانی لبنانی",
-    "desc": "Chicken shawarma roll wrapped tightly in toasted Lebanese bread.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/30.jpg",
-    "badge": " Classic"
-  },
-  {
-    "num": 5,
-    "id": "cs5",
-    "category": "ch_shawarma",
-    "name": "Double Chicken Shawarma Roll",
-    "nameAr": "لفة شاورما دجاج دبل",
-    "nameKu": "لوولەی شاورمەی مریشک دبل",
-    "desc": "Double portion chicken shawarma roll toasted on wooden board.",
-    "priceFormatted": "3,000 IQD",
-    "img": "assets/62.jpg",
-    "badge": " Double Extra"
-  },
-  {
-    "num": 6,
-    "id": "cs6",
-    "category": "ch_shawarma",
-    "name": "Arabi Chicken Shawarma Meal",
-    "nameAr": "وجبة شاورما عربي دجاج",
-    "nameKu": "ژەمی شاورمەی عەرەبی مریشک",
-    "desc": "Sliced Arabi chicken shawarma roll served with fries & garlic dip.",
-    "priceFormatted": "3,500 IQD",
-    "img": "assets/17.jpg",
-    "badge": "⭐ Favorite"
-  },
-  {
-    "num": 7,
-    "id": "cs7",
-    "category": "ch_shawarma",
-    "name": "Double Arabi Chicken Shawarma Meal",
-    "nameAr": "وجبة شاورما عربي دبل",
-    "nameKu": "ژەمی شاورمەی عەرەبی دبل",
-    "desc": "Double portion Arabi chicken shawarma platter with extra fries.",
-    "priceFormatted": "5,000 IQD",
-    "img": "assets/32.jpg",
-    "badge": "🔥 Huge Portion"
-  },
-  {
-    "num": 8,
-    "id": "cs8",
-    "category": "ch_shawarma",
-    "name": "250g Chicken Shawarma Meal",
-    "nameAr": "وجبة شاورما دجاج 250g",
-    "nameKu": "ژەمی شاورمەی مریشک ٢٥٠ گرام",
-    "desc": "Quarter kilo chicken shawarma platter with garlic dip & bread.",
-    "priceFormatted": "7,000 IQD",
-    "img": "assets/15.jpg",
-    "badge": " 250g Box"
-  },
-  {
-    "num": 9,
-    "id": "cs9",
-    "category": "ch_shawarma",
-    "name": "Family Arabi Chicken Shawarma Meal",
-    "nameAr": "وجبة شاورما عربي عائلي",
-    "nameKu": "ژەمی شاورمەی عەرەبی عائلی",
-    "desc": "Family size Arabi chicken shawarma platter with garlic dip, fries & veggies.",
-    "priceFormatted": "11,000 IQD",
-    "img": "assets/35.jpg",
-    "badge": "👨‍👩‍👧‍👦 Family"
-  },
-  {
-    "num": 10,
-    "id": "ms1",
-    "category": "meat_shawarma",
-    "name": "Meat Shawarma Roll (French Samoon)",
-    "nameAr": "لفة شاورما لحم صمون فرنسي",
-    "nameKu": "لوولەی شاورمەی گوشت سەموونی فەرەنسی",
-    "desc": "Meat shawarma inside crispy French baguette samoon with parsley & tomato.",
-    "priceFormatted": "3,500 IQD",
-    "img": "assets/4.jpg",
-    "badge": "🥩 Juicy Meat"
-  },
-  {
-    "num": 11,
-    "id": "ms2",
-    "category": "meat_shawarma",
-    "name": "250g Meat Shawarma Platter on Hummus",
-    "nameAr": "وجبة شاورما لحم 250g مع حمص",
-    "nameKu": "ژەمی شاورمەی گوشت ٢٥٠ گرام لەگەڵ حمس",
-    "desc": "Tender beef shawarma slices arranged around creamy hummus dip.",
-    "priceFormatted": "8,000 IQD",
-    "img": "assets/10.jpg",
-    "badge": " 250g Box"
-  },
-  {
-    "num": 12,
-    "id": "ms3",
-    "category": "meat_shawarma",
-    "name": "Arabi Meat Shawarma Meal",
-    "nameAr": "وجبة شاورما لحم عربي",
-    "nameKu": "ژەمی شاورمەی گوشتي عەرەبی",
-    "desc": "Sliced Arabi meat shawarma platter with fries & tahini dip.",
-    "priceFormatted": "4,500 IQD",
-    "img": "assets/36.jpg",
-    "badge": "⭐ Favorite"
-  },
-  {
-    "num": 13,
-    "id": "ms4",
-    "category": "meat_shawarma",
-    "name": "Double Arabi Meat Shawarma Meal",
-    "nameAr": "وجبة شاورما لحم عربي دبل",
-    "nameKu": "ژەمی شاورمەی گوشتي عەرەبی دبل",
-    "desc": "Double portion Arabi meat shawarma platter with extra fries & tahini.",
-    "priceFormatted": "6,500 IQD",
-    "img": "assets/47.jpg",
-    "badge": "🔥 Huge Portion"
-  },
-  {
-    "num": 14,
-    "id": "ms5",
-    "category": "meat_shawarma",
-    "name": "Double Arabi Meat Shawarma (Special Tray)",
-    "nameAr": "وجبة شاورما لحم عربي دبل خيرة",
-    "nameKu": "ژەمی شاورمەی گوشتي عەرەبی دبل تایبەت",
-    "desc": "Double portion Arabi meat shawarma platter with pickles & sauce.",
-    "priceFormatted": "7,000 IQD",
-    "img": "assets/61.jpg",
-    "badge": "🥩 Double Meat"
-  },
-  {
-    "num": 15,
-    "id": "p1",
-    "category": "pastries",
-    "name": "Za'atar Pastry",
-    "nameAr": "زعتر",
-    "nameKu": "زەعتەر",
-    "desc": "Oven-fresh thyme & olive oil pastry.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/28.jpg",
-    "badge": " Fresh Baked"
-  },
-  {
-    "num": 16,
-    "id": "p2",
-    "category": "pastries",
-    "name": "Muhammara Pastry",
-    "nameAr": "محمرة",
-    "nameKu": "محەمەرە",
-    "desc": "Spiced red pepper paste pastry baked fresh in stone oven.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/38.jpg",
-    "badge": " Spiced"
-  },
-  {
-    "num": 17,
-    "id": "p3",
-    "category": "pastries",
-    "name": "Sujuk / Pepperoni Pie",
-    "nameAr": "فطيرة سجق / ببروني",
-    "nameKu": "فەتیرەی سوجوک / پێپەرۆنی",
-    "desc": "Seasoned sujuk beef sausage & pepperoni pie with cheese.",
-    "priceFormatted": "2,500 IQD",
-    "img": "assets/19.jpg",
-    "badge": " Sujuk & Cheese"
-  },
-  {
-    "num": 18,
-    "id": "p4",
-    "category": "pastries",
-    "name": "Akkawi Cheese Pastry",
-    "nameAr": "جبنة عكاوي",
-    "nameKu": "پەنیری عەکاوی",
-    "desc": "Authentic Akkawi cheese baked inside fresh oven dough.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/8.jpg",
-    "badge": "🧀 Cheesy"
-  },
-  {
-    "num": 19,
-    "id": "p5",
-    "category": "pastries",
-    "name": "Akkawi Cheese Pastry (Black Seed)",
-    "nameAr": "جبنة عكاوي بالحبّة السوداء",
-    "nameKu": "پەنیری عەکاوی",
-    "desc": "Akkawi cheese pie baked with black seeds & herbs.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/68.jpg",
-    "badge": " Cheesy"
-  },
-  {
-    "num": 20,
-    "id": "p6",
-    "category": "pastries",
-    "name": "Kashkaval Cheese Pastry Boat",
-    "nameAr": "جبنة قشقوان قارب",
-    "nameKu": "پەنیری قەشقەوان بەلەمی",
-    "desc": "Melted Kashkaval cheese baked in dough boat.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/49.jpg",
-    "badge": " Kashkaval"
-  },
-  {
-    "num": 21,
-    "id": "p7",
-    "category": "pastries",
-    "name": "Lahm Bi Ajeen (Meat Pie)",
-    "nameAr": "لحم بعجين",
-    "nameKu": "گوشت بە هەویر",
-    "desc": "Oven fresh meat pie topped with spiced minced meat.",
-    "priceFormatted": "1,250 IQD",
-    "img": "assets/60.jpg",
-    "badge": " Traditional"
-  },
-  {
-    "num": 22,
-    "id": "p8",
-    "category": "pastries",
-    "name": "Lahm Bi Ajeen Poster Special",
-    "nameAr": "لحم بعجين عائلي",
-    "nameKu": "گوشت بە هەویر عائلی",
-    "desc": "Traditional pie topped with spiced minced meat.",
-    "priceFormatted": "1,250 IQD",
-    "img": "assets/45.jpg",
-    "badge": " Traditional"
-  },
-  {
-    "num": 23,
-    "id": "p9",
-    "category": "pastries",
-    "name": "Muhammara with Kashkaval Pastry",
-    "nameAr": "محمرة مع قشقوان",
-    "nameKu": "محەمەرە لەگەڵ پەنیری قەشقەوان",
-    "desc": "Spiced red pepper paste topped with melted Kashkaval cheese.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/11.jpg",
-    "badge": "🌶️ Cheesy & Spicy"
-  },
-  {
-    "num": 24,
-    "id": "p10",
-    "category": "pastries",
-    "name": "Mortadella with Kashkaval Pastry",
-    "nameAr": "مرتديلا مع قشقوان",
-    "nameKu": "مۆرتادێلا لەگەڵ پەنیری قەشقەوان",
-    "desc": "Shredded mortadella topped with melted Kashkaval cheese.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/37.jpg",
-    "badge": " Delish"
-  },
-  {
-    "num": 25,
-    "id": "p11",
-    "category": "pastries",
-    "name": "Olives with Kashkaval Pastry",
-    "nameAr": "زيتون مع قشقوان",
-    "nameKu": "زەیتوون لەگەڵ پەنیری قەشقەوان",
-    "desc": "Black & green olives baked with Kashkaval cheese.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/43.jpg",
-    "badge": " Olives & Cheese"
-  },
-  {
-    "num": 26,
-    "id": "p12",
-    "category": "pastries",
-    "name": "Lahm Bi Ajeen with Kashkaval",
-    "nameAr": "لحم بعجين مع قشقوان",
-    "nameKu": "گوشت بە هەویر لەگەڵ پەنیری قەشقەوان",
-    "desc": "Traditional meat pie topped with melted Kashkaval cheese.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/14.jpg",
-    "badge": " Cheesy Meat"
-  },
-  {
-    "num": 27,
-    "id": "p13",
-    "category": "pastries",
-    "name": "Lahm Bi Ajeen with Fried Egg",
-    "nameAr": "لحم بعجين مع بيض مقلي",
-    "nameKu": "گوشت بە هەویر لەگەڵ هێلکەی سورکراوە",
-    "desc": "Traditional meat pie baked with fried egg on top.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/59.jpg",
-    "badge": " Special Egg"
-  },
-  {
-    "num": 28,
-    "id": "p14",
-    "category": "pastries",
-    "name": "Lahm Bi Ajeen with Egg (Oven Rack)",
-    "nameAr": "لحم بعجين مع بيض على الشبك",
-    "nameKu": "گوشت بە هەویر لەگەڵ هێلکە",
-    "desc": "Traditional meat pie baked with fresh egg on oven rack.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/63.jpg",
-    "badge": " Special Egg"
-  },
-  {
-    "num": 29,
-    "id": "p15",
-    "category": "pastries",
-    "name": "Shish Tawook with Kashkaval Pastry",
-    "nameAr": "شيش مع قشقوان",
-    "nameKu": "شیش لەگەڵ پەنیری قەشقەوان",
-    "desc": "Chicken tawook pastry topped with melted Kashkaval cheese.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/64.jpg",
-    "badge": " Chicken Tawook"
-  },
-  {
-    "num": 30,
-    "id": "p16",
-    "category": "pastries",
-    "name": "Small Mini Pizza",
-    "nameAr": "بيتزا صغيرة",
-    "nameKu": "پیتزای بچووک",
-    "desc": "Personal mini pizza baked with cheese, olives & tomato sauce.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/42.jpg",
-    "badge": " Mini Pizza"
-  },
-  {
-    "num": 31,
-    "id": "p17",
-    "category": "pastries",
-    "name": "Smoked Turkey / Beef Pie",
-    "nameAr": "فطيرة جيش مدخن",
-    "nameKu": "فەتیرەی دووکەڵاوی",
-    "desc": "Smoked deli meat pie stuffed with melted cheese.",
-    "priceFormatted": "2,500 IQD",
-    "img": "assets/40.jpg",
-    "badge": " Smoked"
-  },
-  {
-    "num": 32,
-    "id": "p18",
-    "category": "pastries",
-    "name": "Smoked Turkey Deluxe Pie Platter",
-    "nameAr": "فطيرة جيش مدخن ديلوكس",
-    "nameKu": "فەتیرەی دووکەڵاوی دێلۆکس",
-    "desc": "Deluxe smoked turkey pie baked with double cheese.",
-    "priceFormatted": "3,000 IQD",
-    "img": "assets/41.jpg",
-    "badge": " Deluxe Smoked"
-  },
-  {
-    "num": 33,
-    "id": "p19",
-    "category": "pastries",
-    "name": "Half Kilo Shamia Pie Platter (500g)",
-    "nameAr": "فطيرة شامية نص كيلو",
-    "nameKu": "فەتیرەی شامی نیوە کیلۆ",
-    "desc": "500g large authentic Shamia mini pie feast platter.",
-    "priceFormatted": "15,000 IQD",
-    "img": "assets/39.jpg",
-    "badge": "📦 500g Pie"
-  },
-  {
-    "num": 34,
-    "id": "p20",
-    "category": "pastries",
-    "name": "1 KG Shamia Pie Feast",
-    "nameAr": "فطيرة شامية كيلو",
-    "nameKu": "فەتیرەی شامی یەک کیلۆ",
-    "desc": "Full 1 KG giant Shamia pie feast platter for family sharing.",
-    "priceFormatted": "30,000 IQD",
-    "img": "assets/65.jpg",
-    "badge": "👑 1 KG Feast"
-  },
-  {
-    "num": 35,
-    "id": "sw1",
-    "category": "sandwiches",
-    "name": "Crispy Chicken Sandwich",
-    "nameAr": "سندويش كريسبي",
-    "nameKu": "سەندویچی کریسپی",
-    "desc": "Golden crispy chicken breast with mayo, lettuce & pickles.",
-    "priceFormatted": "4,000 IQD",
-    "img": "assets/3.jpg",
-    "badge": " Crisp"
-  },
-  {
-    "num": 36,
-    "id": "sw2",
-    "category": "sandwiches",
-    "name": "Shish Tawook Sandwich Platter",
-    "nameAr": "سندويش شيش طاووق",
-    "nameKu": "سەندویچی شیش طاووق",
-    "desc": "Grilled chicken skewers, garlic paste & pickles in sandwich bread with fries.",
-    "priceFormatted": "4,000 IQD",
-    "img": "assets/20.jpg",
-    "badge": " Grilled"
-  },
-  {
-    "num": 37,
-    "id": "sw3",
-    "category": "sandwiches",
-    "name": "Francisco / Escalope Sandwich",
-    "nameAr": "سندويش فرانسيسكو / سكاليوب",
-    "nameKu": "سەندویچی فرانسیسکۆ",
-    "desc": "Breaded chicken escalope with mozzarella & sweet corn glaze.",
-    "priceFormatted": "4,500 IQD",
-    "img": "assets/52.jpg",
-    "badge": " Special"
-  },
-  {
-    "num": 38,
-    "id": "sw4",
-    "category": "sandwiches",
-    "name": "Fajita Sandwich",
-    "nameAr": "سندويش فاهيتا",
-    "nameKu": "سەندویچی فاهيتا",
-    "desc": "Sautéed chicken strips, peppers, onions & melted cheese.",
-    "priceFormatted": "4,000 IQD",
-    "img": "assets/53.jpg",
-    "badge": " Sizzling"
-  },
-  {
-    "num": 39,
-    "id": "sw5",
-    "category": "sandwiches",
-    "name": "Spicy Zinger Sandwich with Cheddar",
-    "nameAr": "سندويش زنجر مع شيدر",
-    "nameKu": "سەندویچی زنجر بە چێدار",
-    "desc": "Spicy zinger chicken fillet with melted cheddar cheese & spicy mayo.",
-    "priceFormatted": "4,500 IQD",
-    "img": "assets/57.jpg",
-    "badge": "🌶️ Spicy"
-  },
-  {
-    "num": 40,
-    "id": "sw6",
-    "category": "sandwiches",
-    "name": "Shish Tawook Sandwich Platter with Coleslaw",
-    "nameAr": "سندويش شيش طاووق مع كولسلو",
-    "nameKu": "سەندویچی شیش طاووق لەگەڵ کۆلسڵۆ",
-    "desc": "Baguette samoon filled with grilled tawook, fries & coleslaw.",
-    "priceFormatted": "4,500 IQD",
-    "img": "assets/74.jpg",
-    "badge": " Tawook Deluxe"
-  },
-  {
-    "num": 41,
-    "id": "m1",
-    "category": "meals",
-    "name": "Rizo Chicken Rice Bowl",
-    "nameAr": "ريزو دجاج",
-    "nameKu": "ریزووی مریشک",
-    "desc": "Spiced rice bowl topped with crispy chicken & special sauce.",
-    "priceFormatted": "5,000 IQD",
-    "img": "assets/6.jpg",
-    "badge": "⭐ Popular Rice"
-  },
-  {
-    "num": 42,
-    "id": "m2",
-    "category": "meals",
-    "name": "Rizo Chicken Feast Special",
-    "nameAr": "وجبة ريزو دجاج عائلية",
-    "nameKu": "ژەمی تایبەتی ریزووی مریشک",
-    "desc": "Special Rizo chicken rice bowl feast with crispy strips.",
-    "priceFormatted": "6,000 IQD",
-    "img": "assets/18.jpg",
-    "badge": " Rice Special"
-  },
-  {
-    "num": 43,
-    "id": "m3",
-    "category": "meals",
-    "name": "Rizo Chicken Commercial Bowl",
-    "nameAr": "ريزو دجاج ميجا",
-    "nameKu": "ریزووی مریشک میگا",
-    "desc": "Mega size Rizo rice bowl with double crispy chicken.",
-    "priceFormatted": "7,000 IQD",
-    "img": "assets/54.jpg",
-    "badge": " Mega Bowl"
-  },
-  {
-    "num": 44,
-    "id": "m4",
-    "category": "meals",
-    "name": "Fajita Meal Platter",
-    "nameAr": "وجبة فاهيتا",
-    "nameKu": "ژەمی فاهيتا",
-    "desc": "Sizzling chicken fajita served with rice, fries & salad.",
-    "priceFormatted": "9,000 IQD",
-    "img": "assets/22.jpg",
-    "badge": " Sizzling"
-  },
-  {
-    "num": 45,
-    "id": "m5",
-    "category": "meals",
-    "name": "Crispy Chicken Tenders with Cheddar",
-    "nameAr": "وجبة كريسبي مع جبن شيدر",
-    "nameKu": "ژەمی کریسپی لەگەڵ پەنیری چێدار",
-    "desc": "Crispy chicken breast tenders served with cheddar cheese & fries.",
-    "priceFormatted": "9,000 IQD",
-    "img": "assets/29.jpg",
-    "badge": " Cheesy Crispy"
-  },
-  {
-    "num": 46,
-    "id": "m6",
-    "category": "meals",
-    "name": "Crispy Chicken Meal Platter",
-    "nameAr": "وجبة كريسبي دجاج",
-    "nameKu": "ژەمی کریسپی مریشک",
-    "desc": "Crispy chicken tenders platter with fries, coleslaw & baguette.",
-    "priceFormatted": "9,000 IQD",
-    "img": "assets/51.jpg",
-    "badge": " Crispy Combo"
-  },
-  {
-    "num": 47,
-    "id": "m7",
-    "category": "meals",
-    "name": "Crispy Chicken Meal + Extra Pieces",
-    "nameAr": "وجبة كريسبي + قطع إضافية",
-    "nameKu": "ژەمی کریسپی + پارچەی زیاتر",
-    "desc": "Crispy chicken strips & extra pieces platter with fries & coleslaw.",
-    "priceFormatted": "10,000 IQD",
-    "img": "assets/58.jpg",
-    "badge": " Deluxe Tenders"
-  },
-  {
-    "num": 48,
-    "id": "m8",
-    "category": "meals",
-    "name": "Spicy Zinger Meal Platter with Mozzarella",
-    "nameAr": "وجبة زنجر مع جبنة موزاريلا",
-    "nameKu": "ژەمی زنجر لەگەڵ پەنیری موزاريلا",
-    "desc": "Spicy Zinger chicken fillets platter topped with melted mozzarella.",
-    "priceFormatted": "10,000 IQD",
-    "img": "assets/66.jpg",
-    "badge": "🌶️ Spicy Feast"
-  },
-  {
-    "num": 49,
-    "id": "m9",
-    "category": "meals",
-    "name": "Shish Tawook Meal Platter",
-    "nameAr": "وجبة شيش طاووق",
-    "nameKu": "ژەمی شیش طاووق",
-    "desc": "Grilled chicken tawook skewers served with fries, lemon & garlic dip.",
-    "priceFormatted": "8,000 IQD",
-    "img": "assets/67.jpg",
-    "badge": "⭐ Platter"
-  },
-  {
-    "num": 50,
-    "id": "m10",
-    "category": "meals",
-    "name": "Sham Bird Grand Feast Platter",
-    "nameAr": "وجبة شام بيرد الفاخرة",
-    "nameKu": "ژەمی بەرز و تایبەتی شام بیرد",
-    "desc": "Full spread platter featuring mini pies, falafel, chicken strips & sides.",
-    "priceFormatted": "15,000 IQD",
-    "img": "assets/21.jpg",
-    "badge": "👑 Grand Feast"
-  },
-  {
-    "num": 51,
-    "id": "m11",
-    "category": "meals",
-    "name": "Sham Bird Royal Feast",
-    "nameAr": "وجبة شام بيرد الملكية",
-    "nameKu": "ژەمی پاشایەتی شام بیرد",
-    "desc": "Full feast banner featuring shawarma, pizza, pastries & fries.",
-    "priceFormatted": "20,000 IQD",
-    "img": "assets/55.jpg",
-    "badge": "👑 Royal Feast"
-  },
-  {
-    "num": 52,
-    "id": "b1",
-    "category": "burgers",
-    "name": "Beef Burger",
-    "nameAr": "بركر لحم",
-    "nameKu": "بەرگری گوشت",
-    "desc": "Juicy beef patty, tomato, onion & burger house sauce on wooden block.",
-    "priceFormatted": "3,500 IQD",
-    "img": "assets/50.jpg",
-    "badge": "🥩 Beef"
-  },
-  {
-    "num": 53,
-    "id": "b2",
-    "category": "burgers",
-    "name": "Chicken Burger",
-    "nameAr": "بركر دجاج",
-    "nameKu": "بەرگری مریشک",
-    "desc": "Chicken patty, lettuce, mayo & pickles in soft burger bun.",
-    "priceFormatted": "3,000 IQD",
-    "img": "assets/72.jpg",
-    "badge": " Classic"
-  },
-  {
-    "num": 54,
-    "id": "pz1",
-    "category": "pizza",
-    "name": "Vegetable Pizza",
-    "nameAr": "بيتزا خضار",
-    "nameKu": "پیتزای سەوزە",
-    "desc": "Fresh bell peppers, olives, mushrooms, tomatoes & mozzarella.",
-    "priceFormatted": "Small 4k · Mid 5k · Large 7k IQD",
-    "img": "assets/12.jpg",
-    "badge": " Veggie"
-  },
-  {
-    "num": 55,
-    "id": "pz2",
-    "category": "pizza",
-    "name": "Margherita Pizza",
-    "nameAr": "بيتزا مارغريتا",
-    "nameKu": "پیتزای مارگەريتا",
-    "desc": "Classic rich tomato sauce with melted mozzarella cheese.",
-    "priceFormatted": "Small 4k · Mid 5k · Large 7k IQD",
-    "img": "assets/13.jpg",
-    "badge": " Classic"
-  },
-  {
-    "num": 56,
-    "id": "pz3",
-    "category": "pizza",
-    "name": "Margherita Pizza (Wooden Board)",
-    "nameAr": "بيتزا مارغريتا خشبي",
-    "nameKu": "پیتزای مارگەریتا لەسەر تەختە",
-    "desc": "Classic rich tomato sauce & melted mozzarella cheese on wooden board.",
-    "priceFormatted": "Small 4k · Mid 5k · Large 7k IQD",
-    "img": "assets/44.jpg",
-    "badge": " Wood Fired"
-  },
-  {
-    "num": 57,
-    "id": "pz4",
-    "category": "pizza",
-    "name": "Pepperoni Pizza",
-    "nameAr": "بيتزا ببروني",
-    "nameKu": "پیتزای پێپەرۆنی",
-    "desc": "Sliced beef pepperoni & melted mozzarella cheese.",
-    "priceFormatted": "Small 5k · Mid 7k · Large 8k IQD",
-    "img": "assets/16.jpg",
-    "badge": " Pepperoni"
-  },
-  {
-    "num": 58,
-    "id": "pz5",
-    "category": "pizza",
-    "name": "Meat Shawarma Pizza",
-    "nameAr": "بيتزا لحم شاورما",
-    "nameKu": "پیتزای گوشتی شاورمە",
-    "desc": "Seasoned meat shawarma, mushrooms & melted mozzarella.",
-    "priceFormatted": "Small 6k · Mid 8k · Large 9k IQD",
-    "img": "assets/46.jpg",
-    "badge": " Meat Lover"
-  },
-  {
-    "num": 59,
-    "id": "pz6",
-    "category": "pizza",
-    "name": "Chicken Shawarma Pizza",
-    "nameAr": "بيتزا دجاج شاورما",
-    "nameKu": "پیتزای مریشکی شاورمە",
-    "desc": "Tender chicken shawarma pieces, bell peppers & mozzarella.",
-    "priceFormatted": "Small 5k · Mid 7k · Large 8k IQD",
-    "img": "assets/56.jpg",
-    "badge": " Chicken"
-  },
-  {
-    "num": 60,
-    "id": "pz7",
-    "category": "pizza",
-    "name": "Smoked Turkey / Beef Pizza",
-    "nameAr": "بيتزا جيش مدخن",
-    "nameKu": "پیتزای دووکەڵاوی",
-    "desc": "Smoked deli slices, herbs & mozzarella cheese.",
-    "priceFormatted": "Small 5k · Mid 7k · Large 8k IQD",
-    "img": "assets/71.jpg",
-    "badge": " Smoked"
-  },
-  {
-    "num": 61,
-    "id": "lr1",
-    "category": "light_rolls",
-    "name": "Mortadella Roll (Saj Bread)",
-    "nameAr": "لفة مرتديلا خبز صاج",
-    "nameKu": "لوولەی مۆرتادێلا نانی ساج",
-    "desc": "Mortadella slices roll wrapped in Saj bread with pickles.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/5.jpg",
-    "badge": " Mortadella"
-  },
-  {
-    "num": 62,
-    "id": "lr2",
-    "category": "light_rolls",
-    "name": "Mortadella Roll with Fries",
-    "nameAr": "لفت مرتديلا مع بطاطا",
-    "nameKu": "لوولەی مۆرتادێلا بە بەتاتە",
-    "desc": "Mortadella roll stuffed with crispy french fries & pickles.",
-    "priceFormatted": "1,500 IQD",
-    "img": "assets/31.jpg",
-    "badge": " Mortadella & Fries"
-  },
-  {
-    "num": 63,
-    "id": "lr3",
-    "category": "light_rolls",
-    "name": "Fries Roll (Stone Samoon)",
-    "nameAr": "لفة بطاطا صمون حجري",
-    "nameKu": "لوولەی بەتاتە سەموونی بەردین",
-    "desc": "French fries & garlic paste in stone-baked samoon.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/7.jpg",
-    "badge": "🍟 Fries"
-  },
-  {
-    "num": 64,
-    "id": "lr4",
-    "category": "light_rolls",
-    "name": "Fries Roll (Lebanese Bread)",
-    "nameAr": "لفة بطاطا خبز لبناني",
-    "nameKu": "لوولەی بەتاتە نانی لبنانی",
-    "desc": "French fries roll wrapped in soft Lebanese pita bread.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/24.jpg",
-    "badge": "🍟 Fries"
-  },
-  {
-    "num": 65,
-    "id": "lr5",
-    "category": "light_rolls",
-    "name": "Fries Roll (French Samoon)",
-    "nameAr": "لفة بطاطا صمون فرنسي",
-    "nameKu": "لوولەی بەتاتە سەموونی فەرەنسی",
-    "desc": "French fries roll inside crispy French baguette samoon.",
-    "priceFormatted": "2,000 IQD",
-    "img": "assets/25.jpg",
-    "badge": " Baguette Fries"
-  },
-  {
-    "num": 66,
-    "id": "lr6",
-    "category": "light_rolls",
-    "name": "Falafel Roll (Stone Samoon)",
-    "nameAr": "لفة فلافل صمون حجري",
-    "nameKu": "لوولەی فەلافل سەموونی بەردین",
-    "desc": "Crispy falafel, tahini & salad in stone samoon.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/26.jpg",
-    "badge": " Crispy"
-  },
-  {
-    "num": 67,
-    "id": "lr7",
-    "category": "light_rolls",
-    "name": "Falafel Roll (Lebanese Bread)",
-    "nameAr": "لفة فلافل خبز لبناني",
-    "nameKu": "لوولەی فەلافل نانی لبنانی",
-    "desc": "Falafel roll in thin Lebanese pita bread with tahini.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/34.jpg",
-    "badge": " Classic"
-  },
-  {
-    "num": 68,
-    "id": "lr8",
-    "category": "light_rolls",
-    "name": "Falafel Roll (Saj Bread)",
-    "nameAr": "لفة فلافل خبز صاج",
-    "nameKu": "لوولەی فەلافل نانی ساج",
-    "desc": "Falafel roll wrapped in thin Saj flatbread.",
-    "priceFormatted": "1,250 IQD",
-    "img": "assets/27.jpg",
-    "badge": " Saj Roll"
-  },
-  {
-    "num": 69,
-    "id": "lr9",
-    "category": "light_rolls",
-    "name": "Falafel Pieces (8 Pcs with Hummus)",
-    "nameAr": "فلافل قرص (عدد 8) مع حمص",
-    "nameKu": "قورسی فەلافل (٨ دانە) لەگەڵ حمس",
-    "desc": "8 freshly fried golden falafel discs served with hummus dip.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/73.jpg",
-    "badge": " 8 Pcs"
-  },
-  {
-    "num": 70,
-    "id": "lr10",
-    "category": "light_rolls",
-    "name": "Syrian Falafel Feast Banner",
-    "nameAr": "فلافل سورية طازجة",
-    "nameKu": "فەلافلی سوری تازە",
-    "desc": "Freshly fried Syrian falafel poster.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/70.jpg",
-    "badge": " Syrian Falafel"
-  },
-  {
-    "num": 71,
-    "id": "lr11",
-    "category": "light_rolls",
-    "name": "Mixed Veggie Roll (Stone Samoon)",
-    "nameAr": "لفة مشكل صمون حجري",
-    "nameKu": "لوولەی تێکەڵە سەموونی بەردین",
-    "desc": "Mixed grilled veggies & falafel in stone samoon.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/33.jpg",
-    "badge": " Mixed"
-  },
-  {
-    "num": 72,
-    "id": "lr12",
-    "category": "light_rolls",
-    "name": "Mixed Veggie Roll (Saj Bread)",
-    "nameAr": "لفة مشكل خبز صاج",
-    "nameKu": "لوولەی تێکەڵە نانی ساج",
-    "desc": "Mixed veggies, cucumber, cabbage & fries roll in Saj bread.",
-    "priceFormatted": "1,250 IQD",
-    "img": "assets/69.jpg",
-    "badge": " Mixed"
-  },
-  {
-    "num": 73,
     "id": "fr1",
     "category": "fries",
     "name": "French Fries Plate",
@@ -1017,67 +153,800 @@ const menuItems = [
     "badge": "🍟 Crispy"
   },
   {
-    "num": 74,
-    "id": "fr2",
-    "category": "fries",
-    "name": "French Fries with Cheese",
-    "nameAr": "صحن بطاطا بالجبن",
-    "nameKu": "قابی بەتاتە بە پەنیر",
-    "desc": "Crispy fries topped with melted cheddar cheese sauce.",
-    "priceFormatted": "2,500 IQD",
-    "img": "assets/48.jpg",
+    "num": 2,
+    "id": "cs1",
+    "category": "ch_shawarma",
+    "name": "Chicken Shawarma Roll (Saj & Lebanese)",
+    "nameAr": "لفة شاورما دجاج خبز صاج / لبناني",
+    "nameKu": "لوولەی شاورمەی مریشک نانی ساج / لبنانی",
+    "desc": "Fresh chicken shawarma wrapped in toasted Saj or soft Lebanese flatbread.",
+    "priceFormatted": "2,000 IQD",
+    "img": "assets/2.jpg",
+    "badge": "🔥 Popular"
+  },
+  {
+    "num": 3,
+    "id": "san1",
+    "category": "sandwiches",
+    "name": "Zinger Sandwich",
+    "nameAr": "سندويش زنجر",
+    "nameKu": "سەندویچی زنجر",
+    "desc": "Spicy crispy zinger fillet served with fries & coleslaw.",
+    "priceFormatted": "4,500 IQD",
+    "img": "assets/3.jpg",
+    "badge": "🌶️ Zinger"
+  },
+  {
+    "num": 4,
+    "id": "ms1",
+    "category": "meat_shawarma",
+    "name": "Meat Shawarma Roll (French Bread)",
+    "nameAr": "لفة شاورما لحم صمون فرنسي",
+    "nameKu": "لوولەی شاورمەی گوشت سەموونی فەرەنسی",
+    "desc": "Spiced tender meat shawarma wrapped in fresh crispy French baguette.",
+    "priceFormatted": "3,500 IQD",
+    "img": "assets/4.jpg",
+    "badge": " French Bread"
+  },
+  {
+    "num": 5,
+    "id": "lr1",
+    "category": "light_rolls",
+    "name": "Mortadella Roll with Cheese",
+    "nameAr": "لفة مرتديلا مع جبن",
+    "nameKu": "لوولەی مۆرتادێلا لەگەڵ پەنیر",
+    "desc": "Sliced mortadella wrapped with melted cheese in warm flatbread.",
+    "priceFormatted": "1,500 IQD",
+    "img": "assets/5.jpg",
     "badge": "🧀 Cheesy"
   },
   {
-    "num": 75,
-    "id": "dr1",
-    "category": "drinks",
-    "name": "Pepsi",
-    "nameAr": "بيبسي",
-    "nameKu": "پیپسی",
-    "desc": "Refreshing chilled Pepsi cola.",
-    "priceFormatted": "1,000 IQD",
-    "badge": "🥤 Cold"
+    "num": 6,
+    "id": "ml1",
+    "category": "meals",
+    "name": "Chicken Rizo",
+    "nameAr": "ريزو دجاج",
+    "nameKu": "ریزۆ مریشک",
+    "desc": "Yellow seasoned rice bowl topped with crispy chicken tenders & sweet spicy sauce.",
+    "priceFormatted": "5,000 IQD",
+    "img": "assets/6.jpg",
+    "badge": " Rizo Special"
   },
   {
-    "num": 76,
-    "id": "dr2",
+    "num": 7,
+    "id": "lr2",
+    "category": "light_rolls",
+    "name": "French Fries Roll (Saj Bread)",
+    "nameAr": "لفة بطاطا خبز صاج",
+    "nameKu": "لوولەی بەتاتە نانی ساج",
+    "desc": "Crispy golden fries wrapped tightly in toasted Saj flatbread with garlic sauce.",
+    "priceFormatted": "1,250 IQD",
+    "img": "assets/7.jpg",
+    "badge": "🍟 Saj Fries"
+  },
+  {
+    "num": 8,
+    "id": "pas1",
+    "category": "pastries",
+    "name": "Akkawi / Kashkaval Cheese Pastry",
+    "nameAr": "جبنة عكاوي / جبنة قشقوان",
+    "nameKu": "پەنیری عەکاوی / قەشقەوان",
+    "desc": "Traditional melted Akkawi or Kashkaval cheese baked on golden dough crust.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/8.jpg",
+    "badge": "🧀 Cheesy"
+  },
+  {
+    "num": 9,
+    "id": "cs2",
+    "category": "ch_shawarma",
+    "name": "Chicken Shawarma Roll (Stone Samoon)",
+    "nameAr": "لفة شاورما دجاج صمون حجري",
+    "nameKu": "لوولەی شاورمەی مریشک سەموونی بەردین",
+    "desc": "Fresh chicken shawarma stuffed in stone-oven baked samoon bread.",
+    "priceFormatted": "1,250 IQD",
+    "img": "assets/9.jpg",
+    "badge": " Stone Oven"
+  },
+  {
+    "num": 10,
+    "id": "ms2",
+    "category": "meat_shawarma",
+    "name": "Meat Shawarma Meal (250g)",
+    "nameAr": "وجبة شاورما لحم 250g",
+    "nameKu": "ژەمی شاورمەی گوشت ٢٥٠گرا‌م",
+    "desc": "250g prime beef shawarma plate served with chickpea hummus & garlic dip.",
+    "priceFormatted": "8,000 IQD",
+    "img": "assets/10.jpg",
+    "badge": " 250g Plate"
+  },
+  {
+    "num": 11,
+    "id": "cs3",
+    "category": "ch_shawarma",
+    "name": "Arabi Chicken Shawarma Meal",
+    "nameAr": "وجبة شاورما عربي",
+    "nameKu": "ژەمی شاورمەی عەرەبی",
+    "desc": "Sliced Arabi chicken shawarma roll served with fries, pickles & garlic paste.",
+    "priceFormatted": "3,500 IQD",
+    "img": "assets/11.jpg",
+    "badge": " Arabi"
+  },
+  {
+    "num": 12,
+    "id": "piz1",
+    "category": "pizza",
+    "name": "Vegetable Pizza",
+    "nameAr": "بيتزا خضار",
+    "nameKu": "پیتزا سەوزەوات",
+    "desc": "Fresh bell peppers, mushrooms, sweet corn, black olives & mozzarella cheese.",
+    "priceFormatted": "5,000 IQD",
+    "img": "assets/12.jpg",
+    "badge": " Veggie Special"
+  },
+  {
+    "num": 13,
+    "id": "piz2",
+    "category": "pizza",
+    "name": "Margherita Pizza",
+    "nameAr": "بيتزا مارغريتا",
+    "nameKu": "پیتزا مارگریتا",
+    "desc": "Classic rich tomato sauce topped with melted mozzarella cheese.",
+    "priceFormatted": "5,000 IQD",
+    "img": "assets/13.jpg",
+    "badge": " Margherita"
+  },
+  {
+    "num": 14,
+    "id": "pas2",
+    "category": "pastries",
+    "name": "Laham B'Ajeen with Kashkaval",
+    "nameAr": "لحم بعجين مع قشقوان",
+    "nameKu": "گوشت بەعەجین لەگەڵ قەشقەوان",
+    "desc": "Minced spiced meat flatbread baked under melted Kashkaval cheese layer.",
+    "priceFormatted": "1,500 IQD",
+    "img": "assets/14.jpg",
+    "badge": " Meat & Cheese"
+  },
+  {
+    "num": 15,
+    "id": "cs4",
+    "category": "ch_shawarma",
+    "name": "Chicken Shawarma Meal (250g)",
+    "nameAr": "وجبة شاورما دجاج 250g",
+    "nameKu": "ژەمی شاورمەی مریشک ٢٥٠گرا‌م",
+    "desc": "250g freshly sliced chicken shawarma plate with garlic paste & pickles.",
+    "priceFormatted": "7,000 IQD",
+    "img": "assets/15.jpg",
+    "badge": " 250g Plate"
+  },
+  {
+    "num": 16,
+    "id": "piz3",
+    "category": "pizza",
+    "name": "Pepperoni Pizza",
+    "nameAr": "بيتزا ببروني",
+    "nameKu": "پیتزا پیپەرۆنی",
+    "desc": "Beef pepperoni slices over tomato sauce & melted mozzarella cheese.",
+    "priceFormatted": "7,000 IQD",
+    "img": "assets/16.jpg",
+    "badge": " Pepperoni"
+  },
+  {
+    "num": 17,
+    "id": "cs5",
+    "category": "ch_shawarma",
+    "name": "Double Arabi Chicken Shawarma Meal",
+    "nameAr": "وجبة شاورما عربي دبل",
+    "nameKu": "ژەمی شاورمەی عەرەبی دبل",
+    "desc": "Double portion sliced Arabi chicken shawarma meal with fries & dipping sauces.",
+    "priceFormatted": "5,000 IQD",
+    "img": "assets/17.jpg",
+    "badge": " Double Arabi"
+  },
+  {
+    "num": 18,
+    "id": "ml2",
+    "category": "meals",
+    "name": "Chicken Rizo Combo Bowls",
+    "nameAr": "تجميعة أطباق ريزو دجاج",
+    "nameKu": "کۆمەڵەی ریزۆ مریشک",
+    "desc": "Special family & group chicken rizo rice bowls combo.",
+    "priceFormatted": "5,000 IQD",
+    "img": "assets/18.jpg",
+    "badge": " Rizo Combo"
+  },
+  {
+    "num": 19,
+    "id": "pas3",
+    "category": "pastries",
+    "name": "Pepperoni Pie",
+    "nameAr": "فطيرة ببروني",
+    "nameKu": "فەتیرەی پیپەرۆنی",
+    "desc": "Oven-baked dough pie stuffed with beef pepperoni & melted cheese.",
+    "priceFormatted": "2,500 IQD",
+    "img": "assets/19.jpg",
+    "badge": " Pepperoni Pie"
+  },
+  {
+    "num": 20,
+    "id": "san2",
+    "category": "sandwiches",
+    "name": "Crispy Chicken Sandwich",
+    "nameAr": "سندويش كريسبي",
+    "nameKu": "سەندویچی کریسپی",
+    "desc": "Golden crispy fried chicken tenders sandwich with mayo, fries & coleslaw.",
+    "priceFormatted": "4,000 IQD",
+    "img": "assets/20.jpg",
+    "badge": " Crispy"
+  },
+  {
+    "num": 21,
+    "id": "pas4",
+    "category": "pastries",
+    "name": "Showcase Bakery & Meal Variety",
+    "nameAr": "تشكيلة معجنات ومأكولات",
+    "nameKu": "تێکەڵەی جۆراوجۆری هەویرکاری",
+    "desc": "Assorted baked pastries including heart falafels, egg cheese pie & mini pizzas.",
+    "priceFormatted": "5,000 IQD",
+    "img": "assets/21.jpg",
+    "badge": " Variety Mix"
+  },
+  {
+    "num": 22,
+    "id": "ml3",
+    "category": "meals",
+    "name": "Fajita Meal",
+    "nameAr": "وجبة فاهيتا",
+    "nameKu": "ژەمی فاهیتا",
+    "desc": "Sizzling chicken fajita platter served with sautéed peppers, fries & salad.",
+    "priceFormatted": "9,000 IQD",
+    "img": "assets/22.jpg",
+    "badge": " Fajita Meal"
+  },
+  {
+    "num": 23,
+    "id": "cs6",
+    "category": "ch_shawarma",
+    "name": "Chicken Shawarma Roll (Lebanese & Saj)",
+    "nameAr": "لفة شاورما دجاج خبز لبناني مع صاج",
+    "nameKu": "لوولەی شاورمەی مریشک نانی لبنانی و ساج",
+    "desc": "Chicken shawarma wrapped in toasted Saj flatbread with garlic sauce.",
+    "priceFormatted": "2,000 IQD",
+    "img": "assets/23.jpg",
+    "badge": " Lebanese Saj"
+  },
+  {
+    "num": 24,
+    "id": "lr3",
+    "category": "light_rolls",
+    "name": "French Fries Roll with Cheese",
+    "nameAr": "لفة بطاطا بالجبن",
+    "nameKu": "لوولەی بەتاتە بە پەنیر",
+    "desc": "Crispy french fries roll loaded with melted cheddar cheese sauce.",
+    "priceFormatted": "1,500 IQD",
+    "img": "assets/24.jpg",
+    "badge": "🧀 Cheesy Fries"
+  },
+  {
+    "num": 25,
+    "id": "lr4",
+    "category": "light_rolls",
+    "name": "French Fries Roll (French Baguette)",
+    "nameAr": "لفة بطاطا صمون فرنسي",
+    "nameKu": "لوولەی بەتاتە سەموونی فەرەنسی",
+    "desc": "Golden french fries stuffed in crispy French baguette with garlic paste.",
+    "priceFormatted": "2,000 IQD",
+    "img": "assets/25.jpg",
+    "badge": " French Baguette"
+  },
+  {
+    "num": 26,
+    "id": "lr5",
+    "category": "light_rolls",
+    "name": "Falafel Roll (Stone Samoon)",
+    "nameAr": "لفة فلافل صمون حجري",
+    "nameKu": "لوولەی فەلافل سەموونی بەردین",
+    "desc": "Crispy chickpea falafel stuffed in stone-oven baked samoon with tahini.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/26.jpg",
+    "badge": "🧆 Falafel"
+  },
+  {
+    "num": 27,
+    "id": "lr6",
+    "category": "light_rolls",
+    "name": "Mixed Veggie Roll",
+    "nameAr": "لفة مشكل",
+    "nameKu": "لوولەی تێکەڵە",
+    "desc": "Combination roll of falafel, fried eggplant, fries & tahini sauce.",
+    "priceFormatted": "1,250 IQD",
+    "img": "assets/27.jpg",
+    "badge": " Mixed Veggie"
+  },
+  {
+    "num": 28,
+    "id": "pas5",
+    "category": "pastries",
+    "name": "Za'atar Pastry",
+    "nameAr": "زعتر",
+    "nameKu": "زەعته‌ر",
+    "desc": "Wild Mediterranean za'atar herb blend baked on olive oil dough crust.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/28.jpg",
+    "badge": " Herbal"
+  },
+  {
+    "num": 29,
+    "id": "ml4",
+    "category": "meals",
+    "name": "Crispy Chicken Meal + Extra Pieces",
+    "nameAr": "وجبة كريسبي + قطع",
+    "nameKu": "ژەمی کریسپی + پارچەکان",
+    "desc": "Golden fried crispy chicken tenders platter served with extra pieces & fries.",
+    "priceFormatted": "9,000 IQD",
+    "img": "assets/29.jpg",
+    "badge": " Crispy Combo"
+  },
+  {
+    "num": 30,
+    "id": "cs7",
+    "category": "ch_shawarma",
+    "name": "Double Chicken Shawarma Roll",
+    "nameAr": "لفة شاورما دجاج خبز لبناني مع صاج",
+    "nameKu": "لوولەی شاورمەی مریشک دبل",
+    "desc": "Double portion toasted chicken shawarma roll filled with garlic paste.",
+    "priceFormatted": "2,000 IQD",
+    "img": "assets/30.jpg",
+    "badge": " Double Roll"
+  },
+  {
+    "num": 31,
+    "id": "lr7",
+    "category": "light_rolls",
+    "name": "Mortadella Roll with Fries & Cheese",
+    "nameAr": "لفة مرتديلا مع بطاطا وجبن",
+    "nameKu": "لوولەی مۆرتادێلا لەگەڵ بەتاتە و پەنیر",
+    "desc": "Sliced mortadella roll stuffed with crispy french fries & melted cheese.",
+    "priceFormatted": "1,750 IQD",
+    "img": "assets/31.jpg",
+    "badge": " Mortadella Fries"
+  },
+  {
+    "num": 32,
+    "id": "cs8",
+    "category": "ch_shawarma",
+    "name": "Arabi Shawarma Meal",
+    "nameAr": "وجبة شاورما عربي",
+    "nameKu": "ژەمی شاورمەی عەرەبی",
+    "desc": "Sliced Arabi shawarma roll plate served with french fries & dipping sauce.",
+    "priceFormatted": "3,500 IQD",
+    "img": "assets/32.jpg",
+    "badge": " Arabi Meal"
+  },
+  {
+    "num": 33,
+    "id": "lr8",
+    "category": "light_rolls",
+    "name": "Mixed Veggie Roll (Stone Samoon)",
+    "nameAr": "لفة مشكل صمون حجري",
+    "nameKu": "لوولەی تێکەڵە سەموونی بەردین",
+    "desc": "Fried eggplant, potato & veggies stuffed in stone-baked samoon.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/33.jpg",
+    "badge": " Stone Veggie"
+  },
+  {
+    "num": 34,
+    "id": "lr9",
+    "category": "light_rolls",
+    "name": "Falafel Roll (Lebanese / Saj)",
+    "nameAr": "لفة فلافل خبز لبناني / صاج",
+    "nameKu": "لوولەی فەلافل نانی لبنانی / ساج",
+    "desc": "Crispy falafel roll wrapped in pita or Saj flatbread with tahini.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/34.jpg",
+    "badge": "🧆 Falafel Saj"
+  },
+  {
+    "num": 35,
+    "id": "cs9",
+    "category": "ch_shawarma",
+    "name": "Arabi Chicken Shawarma Meal",
+    "nameAr": "وجبة شاورما عربي",
+    "nameKu": "ژەمی شاورمەی عەرەبی",
+    "desc": "Freshly sliced chicken shawarma Arabi platter with garlic paste.",
+    "priceFormatted": "3,500 IQD",
+    "img": "assets/35.jpg",
+    "badge": " Arabi Platter"
+  },
+  {
+    "num": 36,
+    "id": "ms3",
+    "category": "meat_shawarma",
+    "name": "Arabi Meat Shawarma Meal",
+    "nameAr": "وجبة شاورما لحم عربي",
+    "nameKu": "ژەمی شاورمەی عەرەبی گوشت",
+    "desc": "Sliced Arabi meat shawarma meal served with french fries & tahini.",
+    "priceFormatted": "4,500 IQD",
+    "img": "assets/36.jpg",
+    "badge": " Arabi Meat"
+  },
+  {
+    "num": 37,
+    "id": "pas6",
+    "category": "pastries",
+    "name": "Mortadella with Kashkaval",
+    "nameAr": "مرتديلا مع قشقوان",
+    "nameKu": "مۆرتادێلا لەگەڵ قەشقەوان",
+    "desc": "Sliced mortadella baked under creamy melted Kashkaval cheese.",
+    "priceFormatted": "1,500 IQD",
+    "img": "assets/37.jpg",
+    "badge": " Mortadella Cheese"
+  },
+  {
+    "num": 38,
+    "id": "pas7",
+    "category": "pastries",
+    "name": "Muhammara Pastry",
+    "nameAr": "محمرة",
+    "nameKu": "موحەمەرە",
+    "desc": "Spicy roasted red pepper paste baked into dough crust.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/38.jpg",
+    "badge": "🌶️ Spicy"
+  },
+  {
+    "num": 39,
+    "id": "pas8",
+    "category": "pastries",
+    "name": "Assorted Bakery Pastries Mix",
+    "nameAr": "تشكيلة معجنات مشكلة",
+    "nameKu": "تێکەڵەی هەویرکاری جۆراوجۆر",
+    "desc": "Mix of za'atar, muhammara, laham b'ajeen & mini cheese pizzas.",
+    "priceFormatted": "1,250 IQD",
+    "img": "assets/39.jpg",
+    "badge": " Pastry Mix"
+  },
+  {
+    "num": 40,
+    "id": "san3",
+    "category": "sandwiches",
+    "name": "Crispy Chicken Sandwich",
+    "nameAr": "سندويش كريسبي",
+    "nameKu": "سەندویچی کریسپی",
+    "desc": "Crispy chicken fillet sandwich served with fries & garlic mayo.",
+    "priceFormatted": "4,000 IQD",
+    "img": "assets/40.jpg",
+    "badge": " Crispy Sandwich"
+  },
+  {
+    "num": 41,
+    "id": "pas9",
+    "category": "pastries",
+    "name": "Mortadella & Kashkaval Pie",
+    "nameAr": "فطيرة مرتديلا مع قشقوان",
+    "nameKu": "فەتیرەی مۆرتادێلا لەگەڵ قەشقەوان",
+    "desc": "Baked dough pie stuffed with mortadella slices & Kashkaval cheese.",
+    "priceFormatted": "1,500 IQD",
+    "img": "assets/41.jpg",
+    "badge": " Mortadella Pie"
+  },
+  {
+    "num": 42,
+    "id": "piz4",
+    "category": "pizza",
+    "name": "Small Garden Veggie Pizza",
+    "nameAr": "بيتزا خضار صغيرة",
+    "nameKu": "پیتزا سەوزەوات بچووک",
+    "desc": "Small vegetable pizza topped with corn, olives, peppers & mozzarella.",
+    "priceFormatted": "4,000 IQD",
+    "img": "assets/42.jpg",
+    "badge": " Veggie Small"
+  },
+  {
+    "num": 43,
+    "id": "pas10",
+    "category": "pastries",
+    "name": "Olive with Kashkaval Pastry",
+    "nameAr": "زيتون مع قشقوان",
+    "nameKu": "زەیتوون لەگەڵ قەشقەوان",
+    "desc": "Sliced black olives topped with melted Kashkaval cheese on dough.",
+    "priceFormatted": "1,500 IQD",
+    "img": "assets/43.jpg",
+    "badge": " Olive Blend"
+  },
+  {
+    "num": 44,
+    "id": "piz5",
+    "category": "pizza",
+    "name": "Margherita Cheese Pizza",
+    "nameAr": "بيتزا مارغريتا",
+    "nameKu": "پیتزا مارگریتا",
+    "desc": "Classic Margherita pizza with tomato base & rich mozzarella cheese.",
+    "priceFormatted": "4,000 IQD",
+    "img": "assets/44.jpg",
+    "badge": " Margherita"
+  },
+  {
+    "num": 45,
+    "id": "ml5",
+    "category": "meals",
+    "name": "Grand Bakery & Feast Platter",
+    "nameAr": "تشكيلة وجبات ومعجنات مشكلة",
+    "nameKu": "سینی گەورەی هەویرکاری و ژەمەکان",
+    "desc": "Grand showcase feast with heart falafels, hummus, pizza & chicken tenders.",
+    "priceFormatted": "10,000 IQD",
+    "img": "assets/55.jpg",
+    "badge": " Grand Feast"
+  },
+  {
+    "num": 46,
+    "id": "piz6",
+    "category": "pizza",
+    "name": "Chicken Shawarma Pizza",
+    "nameAr": "بيتزا شاورما دجاج",
+    "nameKu": "پیتزا شاورمەی مریشک",
+    "desc": "Topped with tender grilled chicken shawarma, olives & mozzarella cheese.",
+    "priceFormatted": "5,000 IQD",
+    "img": "assets/56.jpg",
+    "badge": " Chicken Pizza"
+  },
+  {
+    "num": 47,
+    "id": "san4",
+    "category": "sandwiches",
+    "name": "Zinger Sandwich with Cheese",
+    "nameAr": "سندويش زنجر",
+    "nameKu": "سەندویچی زنجر",
+    "desc": "Spicy zinger chicken fillet with melted cheddar cheese & garlic mayo.",
+    "priceFormatted": "4,500 IQD",
+    "img": "assets/57.jpg",
+    "badge": "🌶️ Cheesy Zinger"
+  },
+  {
+    "num": 48,
+    "id": "ml6",
+    "category": "meals",
+    "name": "Crispy Chicken Meal Box",
+    "nameAr": "وجبة كريسبي + قطع",
+    "nameKu": "ژەمی کریسپی + پارچەکان",
+    "desc": "Fried crispy chicken platter served with french fries, bread & garlic dip.",
+    "priceFormatted": "9,000 IQD",
+    "img": "assets/58.jpg",
+    "badge": " Crispy Box"
+  },
+  {
+    "num": 49,
+    "id": "pas11",
+    "category": "pastries",
+    "name": "Spicy Muhammara Pastry",
+    "nameAr": "محمرة",
+    "nameKu": "موحەمەرە",
+    "desc": "Traditional spicy red pepper muhammara spread baked on flatbread.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/59.jpg",
+    "badge": "🌶️ Muhammara"
+  },
+  {
+    "num": 50,
+    "id": "pas12",
+    "category": "pastries",
+    "name": "Laham B'Ajeen Flatbread",
+    "nameAr": "لحم بعجين",
+    "nameKu": "گوشت بەعەجین",
+    "desc": "Crispy baked dough flatbread topped with seasoned minced meat.",
+    "priceFormatted": "1,250 IQD",
+    "img": "assets/60.jpg",
+    "badge": " Traditional"
+  },
+  {
+    "num": 51,
+    "id": "cs10",
+    "category": "ch_shawarma",
+    "name": "Arabi Chicken Shawarma Meal",
+    "nameAr": "وجبة شاورما عربي",
+    "nameKu": "ژەمی شاورمەی عەرەبی",
+    "desc": "Sliced chicken shawarma roll served with fries, garlic & pickles.",
+    "priceFormatted": "3,500 IQD",
+    "img": "assets/61.jpg",
+    "badge": " Arabi Classic"
+  },
+  {
+    "num": 52,
+    "id": "cs11",
+    "category": "ch_shawarma",
+    "name": "Chicken Shawarma Saj Roll",
+    "nameAr": "لفة شاورما دجاج خبز صاج",
+    "nameKu": "لوولەی شاورمەی مریشک نانی ساج",
+    "desc": "Chicken shawarma tightly rolled in toasted Saj bread.",
+    "priceFormatted": "2,000 IQD",
+    "img": "assets/62.jpg",
+    "badge": " Saj Roll"
+  },
+  {
+    "num": 53,
+    "id": "pas13",
+    "category": "pastries",
+    "name": "Laham B'Ajeen with Baked Egg",
+    "nameAr": "لحم بعجين مع بيض",
+    "nameKu": "گوشت بەعەجین لەگەڵ هێلکە",
+    "desc": "Minced meat dough flatbread baked with a fresh whole egg on top.",
+    "priceFormatted": "1,500 IQD",
+    "img": "assets/63.jpg",
+    "badge": " Egg Special"
+  },
+  {
+    "num": 54,
+    "id": "pas14",
+    "category": "pastries",
+    "name": "Sujuk with Kashkaval Pastry",
+    "nameAr": "سجق مع قشقوان",
+    "nameKu": "سووجوق لەگەڵ قەشقەوان",
+    "desc": "Spiced sujuk sausage baked under melted Kashkaval cheese.",
+    "priceFormatted": "1,250 IQD",
+    "img": "assets/64.jpg",
+    "badge": " Sujuk Cheese"
+  },
+  {
+    "num": 55,
+    "id": "pas15",
+    "category": "pastries",
+    "name": "Assorted Bakery Platter",
+    "nameAr": "تشكيلة معجنات",
+    "nameKu": "تێکەڵەی هەویرکاری",
+    "desc": "Platter of za'atar, laham b'ajeen & mini dough pizzas.",
+    "priceFormatted": "1,250 IQD",
+    "img": "assets/65.jpg",
+    "badge": " Bakery Platter"
+  },
+  {
+    "num": 56,
+    "id": "ml7",
+    "category": "meals",
+    "name": "Crispy Chicken Tender Platter",
+    "nameAr": "وجبة كريسبي + قطع",
+    "nameKu": "ژەمی کریسپی + پارچەکان",
+    "desc": "Golden crispy fried chicken tenders with fries & dipping garlic sauce.",
+    "priceFormatted": "9,000 IQD",
+    "img": "assets/66.jpg",
+    "badge": " Crispy Tenders"
+  },
+  {
+    "num": 57,
+    "id": "ml8",
+    "category": "meals",
+    "name": "Shish Taouk Charcoal Meal",
+    "nameAr": "وجبة شيش طاووق",
+    "nameKu": "ژەمی شیش تاووک",
+    "desc": "Marinated chicken tikka skewers grilled over charcoal with fries & garlic.",
+    "priceFormatted": "8,000 IQD",
+    "img": "assets/67.jpg",
+    "badge": " Charcoal Grilled"
+  },
+  {
+    "num": 58,
+    "id": "pas16",
+    "category": "pastries",
+    "name": "Kashkaval Cheese Dough Pastry",
+    "nameAr": "جبنة قشقوان",
+    "nameKu": "پەنیری قەشقەوان",
+    "desc": "Melted rich Kashkaval cheese baked on fresh soft dough crust.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/68.jpg",
+    "badge": "🧀 Kashkaval"
+  },
+  {
+    "num": 59,
+    "id": "lr10",
+    "category": "light_rolls",
+    "name": "Falafel & Fries Mix Roll",
+    "nameAr": "لفة مشكل",
+    "nameKu": "لوولەی تێکەڵە",
+    "desc": "Combination roll of crisp falafel, golden french fries & tahini sauce.",
+    "priceFormatted": "1,250 IQD",
+    "img": "assets/69.jpg",
+    "badge": "🧆 Falafel & Fries"
+  },
+  {
+    "num": 60,
+    "id": "lr11",
+    "category": "light_rolls",
+    "name": "Falafel Pieces (8 Pcs)",
+    "nameAr": "فلافل قرص (عدد 8)",
+    "nameKu": "فەلافل (٨ دانە)",
+    "desc": "8 pieces of fresh golden fried chickpea falafel served with tahini.",
+    "priceFormatted": "1,000 IQD",
+    "img": "assets/70.jpg",
+    "badge": "🧆 8 Pieces"
+  },
+  {
+    "num": 61,
+    "id": "pas17",
+    "category": "pastries",
+    "name": "Mortadella & Kashkaval Pastry",
+    "nameAr": "مرتديلا مع قشقوان",
+    "nameKu": "مۆرتادێلا لەگەڵ قەشقەوان",
+    "desc": "Sliced mortadella baked under creamy Kashkaval cheese.",
+    "priceFormatted": "1,500 IQD",
+    "img": "assets/71.jpg",
+    "badge": " Mortadella Cheese"
+  },
+  {
+    "num": 62,
+    "id": "brg1",
+    "category": "burgers",
+    "name": "Chicken Burger",
+    "nameAr": "بركر دجاج",
+    "nameKu": "بەرگری مریشک",
+    "desc": "Crispy or grilled chicken burger patty with mayo, lettuce & pickles.",
+    "priceFormatted": "3,000 IQD",
+    "img": "assets/72.jpg",
+    "badge": " Chicken Burger"
+  },
+  {
+    "num": 63,
+    "id": "app1",
+    "category": "appetizers",
+    "name": "Hummus Dip with Falafel (8 Pcs)",
+    "nameAr": "حمص بطحينة (200g / 300g مع فلافل 8 قطع)",
+    "nameKu": "حومس بە تەحین لەگەڵ ٨ دانە فەلافل",
+    "desc": "Creamy chickpea hummus dip served with 8 crisp falafel pieces & fresh bread.",
+    "priceFormatted": "3,000 IQD",
+    "img": "assets/73.jpg",
+    "badge": " Hummus & Falafel"
+  },
+  {
+    "num": 64,
+    "id": "san5",
+    "category": "sandwiches",
+    "name": "Crispy Chicken Sandwich Meal",
+    "nameAr": "سندويش كريسبي",
+    "nameKu": "سەندویچی کریسپی",
+    "desc": "Crispy fried chicken sandwich served with fries & coleslaw salad.",
+    "priceFormatted": "4,000 IQD",
+    "img": "assets/74.jpg",
+    "badge": " Crispy Combo"
+  },
+  {
+    "num": 65,
+    "id": "dr1",
     "category": "drinks",
     "name": "Water",
     "nameAr": "ماء",
     "nameKu": "ئاو",
-    "desc": "Bottled drinking water.",
-    "priceFormatted": "500 IQD",
+    "desc": "Pure chilled mineral water bottle.",
+    "priceFormatted": "250 IQD",
     "img": "assets/76.png",
-    "badge": "💧 Fresh"
+    "badge": "💧 Mineral Water"
   },
   {
-    "num": 77,
+    "num": 66,
+    "id": "dr2",
+    "category": "drinks",
+    "name": "Pepsi",
+    "nameAr": "بيبسي",
+    "nameKu": "پیپسی",
+    "desc": "Chilled Pepsi soft drink can.",
+    "priceFormatted": "500 IQD",
+    "img": "assets/77.png",
+    "badge": "🥤 Chilled Soda"
+  },
+  {
+    "num": 67,
     "id": "dr3",
     "category": "drinks",
-    "name": "Pepsi Diet",
-    "nameAr": "بيبسي دايت",
-    "nameKu": "پیپسی دایت",
-    "desc": "Chilled Diet Pepsi cola.",
-    "priceFormatted": "1,000 IQD",
-    "img": "assets/77.png",
-    "badge": "🥤 Diet"
-  },
-  {
-    "num": 78,
-    "id": "dr4",
-    "category": "drinks",
-    "name": "7up",
-    "nameAr": "سفن اب",
-    "nameKu": "سڤن ئەپ",
-    "desc": "Chilled 7up.",
-    "priceFormatted": "1,000 IQD",
+    "name": "7Up Lemon Mint Mojito",
+    "nameAr": "سفن أب ليمون ونعناع",
+    "nameKu": "سڤن ئەپ لیمۆن و نەعناع",
+    "desc": "Refreshing 7Up Lemon Mint Mojito soft drink can.",
+    "priceFormatted": "500 IQD",
     "img": "assets/78.png",
-    "badge": "🍋 Lemon"
+    "badge": "🍹 Refreshing Mojito"
   }
 ];
 
-// ── DOM References// ── DOM References ────────────────────────────────────────────────────────
+// ── DOM References ────────────────────────────────────────────────────────
 const splashScreen = document.getElementById('splash-screen');
 const mainApp = document.getElementById('main-app');
 const langDropdown = document.getElementById('lang-dropdown');
@@ -1424,27 +1293,8 @@ function clearSearch() {
 }
 
 // Image Error Fallback Handler
-function handleMealImageError(img, itemNum, catKey) {
-  const catFallbacks = {
-    ch_shawarma: 'assets/shawarma.png',
-    meat_shawarma: 'assets/mixed_grill.png',
-    pastries: 'assets/28.jpg',
-    sandwiches: 'assets/broasted.png',
-    meals: 'assets/broasted.png',
-    burgers: 'assets/50.jpg',
-    pizza: 'assets/12.jpg',
-    light_rolls: 'assets/26.jpg',
-    fries: 'assets/1.jpg',
-    appetizers: 'assets/starters.png',
-    oriental: 'assets/mixed_grill.png'
-  };
-
-  if (!img.dataset.triedFallback && catFallbacks[catKey]) {
-    img.dataset.triedFallback = 'true';
-    img.src = catFallbacks[catKey];
-  } else {
-    img.style.display = 'none';
-  }
+function handleMealImageError(img) {
+  if (img) img.style.display = 'none';
 }
 
 
@@ -1544,28 +1394,29 @@ function renderFoodCardHtml(item, dict) {
     subTitle = `${item.nameAr} · ${item.name}`;
   }
 
-  const imageHtml = item.img ? `
-    <img 
-      src="${item.img}" 
-      alt="${item.name}" 
-      class="food-img" 
-      loading="lazy" 
-      onerror="handleMealImageError(this, ${item.num}, '${item.category}')"
-    />
+  const topHeaderHtml = item.img ? `
+    <div class="food-img-wrapper" style="background: ${theme.gradient};">
+      <img 
+        src="${item.img}" 
+        alt="${item.name}" 
+        class="food-img" 
+        loading="lazy" 
+        onerror="handleMealImageError(this)"
+      />
+      <div class="food-card-overlay"></div>
+      <span class="badge-tag">${item.badge}</span>
+      <span class="cat-icon-badge" title="Item #${item.num}">#${item.num} ${theme.icon}</span>
+    </div>
   ` : `
-    <div class="no-photo-banner">
-      <span class="no-photo-icon">${theme.icon}</span>
+    <div class="no-photo-card-header" style="background: ${theme.gradient};">
+      <span class="cat-icon-badge" title="Item #${item.num}">#${item.num} ${theme.icon}</span>
+      <span class="badge-tag-inline">${item.badge}</span>
     </div>
   `;
 
   return `
     <div class="food-card ${!item.img ? 'card-no-photo' : ''}">
-      <div class="food-img-wrapper" style="background: ${theme.gradient};">
-        ${imageHtml}
-        <div class="food-card-overlay"></div>
-        <span class="badge-tag">${item.badge}</span>
-        <span class="cat-icon-badge" title="Item #${item.num}">#${item.num} ${theme.icon}</span>
-      </div>
+      ${topHeaderHtml}
       <div class="food-info">
         <h3 class="food-name">${primaryTitle}</h3>
         <div class="food-subname">${subTitle}</div>
@@ -1683,15 +1534,27 @@ function openItemModal(itemId) {
     subTitle = `${item.nameAr} · ${item.name}`;
   }
 
-  const imageSrc = item.img || theme.fallbackImg;
-
+  const modalImgContainer = document.querySelector('.item-modal-img-container');
+  const zoomBtn = document.querySelector('.zoom-btn');
+  const modalCard = document.querySelector('.item-modal-card');
   const modalImg = document.getElementById('item-modal-img');
-  if (modalImg) {
-    modalImg.dataset.extIndex = '-1';
-    modalImg.src = imageSrc;
-    modalImg.onerror = function () {
-      handleMealImageError(this, item.num, item.category);
-    };
+
+  if (item.img) {
+    if (modalImgContainer) modalImgContainer.style.display = 'block';
+    if (zoomBtn) zoomBtn.style.display = 'inline-flex';
+    if (modalCard) modalCard.classList.remove('no-photo-modal');
+    if (modalImg) {
+      modalImg.src = item.img;
+      modalImg.style.display = 'block';
+    }
+  } else {
+    if (modalImgContainer) modalImgContainer.style.display = 'none';
+    if (zoomBtn) zoomBtn.style.display = 'none';
+    if (modalCard) modalCard.classList.add('no-photo-modal');
+    if (modalImg) {
+      modalImg.src = '';
+      modalImg.style.display = 'none';
+    }
   }
 
   const badgeEl = document.getElementById('item-modal-badge');
@@ -1731,21 +1594,14 @@ function closeItemModal(e) {
 }
 
 function openPhotoZoom() {
-  if (!currentModalItem) return;
-
-  const theme = catThemes[currentModalItem.category] || catThemes.ch_shawarma;
-  const imageSrc = currentModalItem.img || theme.fallbackImg;
+  if (!currentModalItem || !currentModalItem.img) return;
 
   const zoomBackdrop = document.getElementById('photo-zoom-backdrop');
   const zoomImg = document.getElementById('lightbox-img');
   const zoomTitle = document.getElementById('lightbox-title');
 
   if (zoomBackdrop && zoomImg) {
-    zoomImg.dataset.extIndex = '-1';
-    zoomImg.src = imageSrc;
-    zoomImg.onerror = function () {
-      handleMealImageError(this, currentModalItem.num, currentModalItem.category);
-    };
+    zoomImg.src = currentModalItem.img;
     zoomImg.alt = currentModalItem.name;
     if (zoomTitle) zoomTitle.textContent = `#${currentModalItem.num} ${currentModalItem.name}`;
 
