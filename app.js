@@ -346,18 +346,6 @@ const menuItems = [
   },
   {
     "num": 18,
-    "id": "ml2",
-    "category": "meals",
-    "name": "Chicken Rizo Combo Bowls",
-    "nameAr": "تجميعة أطباق ريزو دجاج",
-    "nameKu": "کۆمەڵەی ریزۆ مریشک",
-    "desc": "Special family & group chicken rizo rice bowls combo.",
-    "priceFormatted": "5,000 IQD",
-    "img": "assets/18.jpg",
-    "badge": " Rizo Combo"
-  },
-  {
-    "num": 19,
     "id": "pas3",
     "category": "pastries",
     "name": "Pepperoni Pie",
@@ -369,7 +357,7 @@ const menuItems = [
     "badge": " Pepperoni Pie"
   },
   {
-    "num": 20,
+    "num": 19,
     "id": "san2",
     "category": "sandwiches",
     "name": "Crispy Chicken Sandwich",
@@ -381,19 +369,7 @@ const menuItems = [
     "badge": " Crispy"
   },
   {
-    "num": 21,
-    "id": "pas4",
-    "category": "pastries",
-    "name": "Showcase Bakery & Meal Variety",
-    "nameAr": "تشكيلة معجنات ومأكولات",
-    "nameKu": "تێکەڵەی جۆراوجۆری هەویرکاری",
-    "desc": "Assorted baked pastries including heart falafels, egg cheese pie & mini pizzas.",
-    "priceFormatted": "5,000 IQD",
-    "img": "assets/21.jpg",
-    "badge": " Variety Mix"
-  },
-  {
-    "num": 22,
+    "num": 20,
     "id": "ml3",
     "category": "meals",
     "name": "Fajita Meal",
@@ -405,7 +381,7 @@ const menuItems = [
     "badge": " Fajita Meal"
   },
   {
-    "num": 23,
+    "num": 21,
     "id": "cs6",
     "category": "ch_shawarma",
     "name": "Chicken Shawarma Roll (Lebanese & Saj)",
@@ -417,7 +393,7 @@ const menuItems = [
     "badge": " Lebanese Saj"
   },
   {
-    "num": 24,
+    "num": 22,
     "id": "lr3",
     "category": "light_rolls",
     "name": "French Fries Roll with Cheese",
@@ -429,7 +405,7 @@ const menuItems = [
     "badge": "🧀 Cheesy Fries"
   },
   {
-    "num": 25,
+    "num": 23,
     "id": "lr4",
     "category": "light_rolls",
     "name": "French Fries Roll (French Baguette)",
@@ -441,7 +417,7 @@ const menuItems = [
     "badge": " French Baguette"
   },
   {
-    "num": 26,
+    "num": 24,
     "id": "lr5",
     "category": "light_rolls",
     "name": "Falafel Roll (Stone Samoon)",
@@ -453,7 +429,7 @@ const menuItems = [
     "badge": "🧆 Falafel"
   },
   {
-    "num": 27,
+    "num": 25,
     "id": "lr6",
     "category": "light_rolls",
     "name": "Mixed Veggie Roll",
@@ -465,7 +441,7 @@ const menuItems = [
     "badge": " Mixed Veggie"
   },
   {
-    "num": 28,
+    "num": 26,
     "id": "pas5",
     "category": "pastries",
     "name": "Za'atar Pastry",
@@ -477,7 +453,7 @@ const menuItems = [
     "badge": " Herbal"
   },
   {
-    "num": 29,
+    "num": 27,
     "id": "ml4",
     "category": "meals",
     "name": "Crispy Chicken Meal + Extra Pieces",
@@ -489,7 +465,7 @@ const menuItems = [
     "badge": " Crispy Combo"
   },
   {
-    "num": 30,
+    "num": 28,
     "id": "cs7",
     "category": "ch_shawarma",
     "name": "Double Chicken Shawarma Roll",
@@ -501,7 +477,7 @@ const menuItems = [
     "badge": " Double Roll"
   },
   {
-    "num": 31,
+    "num": 29,
     "id": "lr7",
     "category": "light_rolls",
     "name": "Mortadella Roll with Fries & Cheese",
@@ -513,7 +489,7 @@ const menuItems = [
     "badge": " Mortadella Fries"
   },
   {
-    "num": 32,
+    "num": 30,
     "id": "cs8",
     "category": "ch_shawarma",
     "name": "Arabi Shawarma Meal",
@@ -525,7 +501,7 @@ const menuItems = [
     "badge": " Arabi Meal"
   },
   {
-    "num": 33,
+    "num": 31,
     "id": "lr8",
     "category": "light_rolls",
     "name": "Mixed Veggie Roll (Stone Samoon)",
@@ -537,7 +513,7 @@ const menuItems = [
     "badge": " Stone Veggie"
   },
   {
-    "num": 34,
+    "num": 32,
     "id": "lr9",
     "category": "light_rolls",
     "name": "Falafel Roll (Lebanese / Saj)",
@@ -549,7 +525,7 @@ const menuItems = [
     "badge": "🧆 Falafel Saj"
   },
   {
-    "num": 35,
+    "num": 33,
     "id": "cs9",
     "category": "ch_shawarma",
     "name": "Arabi Chicken Shawarma Meal",
@@ -561,7 +537,7 @@ const menuItems = [
     "badge": " Arabi Platter"
   },
   {
-    "num": 36,
+    "num": 34,
     "id": "ms3",
     "category": "meat_shawarma",
     "name": "Arabi Meat Shawarma Meal",
@@ -573,7 +549,7 @@ const menuItems = [
     "badge": " Arabi Meat"
   },
   {
-    "num": 37,
+    "num": 35,
     "id": "pas6",
     "category": "pastries",
     "name": "Mortadella with Kashkaval",
@@ -585,7 +561,7 @@ const menuItems = [
     "badge": " Mortadella Cheese"
   },
   {
-    "num": 38,
+    "num": 36,
     "id": "pas7",
     "category": "pastries",
     "name": "Muhammara Pastry",
@@ -597,7 +573,7 @@ const menuItems = [
     "badge": "🌶️ Spicy"
   },
   {
-    "num": 39,
+    "num": 37,
     "id": "pas8",
     "category": "pastries",
     "name": "Assorted Bakery Pastries Mix",
@@ -609,7 +585,7 @@ const menuItems = [
     "badge": " Pastry Mix"
   },
   {
-    "num": 40,
+    "num": 38,
     "id": "san3",
     "category": "sandwiches",
     "name": "Crispy Chicken Sandwich",
@@ -621,7 +597,7 @@ const menuItems = [
     "badge": " Crispy Sandwich"
   },
   {
-    "num": 41,
+    "num": 39,
     "id": "pas9",
     "category": "pastries",
     "name": "Mortadella & Kashkaval Pie",
@@ -633,7 +609,7 @@ const menuItems = [
     "badge": " Mortadella Pie"
   },
   {
-    "num": 42,
+    "num": 40,
     "id": "piz4",
     "category": "pizza",
     "name": "Small Garden Veggie Pizza",
@@ -645,7 +621,7 @@ const menuItems = [
     "badge": " Veggie Small"
   },
   {
-    "num": 43,
+    "num": 41,
     "id": "pas10",
     "category": "pastries",
     "name": "Olive with Kashkaval Pastry",
@@ -657,7 +633,7 @@ const menuItems = [
     "badge": " Olive Blend"
   },
   {
-    "num": 44,
+    "num": 42,
     "id": "piz5",
     "category": "pizza",
     "name": "Margherita Cheese Pizza",
@@ -669,7 +645,7 @@ const menuItems = [
     "badge": " Margherita"
   },
   {
-    "num": 45,
+    "num": 43,
     "id": "ml5",
     "category": "meals",
     "name": "Grand Bakery & Feast Platter",
@@ -681,7 +657,7 @@ const menuItems = [
     "badge": " Grand Feast"
   },
   {
-    "num": 46,
+    "num": 44,
     "id": "piz6",
     "category": "pizza",
     "name": "Chicken Shawarma Pizza",
@@ -693,7 +669,7 @@ const menuItems = [
     "badge": " Chicken Pizza"
   },
   {
-    "num": 47,
+    "num": 45,
     "id": "san4",
     "category": "sandwiches",
     "name": "Zinger Sandwich with Cheese",
@@ -705,7 +681,7 @@ const menuItems = [
     "badge": "🌶️ Cheesy Zinger"
   },
   {
-    "num": 48,
+    "num": 46,
     "id": "ml6",
     "category": "meals",
     "name": "Crispy Chicken Meal Box",
@@ -717,7 +693,7 @@ const menuItems = [
     "badge": " Crispy Box"
   },
   {
-    "num": 49,
+    "num": 47,
     "id": "pas11",
     "category": "pastries",
     "name": "Spicy Muhammara Pastry",
@@ -729,7 +705,7 @@ const menuItems = [
     "badge": "🌶️ Muhammara"
   },
   {
-    "num": 50,
+    "num": 48,
     "id": "pas12",
     "category": "pastries",
     "name": "Laham B'Ajeen Flatbread",
@@ -741,7 +717,7 @@ const menuItems = [
     "badge": " Traditional"
   },
   {
-    "num": 51,
+    "num": 49,
     "id": "cs10",
     "category": "ch_shawarma",
     "name": "Arabi Chicken Shawarma Meal",
@@ -753,7 +729,7 @@ const menuItems = [
     "badge": " Arabi Classic"
   },
   {
-    "num": 52,
+    "num": 50,
     "id": "cs11",
     "category": "ch_shawarma",
     "name": "Chicken Shawarma Saj Roll",
@@ -765,7 +741,7 @@ const menuItems = [
     "badge": " Saj Roll"
   },
   {
-    "num": 53,
+    "num": 51,
     "id": "pas13",
     "category": "pastries",
     "name": "Laham B'Ajeen with Baked Egg",
@@ -777,7 +753,7 @@ const menuItems = [
     "badge": " Egg Special"
   },
   {
-    "num": 54,
+    "num": 52,
     "id": "pas14",
     "category": "pastries",
     "name": "Sujuk with Kashkaval Pastry",
@@ -789,7 +765,7 @@ const menuItems = [
     "badge": " Sujuk Cheese"
   },
   {
-    "num": 55,
+    "num": 53,
     "id": "pas15",
     "category": "pastries",
     "name": "Assorted Bakery Platter",
@@ -801,7 +777,7 @@ const menuItems = [
     "badge": " Bakery Platter"
   },
   {
-    "num": 56,
+    "num": 54,
     "id": "ml7",
     "category": "meals",
     "name": "Crispy Chicken Tender Platter",
@@ -813,7 +789,7 @@ const menuItems = [
     "badge": " Crispy Tenders"
   },
   {
-    "num": 57,
+    "num": 55,
     "id": "ml8",
     "category": "meals",
     "name": "Shish Taouk Charcoal Meal",
@@ -825,7 +801,7 @@ const menuItems = [
     "badge": " Charcoal Grilled"
   },
   {
-    "num": 58,
+    "num": 56,
     "id": "pas16",
     "category": "pastries",
     "name": "Kashkaval Cheese Dough Pastry",
@@ -837,7 +813,7 @@ const menuItems = [
     "badge": "🧀 Kashkaval"
   },
   {
-    "num": 59,
+    "num": 57,
     "id": "lr10",
     "category": "light_rolls",
     "name": "Falafel & Fries Mix Roll",
@@ -849,7 +825,7 @@ const menuItems = [
     "badge": "🧆 Falafel & Fries"
   },
   {
-    "num": 60,
+    "num": 58,
     "id": "lr11",
     "category": "light_rolls",
     "name": "Falafel Pieces (8 Pcs)",
@@ -861,7 +837,7 @@ const menuItems = [
     "badge": "🧆 8 Pieces"
   },
   {
-    "num": 61,
+    "num": 59,
     "id": "pas17",
     "category": "pastries",
     "name": "Mortadella & Kashkaval Pastry",
@@ -873,7 +849,7 @@ const menuItems = [
     "badge": " Mortadella Cheese"
   },
   {
-    "num": 62,
+    "num": 60,
     "id": "brg1",
     "category": "burgers",
     "name": "Chicken Burger",
@@ -885,7 +861,7 @@ const menuItems = [
     "badge": " Chicken Burger"
   },
   {
-    "num": 63,
+    "num": 61,
     "id": "app1",
     "category": "appetizers",
     "name": "Hummus Dip with Falafel (8 Pcs)",
@@ -897,7 +873,7 @@ const menuItems = [
     "badge": " Hummus & Falafel"
   },
   {
-    "num": 64,
+    "num": 62,
     "id": "san5",
     "category": "sandwiches",
     "name": "Crispy Chicken Sandwich Meal",
@@ -909,7 +885,7 @@ const menuItems = [
     "badge": " Crispy Combo"
   },
   {
-    "num": 65,
+    "num": 63,
     "id": "dr1",
     "category": "drinks",
     "name": "Water",
@@ -921,7 +897,7 @@ const menuItems = [
     "badge": "💧 Mineral Water"
   },
   {
-    "num": 66,
+    "num": 64,
     "id": "dr2",
     "category": "drinks",
     "name": "Pepsi",
@@ -933,7 +909,7 @@ const menuItems = [
     "badge": "🥤 Chilled Soda"
   },
   {
-    "num": 67,
+    "num": 65,
     "id": "dr3",
     "category": "drinks",
     "name": "7Up Lemon Mint Mojito",
