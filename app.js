@@ -454,6 +454,370 @@ const menuItems = [
     priceFormatted: '2,500 د.ع',
     badge: '🥗 Appetizer',
     img: 'assets/24.jpeg'
+  },
+  {
+    id: 'shish-tawook-meal',
+    num: 25,
+    category: 'meals',
+    name: 'Shish Tawook Meal',
+    nameAr: 'وجبة شيش طاووق',
+    nameKu: 'ژەمی شیش تاووق',
+    desc: 'يقدم مع بطاطا مقلية · Served with French fries · لەگەڵ بەتاتەی سوورکراوە پێشکەش دەکرێت',
+    price: 8000,
+    priceFormatted: '8,000 د.ع',
+    badge: '🍽️ Meal',
+    img: 'assets/25.jpeg'
+  },
+  {
+    id: 'chicken-burger',
+    num: 26,
+    category: 'burgers',
+    name: 'Chicken Burger',
+    nameAr: 'برجر دجاج',
+    nameKu: 'بەرگری مریشک',
+    desc: 'خبز برجر، شريحة دجاج وخس · Burger bun, chicken slice & lettuce · نانی بەرگر، پارچە مریشک و خەس',
+    price: 3500,
+    priceFormatted: '3,500 د.ع',
+    badge: '🍔 Chicken Burger',
+    img: 'assets/26.jpeg'
+  },
+  {
+    id: 'cheese-burger',
+    num: 27,
+    category: 'burgers',
+    name: 'Cheese Burger',
+    nameAr: 'برجر بالجبنة',
+    nameKu: 'بەرگر بە پەنیر',
+    desc: 'خبز برجر، شريحة دجاج وجبنة · Burger bun, chicken slice & cheese · نانی بەرگر، پارچە مریشک و پەنیر',
+    price: 4500,
+    priceFormatted: '4,500 د.ع',
+    badge: '🍔 Cheeseburger',
+    img: 'assets/27.jpeg'
+  },
+  {
+    id: 'escalope-sandwich',
+    num: 28,
+    category: 'sandwiches',
+    name: 'Escalope Sandwich',
+    nameAr: 'سندويش أسكالوب',
+    nameKu: 'سەندویچی ئەسکالۆپ',
+    desc: 'صمون فرنسي وأسكالوب · French bread & escalope · سەموونی فەرەنسی و ئەسکالۆپ',
+    price: 5000,
+    priceFormatted: '5,000 د.ع',
+    badge: '🥪 Escalope',
+    img: 'assets/28.jpeg'
+  },
+  {
+    id: 'french-fries-plate',
+    num: 29,
+    category: 'fries',
+    name: 'French Fries Plate',
+    nameAr: 'طبق بطاطا مقلية',
+    nameKu: 'قاپی بەتاتە',
+    desc: 'بطاطا مقلية عادي · French fries plate · بەتاتەی سوورکراوە',
+    price: 1500,
+    priceFormatted: '1,500 د.ع',
+    badge: '🍟 Fries',
+    img: 'assets/29.jpeg'
+  },
+  {
+    id: 'falafel-plate-10pcs',
+    num: 30,
+    category: 'appetizers',
+    name: 'Falafel Plate (10 Pcs)',
+    nameAr: 'طبق فلافل (10 قطع)',
+    nameKu: 'قاپی فەلافل (١٠ پارچە)',
+    desc: '10 قطع فلافل طازجة · 10 pieces of fresh falafel · ١٠ پارچە فەلافلی نوێ',
+    price: 1000,
+    priceFormatted: '1,000 د.ع',
+    badge: '🥗 Falafel',
+    img: 'assets/30.jpeg'
+  },
+  {
+    id: 'hummus-tahini-lemon',
+    num: 31,
+    category: 'appetizers',
+    name: 'Hummus Special',
+    nameAr: 'حمص بالطحينة',
+    nameKu: 'حومس بە تەحین',
+    desc: 'حمص، بطحينة وعصير ليمون · Hummus with tahini & lemon juice · حومس بە تەحین و ئاوی لیمۆ',
+    price: 2500,
+    priceFormatted: '2,500 د.ع',
+    badge: '🥗 Hummus',
+    img: 'assets/31.jpeg'
+  },
+  {
+    id: 'lahm-bi-ajeen',
+    num: 32,
+    category: 'pastries',
+    name: 'Lahm Bi Ajeen',
+    nameAr: 'لحم بالعجين',
+    nameKu: 'لحم بالعجين',
+    desc: 'عجينة لحم بالعجين ولحم مفروم · Dough topped with minced meat · هەویری تایبەت و گوشتی ڕنراو',
+    price: 1750,
+    priceFormatted: '1,750 د.ع',
+    badge: '🫓 Pastry',
+    img: 'assets/32.jpeg'
+  },
+  {
+    id: 'zaatar-dish',
+    num: 33,
+    category: 'pastries',
+    name: 'Zaatar Dish',
+    nameAr: 'زعتر',
+    nameKu: 'زەعەتەر',
+    desc: 'صدر دجاج، أرز، قطعة زعتر، سلطة خضراء وبطاطس مهروسة · Chicken breast, rice, zaatar piece, green salad & mashed potatoes · سنگ مریشک، برنج، زەعەتەر، سەڵاتە و بەتاتەی شێلراو',
+    price: 1250,
+    priceFormatted: '1,250 د.ع',
+    badge: '🫓 Zaatar',
+    img: 'assets/33.jpeg'
+  },
+  {
+    id: 'muhammara-hummus',
+    num: 34,
+    category: 'appetizers',
+    name: 'Muhammara',
+    nameAr: 'محمرة',
+    nameKu: 'محه مەره',
+    desc: 'حمص بالطحينة والباذنجان · Hummus with tahini & eggplant · حومس بە تەحین و بادنجان',
+    price: 1250,
+    priceFormatted: '1,250 د.ع',
+    badge: '🥗 Appetizer',
+    img: 'assets/34.jpeg'
+  },
+  {
+    id: 'akawi-cheese-pastry',
+    num: 35,
+    category: 'pastries',
+    name: 'Akawi Cheese Manakish',
+    nameAr: 'جبنة عكاوي',
+    nameKu: 'پەنیری عەکاوی',
+    desc: 'عجينة وجبنة عكاوي · Dough & Akawi cheese · هەویر و پەنیری عەکاوی',
+    price: 1750,
+    priceFormatted: '1,750 د.ع',
+    badge: '🫓 Akawi',
+    img: 'assets/35.jpeg'
+  },
+  {
+    id: 'kashkaval-pastry-1',
+    num: 36,
+    category: 'pastries',
+    name: 'Kashkaval Cheese Pastry',
+    nameAr: 'عجينة قشقوان',
+    nameKu: 'پەنیری قەشقەوان',
+    desc: 'عجينة وجبنة قشقوان · Dough & Kashkaval cheese · هەویر و پەنیری قەشقەوان',
+    price: 1750,
+    priceFormatted: '1,750 د.ع',
+    badge: '🫓 Kashkaval',
+    img: 'assets/36.jpeg'
+  },
+  {
+    id: 'kashkaval-pastry-2',
+    num: 37,
+    category: 'pastries',
+    name: 'Kashkaval Cheese Pastry Special',
+    nameAr: 'عجينة قشقوان ممتازة',
+    nameKu: 'پەنیری قەشقەوان تایبەت',
+    desc: 'عجينة وجبنة قشقوان · Dough & Kashkaval cheese · هەویر و پەنیری قەشقەوان',
+    price: 1750,
+    priceFormatted: '1,750 د.ع',
+    badge: '🫓 Kashkaval',
+    img: 'assets/36.jpeg'
+  },
+  {
+    id: 'kashkaval-muhammara',
+    num: 38,
+    category: 'pastries',
+    name: 'Kashkaval Cheese with Muhammara',
+    nameAr: 'جبنة قشقوان مع محمرة',
+    nameKu: 'پەنیری قەشقەوان بە محەمەرە',
+    desc: 'عجين، جبنة قشقوان ومحمرة · Dough, Kashkaval cheese & Muhammara · هەویر، پەنیری قەشقەوان و محەمەرە',
+    price: 2250,
+    priceFormatted: '2,250 د.ع',
+    badge: '🫓 Kashkaval',
+    img: 'assets/38.jpeg'
+  },
+  {
+    id: 'shish-tawook-french-samoon',
+    num: 39,
+    category: 'sandwiches',
+    name: 'Shish Tawook Sandwich',
+    nameAr: 'شيش طاووق',
+    nameKu: 'شیش تاووق',
+    desc: 'صدر دجاج، بطاطا مقلية، كول سلو وصمون فرنسي · Chicken breast, fries, coleslaw & French bread · سنگ مریشک، بەتاتە، کۆلسڵۆ و سەموونی فەرەنسی',
+    price: 2250,
+    priceFormatted: '2,250 د.ع',
+    badge: '🥪 Shish Tawook',
+    img: 'assets/39.jpeg'
+  },
+  {
+    id: 'kashkaval-zaatar',
+    num: 40,
+    category: 'pastries',
+    name: 'Kashkaval Cheese with Zaatar',
+    nameAr: 'جبنة قشقوان مع زعتر',
+    nameKu: 'پەنیری قەشقەوان بە زەعەتەر',
+    desc: 'عجينة، جبنة قشقوان وزعتر · Dough, Kashkaval cheese & Zaatar · هەویر، پەنیری قەشقەوان و زەعەتەر',
+    price: 2250,
+    priceFormatted: '2,250 د.ع',
+    badge: '🫓 Kashkaval',
+    img: 'assets/40.jpeg'
+  },
+  {
+    id: 'olives-kashkaval',
+    num: 41,
+    category: 'pastries',
+    name: 'Olives with Kashkaval Cheese',
+    nameAr: 'زيتون مع قشقوان',
+    nameKu: 'زەیتوون بە قەشقەوان',
+    desc: 'عجينة، جبنة قشقوان وزيتون · Dough, Kashkaval cheese & olives · هەویر، پەنیری قەشقەوان و زەیتوون',
+    price: 2250,
+    priceFormatted: '2,250 د.ع',
+    badge: '🫓 Olives & Cheese',
+    img: 'assets/41.jpeg'
+  },
+  {
+    id: 'mortadella-kashkaval',
+    num: 42,
+    category: 'pastries',
+    name: 'Mortadella with Kashkaval Cheese',
+    nameAr: 'مرتديلا مع قشقوان',
+    nameKu: 'مۆرتادێلا بە قەشقەوان',
+    desc: 'عجينة، مرتديلا وجبنة قشقوان · Dough, mortadella & Kashkaval cheese · هەویر، مۆرتادێلا و پەنیری قەشقەوان',
+    price: 2250,
+    priceFormatted: '2,250 د.ع',
+    badge: '🫓 Mortadella',
+    img: 'assets/42.jpeg'
+  },
+  {
+    id: 'mini-pizza-1pc',
+    num: 43,
+    category: 'pizza',
+    name: 'Mini Pizza (1 Pc)',
+    nameAr: 'بيتزا صغيرة (1 قطعة)',
+    nameKu: 'پیتزای بچووک (١ پارچە)',
+    desc: '1 قطعة بيتزا صغيرة · 1 mini pizza piece · ١ پارچە پیتزای بچووک',
+    price: 2250,
+    priceFormatted: '2,250 د.ع',
+    badge: '🍕 Mini Pizza',
+    img: 'assets/43.jpeg'
+  },
+  {
+    id: 'mixed-cheese-pastry',
+    num: 44,
+    category: 'pastries',
+    name: 'Mixed Cheese Manakish',
+    nameAr: 'جبنة مشكل',
+    nameKu: 'پەنیری تێکەڵاو',
+    desc: 'عجينة وجبنة شيدر · Dough & cheddar cheese · هەویر و پەنیری شیدار',
+    price: 2750,
+    priceFormatted: '2,750 د.ع',
+    badge: '🫓 Cheese Mix',
+    img: 'assets/44.jpeg'
+  },
+  {
+    id: 'wushka-beef-cheese',
+    num: 45,
+    category: 'pastries',
+    name: 'Wushka (Beef & Cheese Bread)',
+    nameAr: 'وشكا',
+    nameKu: 'وشکا (گوشت و پەنیر)',
+    desc: 'خبز محشو باللحم البقري والجبنة · Stuffed bread with beef & cheese · نانی ئاخنراو بە گوشتی مانگا و پەنیر',
+    price: 2750,
+    priceFormatted: '2,750 د.ع',
+    badge: '🫓 Wushka',
+    img: 'assets/45.jpeg'
+  },
+  {
+    id: 'lahm-bi-ajeen-egg',
+    num: 46,
+    category: 'pastries',
+    name: 'Lahm Bi Ajeen with Egg',
+    nameAr: 'لحم بالعجين بالبيض',
+    nameKu: 'لحم بالعجين بە هێلکە',
+    desc: 'لحم مفروم، بيض وعجينة لحم بالعجين · Minced meat, egg & dough · گوشتی ڕنراو، هێلکە و هەویر',
+    price: 2250,
+    priceFormatted: '2,250 د.ع',
+    badge: '🫓 Pastry with Egg',
+    img: 'assets/46.jpeg'
+  },
+  {
+    id: 'lahm-bi-ajeen-kashkaval',
+    num: 47,
+    category: 'pastries',
+    name: 'Lahm Bi Ajeen with Kashkaval Cheese',
+    nameAr: 'لحم بالعجين مع جبنة قشقوان',
+    nameKu: 'لحم بالعجين بە پەنیری قەشقەوان',
+    desc: 'جبنة قشقوان ولحم مفروم · Kashkaval cheese & minced meat · پەنیری قەشقەوان و گوشتی ڕنراو',
+    price: 2250,
+    priceFormatted: '2,250 د.ع',
+    badge: '🫓 Meat & Cheese',
+    img: 'assets/47.jpeg'
+  },
+  {
+    id: 'shamiyeh-1kg',
+    num: 48,
+    category: 'pastries',
+    name: '1 KG Shamiyeh Pastries',
+    nameAr: 'كيلو شامية',
+    nameKu: 'کیلۆیەکی شامیدا',
+    desc: '1 كيلو جرام من المعجنات الحلوة · 1 kg of sweet traditional pastries · ١ килоی هەویرکاری شیرین',
+    price: 32000,
+    priceFormatted: '32,000 د.ع',
+    badge: '🫓 1 KG Sweet',
+    img: 'assets/48.jpeg'
+  },
+  {
+    id: 'mineral-water',
+    num: 49,
+    category: 'drinks',
+    name: 'Mineral Water',
+    nameAr: 'مياه معدنية',
+    nameKu: 'ئاوی کانزایی',
+    desc: 'مياه معدنية معقمة · Sterilized mineral water · ئاوی کانزایی پاکژکراوە',
+    price: 250,
+    priceFormatted: '250 د.ع',
+    badge: '💧 Water',
+    img: 'assets/49.jpeg'
+  },
+  {
+    id: 'ayran-drink',
+    num: 50,
+    category: 'drinks',
+    name: 'Smoked Ayran',
+    nameAr: 'عيران مدخن',
+    nameKu: 'عەیرانی دووکەڵاوی',
+    desc: 'عيران مدخن طازج · Fresh smoked Ayran · عەیرانی دووکەڵاوی نوێ',
+    price: 500,
+    priceFormatted: '500 د.ع',
+    badge: '🥛 Ayran',
+    img: 'assets/50.jpeg'
+  },
+  {
+    id: 'pepsi-can',
+    num: 51,
+    category: 'drinks',
+    name: 'Pepsi Can',
+    nameAr: 'بيبسي',
+    nameKu: 'بیپسی',
+    desc: 'مشروب غازي بيبسي · Refreshing Pepsi soft drink · بیپسی فێنککەرەوە',
+    price: 750,
+    priceFormatted: '750 د.ع',
+    badge: '🥤 Soft Drink',
+    img: 'assets/51.jpeg'
+  },
+  {
+    id: '7up-can',
+    num: 52,
+    category: 'drinks',
+    name: '7Up Can',
+    nameAr: 'سفن أب',
+    nameKu: 'سفن ئاپ',
+    desc: 'مشروب غازي سفن أب · Refreshing 7Up soft drink · سفن ئاپ فێنککەرەوە',
+    price: 750,
+    priceFormatted: '750 د.ع',
+    badge: '🥤 Soft Drink',
+    img: 'assets/52.jpeg'
   }
 ];
 
@@ -918,11 +1282,11 @@ function renderFoodCardHtml(item, dict) {
       />
       <div class="food-card-overlay"></div>
       <span class="badge-tag">${item.badge}</span>
-      <span class="cat-icon-badge" title="Item #${item.num}">#${item.num} ${theme.icon}</span>
+      <span class="cat-icon-badge">${theme.icon}</span>
     </div>
   ` : `
     <div class="no-photo-card-header" style="background: ${theme.gradient};">
-      <span class="cat-icon-badge" title="Item #${item.num}">#${item.num} ${theme.icon}</span>
+      <span class="cat-icon-badge">${theme.icon}</span>
       <span class="badge-tag-inline">${item.badge}</span>
     </div>
   `;
@@ -1087,7 +1451,7 @@ function openItemModal(itemId) {
 
   const waBtn = document.getElementById('item-modal-wa-btn');
   if (waBtn) {
-    const waText = encodeURIComponent(`Hello Sham Bird! I would like to order:\n📌 #${item.num} ${item.nameAr} / ${item.name}\n💰 Price: ${item.priceFormatted}`);
+    const waText = encodeURIComponent(`Hello Sham Bird! I would like to order:\n📌 ${item.nameAr} / ${item.name}\n💰 Price: ${item.priceFormatted}`);
     waBtn.href = `https://wa.me/9647509661218?text=${waText}`;
   }
 
@@ -1116,7 +1480,7 @@ function openPhotoZoom() {
   if (zoomBackdrop && zoomImg) {
     zoomImg.src = currentModalItem.img;
     zoomImg.alt = currentModalItem.name;
-    if (zoomTitle) zoomTitle.textContent = `#${currentModalItem.num} ${currentModalItem.name}`;
+    if (zoomTitle) zoomTitle.textContent = currentModalItem.name;
 
     currentZoomScale = 1;
     zoomImg.style.transform = `scale(${currentZoomScale})`;
