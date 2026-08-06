@@ -1154,3 +1154,148 @@ document.addEventListener('keydown', e => {
     closeReviewModal();
   }
 });
+
+/* ── Ambient Chill Restaurant Music Engine ───────────────────────────────── */
+let audioCtx = null;
+let masterGainNode = null;
+let isMusicPlaying = false;
+let synthTimer = null;
+let currentVolume = 0.25;
+
+// Warm Chill Lounge Chords (Frequencies in Hz for smooth lounge vibes)
+const loungeChords = [
+  // Cmaj9: C3, G3, B3, E4, D5
+  [130.81, 196.00, 246.94, 329.63, 587.33],
+  // Am9: A2, E3, G3, C4, B4
+  [110.00, 164.81, 196.00, 261.63, 493.88],
+  // Fmaj9: F2, C3, E3, A3, G4
+  [87.31, 130.81, 164.81, 220.00, 392.00],
+  // G13 / G7sus: G2, D3, F3, B3, E4
+  [98.00, 146.83, 174.61, 246.94, 329.63]
+];
+let chordIndex = 0;
+
+function initAudioContext() {
+  if (!audioCtx) {
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    if (AudioContext) {
+      audioCtx = new AudioContext();
+      masterGainNode = audioCtx.createGain();
+      masterGainNode.gain.setValueAtTime(currentVolume, audioCtx.currentTime);
+      masterGainNode.connect(audioCtx.destination);
+    }
+  }
+  if (audioCtx && audioCtx.state === 'suspended') {
+    audioCtx.resume();
+  }
+}
+
+function playLoungeChord() {
+  if (!audioCtx || !isMusicPlaying) return;
+
+  const bgAudio = document.getElementById('bg-audio');
+  if (bgAudio && bgAudio.src && !bgAudio.paused) {
+    return; // HTML5 Audio element is actively playing
+  }
+
+  const chord = loungeChords[chordIndex];
+  chordIndex = (chordIndex + 1) % loungeChords.length;
+
+  const now = audioCtx.currentTime;
+  const chordGain = audioCtx.createGain();
+  chordGain.gain.setValueAtTime(0.001, now);
+  chordGain.gain.linearRampToValueAtTime(0.18, now + 0.8);
+  chordGain.gain.exponentialRampToValueAtTime(0.0001, now + 4.8);
+
+  // Soft lowpass filter for warm acoustic dining atmosphere
+  const filter = audioCtx.createBiquadFilter();
+  filter.type = 'lowpass';
+  filter.frequency.setValueAtTime(650, now);
+
+  chordGain.connect(filter);
+  filter.connect(masterGainNode);
+
+  chord.forEach((freq, i) => {
+    const osc = audioCtx.createOscillator();
+    const osc2 = audioCtx.createOscillator();
+
+    osc.type = 'sine';
+    osc2.type = 'triangle';
+
+    osc.frequency.setValueAtTime(freq, now);
+    osc2.frequency.setValueAtTime(freq * 1.002, now); // Gentle chorus effect
+
+    const oscGain = audioCtx.createGain();
+    oscGain.gain.value = i === 0 ? 0.35 : 0.2; // Warm bass grounding
+
+    osc.connect(oscGain);
+    osc2.connect(oscGain);
+    oscGain.connect(chordGain);
+
+    osc.start(now);
+    osc2.start(now);
+
+    osc.stop(now + 5.0);
+    osc2.stop(now + 5.0);
+  });
+}
+
+function startSynthLoop() {
+  if (synthTimer) clearInterval(synthTimer);
+  playLoungeChord();
+  synthTimer = setInterval(() => {
+    if (isMusicPlaying) {
+      playLoungeChord();
+    }
+  }, 4800);
+}
+
+function toggleAmbientMusic() {
+  const widget = document.getElementById('ambient-music-widget');
+  const icon = document.getElementById('music-icon');
+  const label = document.getElementById('music-label');
+  const bgAudio = document.getElementById('bg-audio');
+
+  initAudioContext();
+
+  isMusicPlaying = !isMusicPlaying;
+
+  if (isMusicPlaying) {
+    if (bgAudio && bgAudio.src && bgAudio.readyState >= 2) {
+      bgAudio.volume = currentVolume;
+      bgAudio.play().catch(() => {
+        startSynthLoop();
+      });
+    } else {
+      startSynthLoop();
+    }
+
+    widget?.classList.add('playing');
+    if (icon) icon.textContent = '🎵';
+    if (label) label.textContent = state.currentLang === 'ar' ? 'موسيقى هادئة' : state.currentLang === 'ku' ? 'مۆسیقا' : 'Chill Lounge';
+  } else {
+    if (bgAudio) bgAudio.pause();
+    if (synthTimer) clearInterval(synthTimer);
+    widget?.classList.remove('playing');
+    if (icon) icon.textContent = '🔇';
+    if (label) label.textContent = state.currentLang === 'ar' ? 'مكتوم' : state.currentLang === 'ku' ? 'بێدەنگ' : 'Muted';
+  }
+}
+
+function setMusicVolume(val) {
+  currentVolume = parseFloat(val);
+  if (masterGainNode && audioCtx) {
+    masterGainNode.gain.setValueAtTime(currentVolume, audioCtx.currentTime);
+  }
+  const bgAudio = document.getElementById('bg-audio');
+  if (bgAudio) {
+    bgAudio.volume = currentVolume;
+  }
+}
+
+// Auto-start ambient music gently on first user click or touch interaction
+document.addEventListener('click', function autoStartAudioOnce() {
+  if (!isMusicPlaying) {
+    toggleAmbientMusic();
+  }
+}, { once: true });
