@@ -590,7 +590,8 @@
 
   <!-- Floating Luxury Chill Restaurant Music Player Widget -->
   <div id="ambient-music-widget" class="music-widget">
-    <button id="music-toggle-btn" class="music-toggle-btn" onclick="toggleAmbientMusic()" title="Toggle Restaurant Music / تشغيل الموسيقى الهادئة">
+    <button id="music-toggle-btn" class="music-toggle-btn" onclick="toggleAmbientMusic()"
+      title="Toggle Restaurant Music / تشغيل الموسيقى الهادئة">
       <div class="eq-bars-anim" id="eq-bars">
         <span class="bar bar1"></span>
         <span class="bar bar2"></span>
@@ -599,10 +600,11 @@
       <span class="music-icon" id="music-icon">🎵</span>
       <span class="music-label" id="music-label">Chill Lounge</span>
     </button>
-    <input type="range" id="music-volume" class="music-volume-slider" min="0" max="1" step="0.05" value="0.25" oninput="setMusicVolume(this.value)" title="Volume / مستوى الصوت" />
+    <input type="range" id="music-volume" class="music-volume-slider" min="0" max="1" step="0.05" value="0.25"
+      oninput="setMusicVolume(this.value)" title="Volume / مستوى الصوت" />
   </div>
 
-  <audio id="bg-audio" loop src="assets/music.mp3" preload="auto"></audio>
+  <audio id="bg-audio" loop src="music.mp3" preload="auto"></audio>
 
   <script src="app.js"></script>
 </body>
