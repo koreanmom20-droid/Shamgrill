@@ -222,19 +222,6 @@ const menuItems = [
     img: 'assets/6.jpeg'
   },
   {
-    id: 'chicken-shawarma-meal',
-    num: 7,
-    category: 'ch_shawarma',
-    name: 'Chicken Shawarma Meal',
-    nameAr: 'وجبة شاورما دجاج',
-    nameKu: 'ژەمی شاورمەی مریشک',
-    desc: 'خبز لبناني وشاورمه دجاج · Lebanese bread & chicken shawarma · نانی لبنانی و شاورمەی مریشک',
-    price: 7000,
-    priceFormatted: '7,000 د.ع',
-    badge: '🍗 Chicken Shawarma',
-    img: 'assets/7.jpeg'
-  },
-  {
     id: 'double-chicken-shawarma-meal',
     num: 8,
     category: 'ch_shawarma',
