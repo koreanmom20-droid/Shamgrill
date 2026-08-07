@@ -1331,41 +1331,51 @@ function initBackgroundCanvas() {
     });
   }
 
+  let isScrollingTimeout;
+  let isScrolling = false;
+  window.addEventListener('scroll', () => {
+    isScrolling = true;
+    clearTimeout(isScrollingTimeout);
+    isScrollingTimeout = setTimeout(() => {
+      isScrolling = false;
+    }, 120);
+  }, { passive: true });
+
   function animate() {
-    ctx.clearRect(0, 0, width, height);
+    if (!isScrolling) {
+      ctx.clearRect(0, 0, width, height);
 
-    // Warm radial glow at bottom center
-    const flameGlow = ctx.createRadialGradient(
-      width / 2, height + 120, 80,
-      width / 2, height + 120, height * 0.75
-    );
-    flameGlow.addColorStop(0, 'rgba(255, 140, 0, 0.18)');
-    flameGlow.addColorStop(0.5, 'rgba(239, 68, 68, 0.06)');
-    flameGlow.addColorStop(1, 'transparent');
-    ctx.fillStyle = flameGlow;
-    ctx.fillRect(0, 0, width, height);
+      // Warm radial glow at bottom center
+      const flameGlow = ctx.createRadialGradient(
+        width / 2, height + 120, 80,
+        width / 2, height + 120, height * 0.75
+      );
+      flameGlow.addColorStop(0, 'rgba(255, 140, 0, 0.18)');
+      flameGlow.addColorStop(0.5, 'rgba(239, 68, 68, 0.06)');
+      flameGlow.addColorStop(1, 'transparent');
+      ctx.fillStyle = flameGlow;
+      ctx.fillRect(0, 0, width, height);
 
-    // Render embers
-    embers.forEach(p => {
-      p.y += p.vy;
-      p.angle += p.oscillationSpeed;
-      p.x += p.vx + Math.sin(p.angle) * p.oscillationAmplitude * 0.18;
-      p.alpha = p.baseAlpha + Math.sin(p.angle * 3) * 0.15;
+      // Render embers without heavy CPU/GPU shadowBlur
+      embers.forEach(p => {
+        p.y += p.vy;
+        p.angle += p.oscillationSpeed;
+        p.x += p.vx + Math.sin(p.angle) * p.oscillationAmplitude * 0.18;
+        p.alpha = p.baseAlpha + Math.sin(p.angle * 3) * 0.15;
 
-      if (p.y < -20) {
-        p.y = height + 20;
-        p.x = Math.random() * width;
-      }
-      if (p.x < -20) p.x = width + 20;
-      if (p.x > width + 20) p.x = -20;
+        if (p.y < -20) {
+          p.y = height + 20;
+          p.x = Math.random() * width;
+        }
+        if (p.x < -20) p.x = width + 20;
+        if (p.x > width + 20) p.x = -20;
 
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-      ctx.fillStyle = p.color + Math.max(0, Math.min(1, p.alpha)) + ')';
-      ctx.shadowBlur = 14;
-      ctx.shadowColor = 'rgba(255, 140, 0, 0.85)';
-      ctx.fill();
-    });
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = p.color + Math.max(0, Math.min(1, p.alpha)) + ')';
+        ctx.fill();
+      });
+    }
 
     requestAnimationFrame(animate);
   }

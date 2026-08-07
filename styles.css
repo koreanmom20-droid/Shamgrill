@@ -76,6 +76,9 @@ html[dir="rtl"] body {
   pointer-events: none;
   opacity: 0.55;
   filter: brightness(0.6) contrast(1.15) saturate(1.2);
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .vignette-overlay {
@@ -87,6 +90,9 @@ html[dir="rtl"] body {
   pointer-events: none;
   z-index: 1;
   background: radial-gradient(ellipse at center, transparent 20%, rgba(7, 8, 10, 0.82) 100%);
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 #bg-canvas {
@@ -97,6 +103,9 @@ html[dir="rtl"] body {
   height: 100vh;
   z-index: 0;
   pointer-events: none;
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .bg-silhouettes {
@@ -108,6 +117,9 @@ html[dir="rtl"] body {
   pointer-events: none;
   z-index: 1;
   overflow: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 .silhouette {
@@ -1454,9 +1466,7 @@ html[dir="rtl"] .chef-ribbon {
 }
 
 .food-card {
-  background: var(--bg-card);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
+  background: rgba(16, 17, 22, 0.92);
   border: 1px solid var(--border-glass);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -1466,7 +1476,8 @@ html[dir="rtl"] .chef-ribbon {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6);
   opacity: 1;
-  animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  contain: content;
+  transform: translateZ(0);
 }
 
 .food-card:hover {
