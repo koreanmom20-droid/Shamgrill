@@ -1525,7 +1525,7 @@ html[dir="rtl"] .badge-tag {
 }
 
 .cat-icon-badge {
-  position: absolute;
+  display: none !important;
   top: 16px;
   right: 16px;
   width: 42px;

@@ -1282,11 +1282,9 @@ function renderFoodCardHtml(item, dict) {
       />
       <div class="food-card-overlay"></div>
       <span class="badge-tag">${item.badge}</span>
-      <span class="cat-icon-badge">${theme.icon}</span>
     </div>
   ` : `
     <div class="no-photo-card-header" style="background: ${theme.gradient};">
-      <span class="cat-icon-badge">${theme.icon}</span>
       <span class="badge-tag-inline">${item.badge}</span>
     </div>
   `;
