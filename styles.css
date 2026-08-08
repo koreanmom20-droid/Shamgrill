@@ -3153,3 +3153,39 @@ html[dir="rtl"] .music-widget {
     font-size: 0.75rem;
   }
 }
+
+/* ── Restaurant Manager Styling ── */
+.hero-badges-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero-badges-wrapper .hero-badge {
+  margin-bottom: 0;
+}
+
+.manager-badge {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.22) 0%, rgba(20, 22, 30, 0.8) 100%) !important;
+  border-color: rgba(74, 222, 128, 0.55) !important;
+  color: #86EFAC !important;
+  box-shadow: 0 8px 25px rgba(34, 197, 94, 0.2) !important;
+}
+
+.manager-subtitle-luxury {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #86EFAC;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 1rem;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(74, 222, 128, 0.3);
+  border-radius: var(--radius-full);
+}

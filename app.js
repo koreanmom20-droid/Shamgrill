@@ -943,16 +943,16 @@ const menuItems = [
         img: 'assets/44.jpeg'
     },
     {
-        id: 'wushka-beef-cheese',
+        id: 'toshka-beef-cheese',
         num: 45,
         category: 'pastries',
-        name: 'Wushka (Beef & Cheese Bread)',
-        nameAr: 'وشكات',
-        nameKu: 'وشکا (گوشت و پەنیر)',
+        name: 'Toshka (Beef & Cheese Bread)',
+        nameAr: 'توشكا',
+        nameKu: 'تۆشکا (گوشت و پەنیر)',
         desc: 'خبز محشو باللحم البقري والجبنة · Stuffed bread with beef & cheese · نانی ئاخنراو بە گوشتی مانگا و پەنیر',
         price: 5000,
         priceFormatted: '5,000 د.ع',
-        badge: '🫓 Wushka',
+        badge: '🫓 Toshka',
         img: 'assets/45.jpeg'
     },
     {
@@ -1199,8 +1199,8 @@ const menuItems = [
         num: 50,
         category: 'drinks',
         name: 'Smoked Ayran',
-        nameAr: 'عيران مدخن',
-        nameKu: 'عەیرانی دووکەڵاوی',
+        nameAr: 'لبن مدخن',
+        nameKu: 'سڵەیمانی دووکەڵاوی',
         desc: 'عيران مدخن طازج · Fresh smoked Ayran · عەیرانی دووکەڵاوی نوێ',
         price: 500,
         priceFormatted: '500 د.ع',
