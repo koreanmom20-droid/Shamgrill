@@ -1,0 +1,49 @@
+$listener = New-Object System.Net.HttpListener
+$listener.Prefixes.Add("http://localhost:8080/")
+$listener.Prefixes.Add("http://127.0.0.1:8080/")
+$listener.Start()
+Write-Host "Live Server running on http://localhost:8080/"
+$root = $PSScriptRoot
+
+while ($listener.IsListening) {
+    try {
+        $context = $listener.GetContext()
+        $request = $context.Request
+        $response = $context.Response
+
+        $urlPath = [System.Uri]::UnescapeDataString($request.Url.LocalPath)
+        if ($urlPath -eq "/") { $urlPath = "/index.html" }
+
+        $filePath = Join-Path $root $urlPath.TrimStart('/')
+
+        if (Test-Path $filePath -PathType Leaf) {
+            $bytes = [System.IO.File]::ReadAllBytes($filePath)
+            $ext = [System.IO.Path]::GetExtension($filePath).ToLower()
+            switch ($ext) {
+                ".html" { $response.ContentType = "text/html; charset=utf-8" }
+                ".css"  { $response.ContentType = "text/css; charset=utf-8" }
+                ".js"   { $response.ContentType = "text/javascript; charset=utf-8" }
+                ".json" { $response.ContentType = "application/json; charset=utf-8" }
+                ".png"  { $response.ContentType = "image/png" }
+                ".jpg"  { $response.ContentType = "image/jpeg" }
+                ".jpeg" { $response.ContentType = "image/jpeg" }
+                ".svg"  { $response.ContentType = "image/svg+xml" }
+                ".mp3"  { $response.ContentType = "audio/mpeg" }
+                default { $response.ContentType = "application/octet-stream" }
+            }
+            $response.ContentLength64 = $bytes.Length
+            $response.OutputStream.Write($bytes, 0, $bytes.Length)
+        } else {
+            $response.StatusCode = 404
+            $buffer = [System.Text.Encoding]::UTF8.GetBytes("404 Not Found")
+            $response.ContentLength64 = $buffer.Length
+            $response.OutputStream.Write($buffer, 0, $buffer.Length)
+        }
+    } catch {
+        # ignore request processing error and continue server loop
+    } finally {
+        if ($null -ne $response) {
+            try { $response.Close() } catch {}
+        }
+    }
+}
