@@ -159,8 +159,8 @@ const menuItems = [
         nameAr: 'وجبة كرسبي',
         nameKu: 'ژەمی کرسپی',
         desc: 'يقدم مع بطاطا مقلية · Served with French fries · لەگەڵ بەتاتەی سوورکراوە پێشکەش دەکرێت',
-        price: 9000,
-        priceFormatted: '9,000 د.ع',
+        price: 10000,
+        priceFormatted: '1,0000 د.ع',
         badge: '🍗 Crispy',
         img: 'assets/photo1.jpeg'
     },
@@ -172,24 +172,12 @@ const menuItems = [
         nameAr: 'ساندويش فاهيتا',
         nameKu: 'ساندویچی فاهیتا',
         desc: 'صمون فرنسي وفاهيتا · French bread & Fajita · سەموونی فەرەنسی و فاهیتا',
-        price: 4500,
-        priceFormatted: '4,500 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🥪 Fajita',
         img: 'assets/2.jpeg'
     },
-    {
-        id: 'shish-tawook-sandwich',
-        num: 3,
-        category: 'sandwiches',
-        name: 'Shish Tawook Sandwich',
-        nameAr: 'ساندويش شيش طاووق',
-        nameKu: 'ساندویچی شیش تاووق',
-        desc: 'صمون فرنسي و شيش طاووق · French bread & Shish Tawook · سەموونی فەرەنسی و شیش تاووق',
-        price: 4000,
-        priceFormatted: '4,000 د.ع',
-        badge: '🥪 Shish Tawook',
-        img: 'assets/3.jpeg'
-    },
+
     {
         id: 'family-arabic-shawarma-meal',
         num: 4,
@@ -261,32 +249,7 @@ const menuItems = [
         badge: '🍗 French Samoon',
         img: 'assets/10.jpeg'
     },
-    {
-        id: 'chicken-shawarma-stone-samoon',
-        num: 11,
-        category: 'ch_shawarma',
-        name: 'Chicken Shawarma (Stone Samoon)',
-        nameAr: 'شاورما دجاج-صمون حجري',
-        nameKu: 'شاورمەی مریشک (سەموونی بەردین)',
-        desc: 'شاورما دجاج و بطاطس · Chicken shawarma & fries · شاورمەی مریشک و بەتاتە',
-        price: 1250,
-        priceFormatted: '1,250 د.ع',
-        badge: '🍗 Stone Samoon',
-        img: 'assets/11.jpeg'
-    },
-    {
-        id: 'chicken-saj-shawarma-lebanese-bread',
-        num: 12,
-        category: 'ch_shawarma',
-        name: 'Chicken Saj Shawarma (Lebanese Bread)',
-        nameAr: 'شاورما صاج دجاج-خبز لبناني',
-        nameKu: 'شاورمەی صاجی مریشک (نانی لبنانی)',
-        desc: 'شاورما دجاج و بطاطس · Chicken shawarma & fries · شاورمەی مریشک و بەتاتە',
-        price: 1500,
-        priceFormatted: '1,500 د.ع',
-        badge: '🍗 Saj Shawarma',
-        img: 'assets/12.jpeg'
-    },
+
     {
         id: 'chicken-shawarma-lebanese-bread',
         num: 13,
@@ -301,6 +264,32 @@ const menuItems = [
         img: 'assets/13.jpeg'
     },
     {
+        id: 'double-chicken-shawarma',
+        num: 241,
+        category: 'ch_shawarma',
+        name: 'Double Chicken Shawarma',
+        nameAr: 'شاورما دجاج دبل',
+        nameKu: 'شاورمەی مریشکی دووبل',
+        desc: 'شاورما دجاج دبل غنية بالنكهة مع صوص الثوم والمخلل · Double chicken shawarma with garlic sauce & pickles · شاورمەی مریشکی دووبل لەگەڵ سۆسی سێر و ترشی',
+        price: 3000,
+        priceFormatted: '3,000 د.ع',
+        badge: '🍗 Double Shawarma',
+        img: 'assets/13.jpeg'
+    },
+    {
+        id: 'chicken-shawarma-with-cheese',
+        num: 242,
+        category: 'ch_shawarma',
+        name: 'Chicken Shawarma with Cheese',
+        nameAr: 'شاورما دجاج بالجبن',
+        nameKu: 'شاورمەی مریشک بە پەنیر',
+        desc: 'شاورما دجاج شهية مع طبقة غنية من الجبنة الذائبة · Chicken shawarma with melted rich cheese · شاورمەی مریشک لەگەڵ پەنیری تواوەی بەتام',
+        price: 3000,
+        priceFormatted: '3,000 د.ع',
+        badge: '🍗 Shawarma & Cheese',
+        img: 'assets/13.jpeg'
+    },
+    {
         id: 'vegetable-pizza',
         num: 18,
         category: 'pizza',
@@ -308,14 +297,14 @@ const menuItems = [
         nameAr: 'بيتزا خضراوات (خضار)',
         nameKu: 'پیتزای سەوزەوات',
         desc: 'عجينة بيتزا، فلفل ملون، مشروم وجبنة · Pizza dough, bell peppers, mushroom & cheese · هەویری پیتزا، بیبەری ڕەنگاوڕەنگ، قارچک و پەنیر',
-        price: 4000,
-        priceFormatted: '4,000 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🍕 Veggie',
         img: 'assets/18.jpeg',
         variants: [
-            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 4000, priceFormatted: '4,000 د.ع' },
-            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 5000, priceFormatted: '5,000 د.ع' },
-            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 7000, priceFormatted: '7,000 د.ع' }
+            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 5000, priceFormatted: '5,000 د.ع' },
+            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 6000, priceFormatted: '6,000 د.ع' },
+            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 8000, priceFormatted: '8,000 د.ع' }
         ],
         selectedVariant: 'small'
     },
@@ -327,14 +316,14 @@ const menuItems = [
         nameAr: 'بيتزا مارجريتا',
         nameKu: 'پیتزا مارگریتا',
         desc: 'عجينه بيتزا وجبينه · Pizza dough & cheese · هەویری پیتزا و پەنیری مۆزارێلا',
-        price: 4000,
-        priceFormatted: '4,000 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🍕 Margherita',
         img: 'assets/14.jpeg',
         variants: [
-            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 4000, priceFormatted: '4,000 د.ع' },
-            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 5000, priceFormatted: '5,000 د.ع' },
-            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 7000, priceFormatted: '7,000 د.ع' }
+            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 5000, priceFormatted: '5,000 د.ع' },
+            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 6000, priceFormatted: '6,000 د.ع' },
+            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 8000, priceFormatted: '8,000 د.ع' }
         ],
         selectedVariant: 'small'
     },
@@ -346,14 +335,14 @@ const menuItems = [
         nameAr: 'بيتزا دجاج',
         nameKu: 'پیتزا مریشک',
         desc: 'عجينه بيتزا، دجاج فلفل ملون، مشروم وجبنه · Pizza dough, chicken, bell peppers, mushroom & cheese · هەویری پیتزا، مریشک، بیبەری ڕەنگاوڕەنگ، قارچک و پەنیر',
-        price: 5000,
-        priceFormatted: '5,000 د.ع',
+        price: 6000,
+        priceFormatted: '6,000 د.ع',
         badge: '🍕 Chicken Pizza',
         img: 'assets/17.jpeg',
         variants: [
-            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 5000, priceFormatted: '5,000 د.ع' },
-            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 7000, priceFormatted: '7,000 د.ع' },
-            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 8000, priceFormatted: '8,000 د.ع' }
+            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 6000, priceFormatted: '6,000 د.ع' },
+            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 8000, priceFormatted: '8,000 د.ع' },
+            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 9000, priceFormatted: '9,000 د.ع' }
         ],
         selectedVariant: 'small'
     },
@@ -365,14 +354,14 @@ const menuItems = [
         nameAr: 'بيتزا ببروني',
         nameKu: 'پیتزا پێپەرۆنی',
         desc: 'عجينه بيتزا، ببروني وجبنه · Pizza dough, pepperoni & cheese · هەویری پیتزا، پێپەرۆنی و پەنیر',
-        price: 5000,
-        priceFormatted: '5,000 د.ع',
+        price: 6000,
+        priceFormatted: '6,000 د.ع',
         badge: '🍕 Pepperoni',
         img: 'assets/15.jpeg',
         variants: [
-            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 5000, priceFormatted: '5,000 د.ع' },
-            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 7000, priceFormatted: '7,000 د.ع' },
-            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 8000, priceFormatted: '8,000 د.ع' }
+            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 6000, priceFormatted: '6,000 د.ع' },
+            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 8000, priceFormatted: '8,000 د.ع' },
+            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 9000, priceFormatted: '9,000 د.ع' }
         ],
         selectedVariant: 'small'
     },
@@ -381,17 +370,17 @@ const menuItems = [
         num: 171,
         category: 'pizza',
         name: 'Smoked Chicken Pizza (Jish Mudkhan)',
-        nameAr: 'بيتزا شيش مدخن',
+        nameAr: 'بيتزا حبش مدخن',
         nameKu: 'پیتزای شیشی دووکەڵاوی',
         desc: 'عجينة بيتزا، قطع شيش طاووق مدخن، فلفل ملون وجبنة · Pizza dough, smoked shish tawook, bell peppers & cheese · هەویری پیتزا، شیشی دووکەڵاوی، بیبەر و پەنیر',
-        price: 5000,
-        priceFormatted: '5,000 د.ع',
+        price: 6000,
+        priceFormatted: '6,000 د.ع',
         badge: '🍕 Smoked Pizza',
         img: 'assets/17.jpeg',
         variants: [
-            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 5000, priceFormatted: '5,000 د.ع' },
-            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 7000, priceFormatted: '7,000 د.ع' },
-            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 8000, priceFormatted: '8,000 د.ع' }
+            { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 6000, priceFormatted: '6,000 د.ع' },
+            { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 8000, priceFormatted: '8,000 د.ع' },
+            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 9000, priceFormatted: '9,000 د.ع' }
         ],
         selectedVariant: 'small'
     },
@@ -410,7 +399,7 @@ const menuItems = [
         variants: [
             { id: 'small', weight: 'Small', weightAr: 'صغيرة', weightKu: 'بچووک', price: 6000, priceFormatted: '6,000 د.ع' },
             { id: 'medium', weight: 'Medium', weightAr: 'وسط', weightKu: 'ناوەند', price: 8000, priceFormatted: '8,000 د.ع' },
-            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 9000, priceFormatted: '9,000 د.ع' }
+            { id: 'large', weight: 'Large', weightAr: 'كبير', weightKu: 'گەورە', price: 10000, priceFormatted: '10,000 د.ع' }
         ],
         selectedVariant: 'small'
     },
@@ -422,8 +411,8 @@ const menuItems = [
         nameAr: 'بيتزا مشكل (لحم ودجاج)',
         nameKu: 'پیتزا تێکەڵاو (گوشت و مریشک)',
         desc: 'دجاج، لحم، فلفل ملون، مشروم وجبنة · Chicken, meat, bell peppers, mushroom & cheese · مریشک، گوشت، بیبەری ڕەنگاوڕەنگ، قارچک و پەنیر',
-        price: 6000,
-        priceFormatted: '6,000 د.ع',
+        price: 7000,
+        priceFormatted: '7,000 د.ع',
         badge: '🍕 Mix Supreme',
         img: 'assets/16.jpeg',
         variants: [
@@ -473,6 +462,45 @@ const menuItems = [
         img: 'assets/21.jpeg'
     },
     {
+        id: 'falafel-potato-mix',
+        num: 301,
+        category: 'falafel',
+        name: 'Mixed Falafel & Potato Sandwich',
+        nameAr: 'بطاطا وفلافل مشكل',
+        nameKu: 'تێکەڵەی فەلافل و بەتاتە',
+        desc: 'فلافل طازجة مقرمشة مع أصابع البطاطا والمقبلات الشهية · Fresh crispy falafel with fries, pickles & tahini · فەلافلی نوێ و بەتاتەی سوورکراوە لەگەڵ تەحین و ترشی',
+        price: 1500,
+        priceFormatted: '1,500 د.ع',
+        badge: '🧆 Falafel & Fries',
+        img: 'assets/21.jpeg'
+    },
+    {
+        id: 'double-falafel-sandwich',
+        num: 302,
+        category: 'falafel',
+        name: 'Double Falafel Sandwich',
+        nameAr: 'دبل فلافل',
+        nameKu: 'فەلافلی دووبل',
+        desc: 'سندويش فلافل بحشوة مضاعفة من أقراص الفلافل المقرمشة والطحينة · Double portion falafel sandwich with veggies & tahini · سەندویچی فەلافلی دووبل بە بەشی زیاتر لە فەلافل و تەحین',
+        price: 2000,
+        priceFormatted: '2,000 د.ع',
+        badge: '🧆 Double Falafel',
+        img: 'assets/808.png'
+    },
+    {
+        id: 'falafel-french-samoon',
+        num: 303,
+        category: 'falafel',
+        name: 'Falafel (French Samoon)',
+        nameAr: 'صمون فرنسي فلافل',
+        nameKu: 'فەلافل (سەموونی فەرەنسی)',
+        desc: 'أقراص فلافل مقرمشة في صمون فرنسي طازج مع سلطة وطحينة · Crispy falafel in fresh French samoon with salad & tahini · فەلافلی بەتام لە سەموونی فەرەنسی نوێ لەگەڵ سەڵاتە و تەحین',
+        price: 2000,
+        priceFormatted: '2,000 د.ع',
+        badge: '🧆 French Samoon',
+        img: 'assets/809.png'
+    },
+    {
         id: 'hummus-with-meat',
         num: 22,
         category: 'appetizers',
@@ -506,8 +534,8 @@ const menuItems = [
         nameAr: 'وجبة شيش طاووق',
         nameKu: 'ژەمی شیش تاووق',
         desc: 'يقدم مع بطاطا مقلية · Served with French fries · لەگەڵ بەتاتەی سوورکراوە پێشکەش دەکرێت',
-        price: 8000,
-        priceFormatted: '8,000 د.ع',
+        price: 10000,
+        priceFormatted: '1,0000 د.ع',
         badge: '🍽️ Meal',
         img: 'assets/25.jpeg'
     },
@@ -545,8 +573,8 @@ const menuItems = [
         nameAr: 'وجبة زنجر',
         nameKu: 'ژەمی زەنجەر',
         desc: 'قطع دجاج مقرمشة تقدم مع بطاطا وسلطة · Crispy chicken fillets served with fries & coleslaw · پارچە مریشکی کڕسپی لەگەڵ بەتاتە',
-        price: 10000,
-        priceFormatted: '10,000 د.ع',
+        price: 12000,
+        priceFormatted: '12,000 د.ع',
         badge: '🍗 Zinger Meal',
         img: 'assets/901.jpeg'
     },
@@ -571,8 +599,8 @@ const menuItems = [
         nameAr: 'وجبة فرانشيسكو',
         nameKu: 'ژەمی فرانشیسکۆ',
         desc: 'دجاج فرانشيسكو يقدم مع بطاطا مقلية وسلطة · Francisco chicken served with French fries & salad · مریشکی فرانشیسکۆ لەگەڵ بەتاتەی سوورکراوە',
-        price: 9000,
-        priceFormatted: '9,000 د.ع',
+        price: 10000,
+        priceFormatted: '1,0000 د.ع',
         badge: '🍽️ Francisco Meal',
         img: 'assets/900.jpeg'
     },
@@ -584,8 +612,8 @@ const menuItems = [
         nameAr: 'برجر دجاج',
         nameKu: 'بەرگری مریشک',
         desc: 'خبز برجر، شريحة دجاج وخس · Burger bun, chicken slice & lettuce · نانی بەرگر، پارچە مریشک و خەس',
-        price: 3000,
-        priceFormatted: '3,000 د.ع',
+        price: 3500,
+        priceFormatted: '3,500 د.ع',
         badge: '🍔 Chicken Burger',
         img: 'assets/26.jpeg'
     },
@@ -597,8 +625,8 @@ const menuItems = [
         nameAr: 'برجر دجاج دبل',
         nameKu: 'بەرگری مریشکی دووبل',
         desc: 'شريحتان دجاج، جبنة وخس · Double chicken patties, cheese & lettuce · دوو پارچە مریشک، پەنیر و خەس',
-        price: 4500,
-        priceFormatted: '4,500 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🍔 Double Chicken',
         img: 'assets/26.jpeg'
     },
@@ -610,8 +638,8 @@ const menuItems = [
         nameAr: 'برجر لحم ',
         nameKu: 'بەرگری گوشت (بێ پەنیر)',
         desc: 'شريحة لحم طازجة بدون جبن · Fresh beef patty (no cheese) · پارچە گوشتی نوێ (بێ پەنیر)',
-        price: 3500,
-        priceFormatted: '3,500 د.ع',
+        price: 4000,
+        priceFormatted: '4,000 د.ع',
         badge: '🍔 Meat Burger',
         img: 'assets/27.jpeg'
     },
@@ -619,16 +647,28 @@ const menuItems = [
         id: 'cheese-burger',
         num: 27,
         category: 'burgers',
-        name: 'Cheese Burger',
-        nameAr: 'برجر دجاج  بالجبنة',
-        nameKu: 'بەرگر بە پەنیر',
+        name: 'Chicken Cheese Burger',
+        nameAr: 'برجر دجاج بالجبنة',
+        nameKu: 'بەرگری مریشک بە پەنیر',
         desc: 'خبز برجر، شريحة دجاج وجبنة · Burger bun, chicken slice & cheese · نانی بەرگر، پارچە مریشک و پەنیر',
-        price: 3500,
-        priceFormatted: '3,500 د.ع',
-        badge: '🍔 Cheeseburger',
+        price: 4000,
+        priceFormatted: '4,000 د.ع',
+        badge: '🍔 Chicken & Cheese',
         img: 'assets/27.jpeg'
     },
-
+    {
+        id: 'meat-cheese-burger',
+        num: 270,
+        category: 'burgers',
+        name: 'Meat Burger with Cheese',
+        nameAr: 'برجر لحم بالجبنة',
+        nameKu: 'بەرگری گوشت بە پەنیر',
+        desc: 'شريحة لحم بقري طازج مع شريحة جبنة ذائبة وخس طازج · Fresh beef patty topped with melt cheese & lettuce · پارچە گوشتی نوێ لەگەڵ پەنیری تواوە',
+        price: 4500,
+        priceFormatted: '4,500 د.ع',
+        badge: '🍔 Meat & Cheese',
+        img: 'assets/27.jpeg'
+    },
     {
         id: 'double-meat-burger',
         num: 271,
@@ -637,8 +677,8 @@ const menuItems = [
         nameAr: 'برجر لحم دبل',
         nameKu: 'بەرگری گوشتی دووبل',
         desc: 'شريحتان لحم طازج وجبنة · Double fresh beef patties & cheese · دوو پارچە گوشتی نوێ و پەنیر',
-        price: 6000,
-        priceFormatted: '6,000 د.ع',
+        price: 6500,
+        priceFormatted: '6,500 د.ع',
         badge: '🍔 Double Meat',
         img: 'assets/27.jpeg'
     },
@@ -650,8 +690,8 @@ const menuItems = [
         nameAr: 'برجر لحم دبل بالجبن',
         nameKu: 'بەرگری دووبل پەنیر',
         desc: 'شريحتا جبنة مضاعفة مع برجر طازج · Double melt cheese slice with burger patty · دوو پارچە پەنیری تواوە لەگەڵ بەرگر',
-        price: 6500,
-        priceFormatted: '6,500 د.ع',
+        price: 7000,
+        priceFormatted: '7,000 د.ع',
         badge: '🍔 Double Cheeseburger',
         img: 'assets/27.jpeg'
     },
@@ -664,8 +704,8 @@ const menuItems = [
         nameAr: 'سندويش أسكالوب',
         nameKu: 'سەندویچی ئەسکالۆپ',
         desc: 'صمون فرنسي وأسكالوب · French bread & escalope · سەموونی فەرەنسی و ئەسکالۆپ',
-        price: 4500,
-        priceFormatted: '4,500 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🥪 Escalope',
         img: 'assets/escalob.jpeg'
     },
@@ -677,8 +717,8 @@ const menuItems = [
         nameAr: 'سندويش كريسبي',
         nameKu: 'سەندویچی کرسپی',
         desc: 'صمون فرنسي ودجاج كريسبي مقرمش · French bread & crispy chicken · سەموونی فەرەنسی و مریشکی کرسپی',
-        price: 4000,
-        priceFormatted: '4,000 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🥪 Crispy',
         img: 'assets/crispy.jpeg'
     },
@@ -690,8 +730,8 @@ const menuItems = [
         nameAr: 'سندويش مكسيكي',
         nameKu: 'سەندویچی مەکسیکی',
         desc: 'صمون فرنسي ودجاج مكسيكي حار · French bread & spicy Mexican chicken · سەموونی فەرەنسی و مریشکی مەکسیکی',
-        price: 4500,
-        priceFormatted: '4,500 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🥪 Mexican',
         img: 'assets/2.jpeg'
     },
@@ -703,8 +743,8 @@ const menuItems = [
         nameAr: 'سندويش فرانشيسكو',
         nameKu: 'سەندویچی فرانشیسکۆ',
         desc: 'صمون فرنسي ودجاج فرانشيسكو مع جبنة · French bread & Francisco chicken with melt cheese · سەموونی فەرەنسی و فرانشیسکۆ',
-        price: 4500,
-        priceFormatted: '4,500 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🥪 Francisco',
         img: 'assets/fransisco.jpeg'
     },
@@ -716,8 +756,8 @@ const menuItems = [
         nameAr: 'سندويش زنجر',
         nameKu: 'سەندویچی زەنجەر',
         desc: 'صمون فرنسي ودجاج زنجر حار مقرمش · French bread & spicy zinger chicken · سەموونی فەرەنسی و زەنجەر',
-        price: 4500,
-        priceFormatted: '4,500 د.ع',
+        price: 5000,
+        priceFormatted: '5,000 د.ع',
         badge: '🥪 Zinger',
         img: 'assets/zinjar.jpeg'
     },
@@ -742,8 +782,8 @@ const menuItems = [
         nameAr: 'صحن بطاطا بالجبن',
         nameKu: 'قاپی بەتاتە بە پەنیر',
         desc: 'بطاطا مقلية مغطاة بالجبنة الذائبة · French fries topped with melted cheese · بەتاتەی سوورکراوە بە پەنیری تواوە',
-        price: 2500,
-        priceFormatted: '2,500 د.ع',
+        price: 3000,
+        priceFormatted: '3,000 د.ع',
         badge: '🍟 Cheese Fries',
         img: 'assets/ptatocheese.jpeg'
     },
@@ -772,6 +812,97 @@ const menuItems = [
         priceFormatted: '4,500 د.ع',
         badge: '🍟 Extra Fries',
         img: 'assets/ptato.jpeg'
+    },
+    {
+        id: 'potato-sandwich-lebanese',
+        num: 294,
+        category: 'fries',
+        name: 'Potato Sandwich (Lebanese Bread)',
+        nameAr: 'سندويش بطاطا - خبز لبناني',
+        nameKu: 'سەندویچی بەتاتە (نانی لبنانی)',
+        desc: 'بطاطا مقلية مقرمشة في خبز لبناني مع صوص الثوم والكاتشب · Crispy fries in Lebanese bread with garlic sauce & ketchup · بەتاتەی سوورکراوە لە نانی لبنانی لەگەڵ سۆس',
+        price: 1000,
+        priceFormatted: '1,000 د.ع',
+        badge: '🍟 Lebanese Bread',
+        img: 'assets/805.png'
+    },
+    {
+        id: 'potato-sandwich-saj',
+        num: 295,
+        category: 'fries',
+        name: 'Potato Sandwich (Saj Bread)',
+        nameAr: 'سندويش بطاطا - خبز صاج',
+        nameKu: 'سەندویچی بەتاتە (نانی ساج)',
+        desc: 'بطاطا مقلية في خبز صاج محمص على الطريقة الشامية · Crispy fries rolled in toasted saj bread · بەتاتەی سوورکراوە لە نانی ساجی برژاو',
+        price: 1000,
+        priceFormatted: '1,000 د.ع',
+        badge: '🍟 Saj Bread',
+        img: 'assets/ptato.jpeg'
+    },
+    {
+        id: 'potato-sandwich-french',
+        num: 296,
+        category: 'fries',
+        name: 'Potato Sandwich (French Samoon)',
+        nameAr: 'سندويش بطاطا - صمون فرنسي',
+        nameKu: 'سەندویچی بەتاتە (سەموونی فەرەنسی)',
+        desc: 'بطاطا مقلية محشوة في صمون فرنسي هش وطازج · Golden French fries inside fresh French samoon · بەتاتەی سوورکراوە لە سەموونی فەرەنسی نوێ',
+        price: 1500,
+        priceFormatted: '1,500 د.ع',
+        badge: '🍟 French Samoon',
+        img: 'assets/806.png'
+    },
+    {
+        id: 'potato-cheese-lebanese',
+        num: 297,
+        category: 'fries',
+        name: 'Potato & Cheese Sandwich (Lebanese Bread)',
+        nameAr: 'سندويش بطاطا مع جبن (خبز لبناني)',
+        nameKu: 'سەندویچی بەتاتە و پەنیر (نانی لبنانی)',
+        desc: 'بطاطا مقلية ذهبية مع جبنة ذائبة في خبز لبناني · Golden fries with melted cheese in Lebanese bread · بەتاتەی سوورکراوە لەگەڵ پەنیری تواوە لە نانی لبنانی',
+        price: 2000,
+        priceFormatted: '2,000 د.ع',
+        badge: '🍟 Fries & Cheese',
+        img: 'assets/805.png'
+    },
+    {
+        id: 'potato-cheese-french',
+        num: 298,
+        category: 'fries',
+        name: 'Potato & Cheese (French Samoon)',
+        nameAr: 'سندويش بطاطا بالجبنة (صمون فرنسي)',
+        nameKu: 'سەندویچی بەتاتە بە پەنیر (سەموونی فەرەنسی)',
+        desc: 'صمون فرنسي محشو بالبطاطا المقلية والجبنة الشهية الذائبة · French samoon stuffed with fries & melted rich cheese · سەموونی فەرەنسی پڕ لە بەتاتە و پەنیری تواوە',
+        price: 2500,
+        priceFormatted: '2,500 د.ع',
+        badge: '🍟 Cheese Samoon',
+        img: 'assets/807.png'
+    },
+    {
+        id: 'potato-falafel-mix-fries',
+        num: 299,
+        category: 'fries',
+        name: 'Mixed Potato & Falafel Sandwich',
+        nameAr: 'بطاطا وفلافل مشكل',
+        nameKu: 'تێکەڵەی بەتاتە و فەلافل',
+        desc: 'مكس رائع من البطاطا المقرمشة وأقراص الفلافل اللذيذة · A delicious combo of crispy fries and falafel patties · تێکەڵەیەکی بەتام لە بەتاتەی سوورکراوە و فەلافل',
+        price: 1500,
+        priceFormatted: '1,500 د.ع',
+        badge: '🍟 Mixed Sandwich',
+        img: 'assets/808.png'
+    },
+    {
+        id: 'double-potato-sandwich',
+        num: 300,
+        category: 'fries',
+        name: 'Double Potato Sandwich',
+        nameAr: 'سندويش بطاطا دبل',
+        nameKu: 'سەندویچی بەتاتەی دووبل',
+        desc: 'سندويش محشو بكمية مضاعفة من البطاطا المقلية المقرمشة · Double-filled crispy French fries sandwich · سەندویچی دووبل لە بەتاتەی سوورکراوەی بەتام',
+        price: 2000,
+        priceFormatted: '2,000 د.ع',
+        badge: '🍟 Double Fries',
+        img: 'assets/805.png'
     },
     {
         id: 'falafel-plate-10pcs',
@@ -807,8 +938,8 @@ const menuItems = [
         nameAr: 'لحم بالعجين',
         nameKu: 'لحم بالعجين',
         desc: 'عجينة لحم بالعجين ولحم مفروم · Dough topped with minced meat · هەویری تایبەت و گوشتی ڕنراو',
-        price: 1250,
-        priceFormatted: '1,250 د.ع',
+        price: 2000,
+        priceFormatted: '2,000 د.ع',
         badge: '🫓 Pastry',
         img: 'assets/32.jpeg'
     },
@@ -843,13 +974,19 @@ const menuItems = [
         num: 35,
         category: 'pastries',
         name: 'Akawi Cheese Manakish',
-        nameAr: 'جبنة قشقوان',
-        nameKu: 'پەنیریی',
-        desc: 'عجينة وجبنة عكاوي · Dough & Akawi cheese · هەویر و پەنیری عەکاوی',
-        price: 1000,
-        priceFormatted: '1,000 د.ع',
-        badge: '🫓 Akawi',
-        img: 'assets/35.jpeg'
+        nameAr: 'جبنة عكاوي',
+        nameKu: 'پەنیری عەکاوی',
+        desc: 'عجينة طازجة مع جبنة عكاوي أصلية فاخرة · Fresh dough topped with authentic Akawi cheese · هەویری نوێ بە پەنیری عەکاوی ڕەسەن',
+        price: 1250,
+        priceFormatted: '1,250 د.ع',
+        badge: '🫓 Akawi Cheese',
+        img: 'assets/شيييي.png',
+        variantType: 'size',
+        variants: [
+            { id: 'regular', weight: 'Single (عادي)', weightAr: 'عادي', weightKu: 'ئاسایی', price: 1250, priceFormatted: '1,250 د.ع' },
+            { id: 'double', weight: 'Double (دبل)', weightAr: 'دبل', weightKu: 'دووبل', price: 2000, priceFormatted: '2,000 د.ع' }
+        ],
+        selectedVariant: 'regular'
     },
     {
         id: 'kashkaval-muhammara',
@@ -865,17 +1002,23 @@ const menuItems = [
         img: 'assets/38.jpeg'
     },
     {
-        id: 'shish-tawook-french-samoon',
+        id: 'shish-tawook-pastry',
         num: 39,
         category: 'pastries',
-        name: 'Shish Tawook Sandwich',
+        name: 'Shish Tawook Pastry',
         nameAr: 'شيش طاووق',
         nameKu: 'شیش تاووق',
-        desc: 'صدر دجاج، بطاطا مقلية، كول سلو وصمون فرنسي · Chicken breast, fries, coleslaw & French bread · سنگ مریشک، بەتاتە، کۆلسڵۆ و سەموونی فەرەنسی',
-        price: 2250,
-        priceFormatted: '2,250 د.ع',
-        badge: '🥪 Shish Tawook',
-        img: 'assets/39.jpeg'
+        desc: 'عجينة طازجة مع قطع شيش طاووق متبلة ومحمصة · Fresh dough topped with seasoned shish tawook · هەویری نوێ لەگەڵ شیش تاووق',
+        price: 2000,
+        priceFormatted: '2,000 د.ع',
+        badge: '🫓 Shish Tawook',
+        img: 'assets/tawuq.png',
+        variantType: 'cheese',
+        variants: [
+            { id: 'without-cheese', weight: 'Without Cheese', weightAr: 'بدون جبنة', weightKu: 'بێ پەنیر', price: 2000, priceFormatted: '2,000 د.ع' },
+            { id: 'with-cheese', weight: 'With Cheese', weightAr: 'مع جبنة', weightKu: 'بە پەنیر', price: 2500, priceFormatted: '2,500 د.ع' }
+        ],
+        selectedVariant: 'without-cheese'
     },
     {
         id: 'kashkaval-zaatar',
@@ -917,17 +1060,17 @@ const menuItems = [
         img: 'assets/42.jpeg'
     },
     {
-        id: 'mini-pizza-1pc',
+        id: 'mini-pizza-pastry',
         num: 43,
-        category: 'pizza',
-        name: 'Mini Pizza (1 Pc)',
-        nameAr: 'بيتزا سوارى (1 قطعة)',
-        nameKu: 'پیتزای بچووک (١ پارچە)',
-        desc: '1 قطعة بيتزا صغيرة · 1 mini pizza piece · ١ پارچە پیتزای بچووک',
-        price: 1500,
-        priceFormatted: '1,500 د.ع',
-        badge: '🍕 Mini Pizza',
-        img: 'assets/43.jpeg'
+        category: 'pastries',
+        name: 'Mini Pizza',
+        nameAr: 'ميني بيتزا',
+        nameKu: 'مینی پیتزا',
+        desc: 'تشكيلة معجنات بيتزا صغيرة مشكلة ومخبوزة طازجة · Fresh baked assorted mini pizza · هەویری پیتزای بچووکی نوێ و بەتام',
+        price: 2000,
+        priceFormatted: '2,000 د.ع',
+        badge: '🫓 Mini Pizza',
+        img: 'assets/pizzzaaaa.png'
     },
     {
         id: 'mixed-cheese-pastry',
@@ -937,8 +1080,8 @@ const menuItems = [
         nameAr: 'جبنة مشكل',
         nameKu: 'پەنیری تێکەڵاو',
         desc: 'عجينة وجبنة شيدر · Dough & cheddar cheese · هەویر و پەنیری شیدار',
-        price: 2750,
-        priceFormatted: '2,750 د.ع',
+        price: 2500,
+        priceFormatted: '2,500 د.ع',
         badge: '🫓 Cheese Mix',
         img: 'assets/44.jpeg'
     },
@@ -963,8 +1106,8 @@ const menuItems = [
         nameAr: 'لحم بالعجين بالبيض',
         nameKu: 'لحم بالعجين بە هێلکە',
         desc: 'لحم مفروم، بيض وعجينة لحم بالعجين · Minced meat, egg & dough · گوشتی ڕنراو، هێلکە و هەویر',
-        price: 1500,
-        priceFormatted: '1,500 د.ع',
+        price: 2500,
+        priceFormatted: '2,500 د.ع',
         badge: '🫓 Pastry with Egg',
         img: 'assets/46.jpeg'
     },
@@ -976,8 +1119,8 @@ const menuItems = [
         nameAr: 'لحم بالعجين مع جبنة قشقوان',
         nameKu: 'لحم بالعجين بە پەنیری قەشقەوان',
         desc: 'جبنة قشقوان ولحم مفروم · Kashkaval cheese & minced meat · پەنیری قەشقەوان و گوشتی ڕنراو',
-        price: 1500,
-        priceFormatted: '1,500 د.ع',
+        price: 2500,
+        priceFormatted: '2,500 د.ع',
         badge: '🫓 Meat & Cheese',
         img: 'assets/lahm.jpeg'
     },
@@ -994,8 +1137,8 @@ const menuItems = [
         badge: '🫓 Pastry',
         img: 'assets/500.jpeg',
         variants: [
-            { id: '500g', weight: '500g', weightAr: '500 غرام', weightKu: '500 گرام', price: 15000, priceFormatted: '15,000 د.ع' },
-            { id: '1000g', weight: '1000g (1kg)', weightAr: '1000 غرام (1 كغم)', weightKu: '1000 گرام (1 کگم)', price: 30000, priceFormatted: '30,000 د.ع' }
+            { id: '500g', weight: '500g', weightAr: '500 غرام', weightKu: '500 گرام', price: 20000, priceFormatted: '20,000 د.ع' },
+            { id: '1000g', weight: '1000g (1kg)', weightAr: '1000 غرام (1 كغم)', weightKu: '1000 گرام (1 کگم)', price: 40000, priceFormatted: '40,000 د.ع' }
         ],
         selectedVariant: '500g'
     },
@@ -1007,37 +1150,26 @@ const menuItems = [
         nameAr: 'سجق دجاج',
         nameKu: 'سوجووقی مریشک',
         desc: 'عجينة طازجة مع سجق دجاج · Fresh dough topped with chicken sujuk · هەویری نوێ لەگەڵ سوجووقی مریشک',
-        price: 1000,
-        priceFormatted: '1,000 د.ع',
+        price: 1250,
+        priceFormatted: '1,250 د.ع',
         badge: '🫓 Sujuk',
         img: 'assets/sjk.jpeg'
+
     },
     {
         id: 'beef-sujuk-pastry',
         num: 352,
         category: 'pastries',
         name: 'Beef Sujuk Manakish',
-        nameAr: 'سجق لحم',
-        nameKu: 'سوجووقی گوشت',
-        desc: 'عجينة طازجة مع سجق لحم بلدي · Fresh dough topped with spiced beef sujuk · هەویری نوێ لەگەڵ سوجووقی گوشت',
-        price: 2000,
-        priceFormatted: '2,000 د.ع',
+        nameAr: 'سجق بالجبنة',
+        nameKu: 'سوجووقی گوشت بە پەنیری',
+        desc: 'عجينة طازجة مع بالجبنه لحم بلدي · Fresh dough topped with spiced beef sujuk · هەویری نوێ لەگەڵ سوجووقی گوشت',
+        price: 1500,
+        priceFormatted: '1,500 د.ع',
         badge: '🫓 Beef Sujuk',
         img: 'assets/sjk.jpeg'
     },
-    {
-        id: 'shish-kashkaval-pastry',
-        num: 353,
-        category: 'pastries',
-        name: 'Shish Tawook & Kashkaval Pastry',
-        nameAr: 'شيش مع قشقوان',
-        nameKu: 'شیش تاووق بە قەشقەوان',
-        desc: 'عجينة طازجة، قطع شيش طاووق وجبنة قشقوان · Fresh dough, shish tawook & Kashkaval cheese · هەویر، شیش تاووق و پەنیری قەشقەوان',
-        price: 2000,
-        priceFormatted: '2,000 د.ع',
-        badge: '🫓 Shish & Cheese',
-        img: 'assets/39.jpeg'
-    },
+
     {
         id: 'pepperoni-pie',
         num: 354,
@@ -1072,8 +1204,8 @@ const menuItems = [
         nameAr: 'فطيرة حبش مدخن',
         nameKu: 'فەتیرەی حەبەشی دووکەڵاوی',
         desc: 'فطيرة محشوة بالحبش المدخن والجبنة الذائبة · Stuffed pie with smoked turkey & melt cheese · فەتیرەی حەبەشی دووکەڵاوی و پەنیر',
-        price: 2500,
-        priceFormatted: '2,500 د.ع',
+        price: 3000,
+        priceFormatted: '3,000 د.ع',
         badge: '🫓 Smoked Turkey Pie',
         img: 'assets/ftyra.jpeg'
     },
@@ -1740,13 +1872,17 @@ function renderFoodCardHtml(item, dict) {
 
     let variantsHtml = '';
     if (item.variants && item.variants.length > 0) {
-        const isPizza = item.category === 'pizza';
-        const vLabel = state.currentLang === 'ar'
-            ? (isPizza ? 'اختر الحجم:' : 'اختر الكمية / الوزن:')
-            : state.currentLang === 'ku'
-                ? (isPizza ? 'قەبارە هەڵبژێرە:' : 'کێش هەڵبژێرە:')
-                : (isPizza ? 'Select Size:' : 'Select Portion:');
-        const vIcon = isPizza ? '🍕' : '⚖️';
+        let vLabel, vIcon;
+        if (item.variantType === 'cheese') {
+            vIcon = '🧀';
+            vLabel = state.currentLang === 'ar' ? 'الجبنة:' : (state.currentLang === 'ku' ? 'پەنیر:' : 'Cheese Option:');
+        } else if (item.variantType === 'size' || item.category === 'pizza') {
+            vIcon = item.category === 'pizza' ? '🍕' : '📏';
+            vLabel = state.currentLang === 'ar' ? 'اختر الحجم:' : (state.currentLang === 'ku' ? 'قەبارە هەڵبژێرە:' : 'Select Size:');
+        } else {
+            vIcon = '⚖️';
+            vLabel = state.currentLang === 'ar' ? 'اختر الكمية / الوزن:' : (state.currentLang === 'ku' ? 'کێش هەڵبژێرە:' : 'Select Portion:');
+        }
         variantsHtml = `
       <div class="variant-selector" onclick="event.stopPropagation()">
         <div class="variant-label">
@@ -1939,13 +2075,17 @@ function openItemModal(itemId) {
     const modalVariantsContainer = document.getElementById('item-modal-variants-container');
     if (modalVariantsContainer) {
         if (item.variants && item.variants.length > 0) {
-            const isPizza = item.category === 'pizza';
-            const vLabel = state.currentLang === 'ar'
-                ? (isPizza ? 'اختر الحجم:' : 'اختر الكمية / الوزن:')
-                : state.currentLang === 'ku'
-                    ? (isPizza ? 'قەبارە هەڵبژێرە:' : 'کێش هەڵبژێرە:')
-                    : (isPizza ? 'Select Size:' : 'Select Portion:');
-            const vIcon = isPizza ? '🍕' : '⚖️';
+            let vLabel, vIcon;
+            if (item.variantType === 'cheese') {
+                vIcon = '🧀';
+                vLabel = state.currentLang === 'ar' ? 'الجبنة:' : (state.currentLang === 'ku' ? 'پەنیر:' : 'Cheese Option:');
+            } else if (item.variantType === 'size' || item.category === 'pizza') {
+                vIcon = item.category === 'pizza' ? '🍕' : '📏';
+                vLabel = state.currentLang === 'ar' ? 'اختر الحجم:' : (state.currentLang === 'ku' ? 'قەبارە هەڵبژێرە:' : 'Select Size:');
+            } else {
+                vIcon = '⚖️';
+                vLabel = state.currentLang === 'ar' ? 'اختر الكمية / الوزن:' : (state.currentLang === 'ku' ? 'کێش هەڵبژێرە:' : 'Select Portion:');
+            }
             const selectedVId = item.selectedVariant || item.variants[0].id;
             modalVariantsContainer.innerHTML = `
         <div class="variant-selector modal-variant-selector">
@@ -1980,7 +2120,8 @@ function openItemModal(itemId) {
     const activeV = (item.variants && item.variants.length > 0)
         ? (item.variants.find(v => v.id === item.selectedVariant) || item.variants[0])
         : null;
-    const variantStr = activeV ? ` (${activeV.weight})` : '';
+    const vText = activeV ? (state.currentLang === 'ar' ? (activeV.weightAr || activeV.weight) : (state.currentLang === 'ku' ? (activeV.weightKu || activeV.weight) : activeV.weight)) : '';
+    const variantStr = activeV ? ` (${vText})` : '';
 
     const waBtn = document.getElementById('item-modal-wa-btn');
     if (waBtn) {
