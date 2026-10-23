@@ -160,7 +160,7 @@ const menuItems = [
         nameKu: 'ژەمی کرسپی',
         desc: 'يقدم مع بطاطا مقلية · Served with French fries · لەگەڵ بەتاتەی سوورکراوە پێشکەش دەکرێت',
         price: 10000,
-        priceFormatted: '1,0000 د.ع',
+        priceFormatted: '10,000 د.ع',
         badge: '🍗 Crispy',
         img: 'assets/photo1.jpeg'
     },
@@ -535,7 +535,7 @@ const menuItems = [
         nameKu: 'ژەمی شیش تاووق',
         desc: 'يقدم مع بطاطا مقلية · Served with French fries · لەگەڵ بەتاتەی سوورکراوە پێشکەش دەکرێت',
         price: 10000,
-        priceFormatted: '1,0000 د.ع',
+        priceFormatted: '10,000 د.ع',
         badge: '🍽️ Meal',
         img: 'assets/25.jpeg'
     },
@@ -600,7 +600,7 @@ const menuItems = [
         nameKu: 'ژەمی فرانشیسکۆ',
         desc: 'دجاج فرانشيسكو يقدم مع بطاطا مقلية وسلطة · Francisco chicken served with French fries & salad · مریشکی فرانشیسکۆ لەگەڵ بەتاتەی سوورکراوە',
         price: 10000,
-        priceFormatted: '1,0000 د.ع',
+        priceFormatted: '10,000 د.ع',
         badge: '🍽️ Francisco Meal',
         img: 'assets/900.jpeg'
     },
