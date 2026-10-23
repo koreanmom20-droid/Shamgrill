@@ -837,7 +837,7 @@ const menuItems = [
         price: 1000,
         priceFormatted: '1,000 د.ع',
         badge: '🍟 Saj Bread',
-        img: 'assets/805.jpeg'
+        img: 'assets/805.png'
     },
     {
         id: 'potato-sandwich-french',
