@@ -925,8 +925,8 @@ const menuItems = [
         nameAr: 'حمص بالطحينة',
         nameKu: 'حومس بە تەحین',
         desc: 'حمص، بطحينة وعصير ليمون · Hummus with tahini & lemon juice · حومس بە تەحین و ئاوی لیمۆ',
-        price: 2500,
-        priceFormatted: '2,500 د.ع',
+        price: 2000,
+        priceFormatted: '2,000 د.ع',
         badge: '🥗 Hummus',
         img: 'assets/31.jpeg'
     },
